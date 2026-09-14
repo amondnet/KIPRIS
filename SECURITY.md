@@ -3,7 +3,7 @@
 ## Reporting a vulnerability
 
 Please report security issues privately through
-[GitHub Security Advisories](https://github.com/amondnet/kipris/security/advisories/new)
+[GitHub Security Advisories](https://github.com/amondnet/KIPRIS/security/advisories/new)
 rather than a public issue.
 
 Expect an initial response within 7 days.

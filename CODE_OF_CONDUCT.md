@@ -6,5 +6,5 @@ Be respectful. Harassment, personal attacks, and discriminatory language are not
 acceptable in issues, pull requests, or any other project space.
 
 Report unacceptable behavior to the maintainer via
-[GitHub Security Advisories](https://github.com/amondnet/kipris/security/advisories/new)
+[GitHub Security Advisories](https://github.com/amondnet/KIPRIS/security/advisories/new)
 or a direct message. Reports are handled confidentially.

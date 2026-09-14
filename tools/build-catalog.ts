@@ -594,8 +594,8 @@ function main(): void {
       note: "Derived from KIPRIS Plus Open API specifications documented in the source repo.",
     },
     gateways: {
-      openapi: { base: "http://plus.kipris.or.kr/openapi/rest", auth_param: "accessKey" },
-      kipo: { base: "http://plus.kipris.or.kr/kipo-api/kipi", auth_param: "ServiceKey" },
+      openapi: { base: "https://plus.kipris.or.kr/openapi/rest", auth_param: "accessKey" },
+      kipo: { base: "https://plus.kipris.or.kr/kipo-api/kipi", auth_param: "ServiceKey" },
     },
     services: services.map((s) => ({
       id: s.id,

@@ -17,8 +17,11 @@ FM_NAME="$(awk '/^name:/{print $2; exit}' "$SKILL_DIR/SKILL.md")"
 
 mkdir -p "$ROOT/dist"
 rm -f "$OUT"
+# zip은 .gitignore를 보지 않는다. 스킬 폴더에 남은 키 파일이 업로드 아카이브에
+# 그대로 실려 나가지 않도록 kipris.py가 읽는 자격 증명 파일명을 모두 제외한다.
 (cd "$(dirname "$SKILL_DIR")" && zip -qr "$OUT" "$NAME" \
-  -x '*/__pycache__/*' '*.pyc' '*/.DS_Store' '*/evals/*')
+  -x '*/__pycache__/*' '*.pyc' '*/.DS_Store' '*/evals/*' \
+     '*/.env' '*/.env.*' '*/api_key' '*/openapi_key' '*/kipo_key')
 
 echo "created $OUT ($(du -h "$OUT" | cut -f1))"
 unzip -l "$OUT" | tail -3

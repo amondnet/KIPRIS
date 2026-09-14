@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generated_at": "2026-09-14T08:10:50Z",
+  "generated_at": "2026-09-14T09:08:57Z",
   "source": {
     "repo": "nuri428/kipris_skill",
     "license": "MIT",
@@ -9,11 +9,11 @@
   },
   "gateways": {
     "openapi": {
-      "base": "http://plus.kipris.or.kr/openapi/rest",
+      "base": "https://plus.kipris.or.kr/openapi/rest",
       "auth_param": "accessKey"
     },
     "kipo": {
-      "base": "http://plus.kipris.or.kr/kipo-api/kipi",
+      "base": "https://plus.kipris.or.kr/kipo-api/kipi",
       "auth_param": "ServiceKey"
     }
   },

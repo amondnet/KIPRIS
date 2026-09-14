@@ -14,6 +14,7 @@ Subcommands:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import os
 import sys
@@ -25,29 +26,37 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
+try:  # POSIX only; the counter still works without it, just unserialized.
+    import fcntl
+except ImportError:  # pragma: no cover - Windows
+    fcntl = None
+
 CATALOG_DIR = Path(__file__).resolve().parent.parent / "references" / "catalog"
 CONFIG_DIR = Path(os.environ.get("KIPRIS_CONFIG_DIR") or (Path.home() / ".config" / "kipris"))
 USAGE_FILE = CONFIG_DIR / "usage.json"
+USAGE_LOCK = CONFIG_DIR / "usage.lock"
 TIMEOUT = 30
 MAX_RETRIES = 3
 MIN_INTERVAL = 0.05  # KIPRIS blocks IPs above 50 requests/second; stay well under.
 
 # KIPRIS exposes the same service through two gateways with different auth
 # params. The catalog records the gateway per service, but a few services carry
-# operations on both -- these are the ones confirmed by real calls.
+# operations on both -- these are the ones confirmed by real calls. Operation
+# ids repeat across services, so the key is (service id, operation id):
+# freeSearchInfo means openapi under patent_utility but kipo under trademark.
 OPERATION_GATEWAY = {
-    "getAdvancedSearch": "kipo",
-    "getBibliographyDetailInfoSearch": "kipo",
-    "getBibliographySumryInfoSearch": "kipo",
-    "freeSearchInfo": "openapi",
-    "applicationNumberSearchInfo": "openapi",
-    "applicantNameSearchInfo": "openapi",
-    "rightHolerSearchInfo": "openapi",
-    "freeSearch": "openapi",
-    "applicationNumberSearch": "openapi",
-    "internationalOpenNumberSearch": "openapi",
-    "applicantSearch": "openapi",
-    "internationalApplicationNumberSearch": "openapi",
+    ("patent_utility", "getAdvancedSearch"): "kipo",
+    ("patent_utility", "getBibliographyDetailInfoSearch"): "kipo",
+    ("patent_utility", "getBibliographySumryInfoSearch"): "kipo",
+    ("patent_utility", "freeSearchInfo"): "openapi",
+    ("patent_utility", "applicationNumberSearchInfo"): "openapi",
+    ("patent_utility", "applicantNameSearchInfo"): "openapi",
+    ("patent_utility", "rightHolerSearchInfo"): "openapi",
+    ("foreign_patent", "freeSearch"): "openapi",
+    ("foreign_patent", "applicationNumberSearch"): "openapi",
+    ("foreign_patent", "internationalOpenNumberSearch"): "openapi",
+    ("foreign_patent", "applicantSearch"): "openapi",
+    ("foreign_patent", "internationalApplicationNumberSearch"): "openapi",
 }
 
 
@@ -79,13 +88,15 @@ def resolve_key(gateway: str) -> tuple[str, str]:
     file paths matter as much as the variables.
     """
     specific = "KIPRIS_ACCESS_KEY" if gateway == "openapi" else "KIPRIS_SERVICE_KEY"
+    # A blank value counts as absent: an exported-but-empty variable must not
+    # shadow the shared key that is actually set.
     for name in (specific, "KIPRIS_API_KEY"):
-        value = os.environ.get(name)
+        value = (os.environ.get(name) or "").strip()
         if value:
-            return value.strip(), f"env:{name}"
+            return value, f"env:{name}"
     for filename in (".env.local", ".env"):
         for name in (specific, "KIPRIS_API_KEY"):
-            value = _read_env_file(Path.cwd() / filename, name)
+            value = (_read_env_file(Path.cwd() / filename, name) or "").strip()
             if value:
                 return value, f"{filename}:{name}"
     for filename in (f"{gateway}_key", "api_key"):
@@ -106,24 +117,56 @@ def resolve_key(gateway: str) -> tuple[str, str]:
 
 # --------------------------------------------------------------------------- quota
 
+@contextlib.contextmanager
+def _usage_lock():
+    """Serialize the read-modify-write below. Fan-out searches run several
+    invocations at once, and an unlocked counter silently loses increments.
+    Locking is best effort: a read-only home or a filesystem without flock
+    must degrade to the old unlocked behaviour, never fail the search."""
+    handle = None
+    try:
+        USAGE_LOCK.parent.mkdir(parents=True, exist_ok=True)
+        handle = open(USAGE_LOCK, "a+b")
+        if fcntl is not None:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+    except (OSError, ValueError):
+        if handle is not None:
+            handle.close()
+        handle = None
+    try:
+        yield
+    finally:
+        if handle is not None:
+            try:
+                if fcntl is not None:
+                    fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+            except (OSError, ValueError):
+                pass
+            handle.close()
+
+
 def _usage_bump(count: int = 1) -> dict:
     """Track calls per month. The free tier allows 1,000/month, so a caller that
     is about to fan out over N results needs to know what it has already spent."""
     month = datetime.now(timezone.utc).strftime("%Y-%m")
-    data = {}
-    if USAGE_FILE.is_file():
+    with _usage_lock():
+        data = {}
+        if USAGE_FILE.is_file():
+            try:
+                data = json.loads(USAGE_FILE.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError, ValueError):
+                data = {}
+        if not isinstance(data, dict) or data.get("month") != month:
+            data = {"month": month, "calls": 0}
+        data["calls"] = int(data.get("calls", 0)) + count
         try:
-            data = json.loads(USAGE_FILE.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
-            data = {}
-    if data.get("month") != month:
-        data = {"month": month, "calls": 0}
-    data["calls"] = int(data.get("calls", 0)) + count
-    try:
-        CONFIG_DIR.mkdir(parents=True, exist_ok=True)
-        USAGE_FILE.write_text(json.dumps(data), encoding="utf-8")
-    except OSError:
-        pass  # A read-only home is not a reason to fail the search.
+            USAGE_FILE.parent.mkdir(parents=True, exist_ok=True)
+            # Replace atomically so a concurrent reader never sees a half file.
+            tmp = USAGE_FILE.with_name(f"{USAGE_FILE.name}.{os.getpid()}.tmp")
+            tmp.write_text(json.dumps(data), encoding="utf-8")
+            os.replace(tmp, USAGE_FILE)
+        except OSError:
+            pass  # A read-only home is not a reason to fail the search.
     return data
 
 
@@ -150,8 +193,9 @@ def pick_gateway(service: dict, operation_id: str, override: str | None) -> tupl
     so a wrong gateway is diagnosable instead of looking like a bad API key."""
     if override:
         return override, "explicit --gateway"
-    if operation_id in OPERATION_GATEWAY:
-        return OPERATION_GATEWAY[operation_id], "verified operation mapping"
+    verified = OPERATION_GATEWAY.get((service.get("id"), operation_id))
+    if verified:
+        return verified, "verified operation mapping"
     gateway = service.get("gateway")
     if gateway in ("openapi", "kipo"):
         return gateway, "service catalog"
@@ -167,13 +211,18 @@ def pick_gateway(service: dict, operation_id: str, override: str | None) -> tupl
 
 # --------------------------------------------------------------------------- http
 
-def _fetch(url: str) -> tuple[bytes, str]:
+def _fetch(url: str) -> tuple[bytes, str, dict]:
+    """Return (body, content type, usage). Every attempt reaches KIPRIS and so
+    spends quota, including the ones a retry replaces -- the counter is bumped
+    per attempt and the latest snapshot travels back to the caller."""
     last: Exception | None = None
+    usage: dict = {}
     for attempt in range(MAX_RETRIES):
+        usage = _usage_bump()
         try:
             request = urllib.request.Request(url, headers={"User-Agent": "kipris-skill/1.0"})
             with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-                return response.read(), response.headers.get_content_type()
+                return response.read(), response.headers.get_content_type(), usage
         except urllib.error.HTTPError as exc:
             if exc.code < 500 or attempt == MAX_RETRIES - 1:
                 raise KiprisError(f"HTTP {exc.code} {exc.reason} from KIPRIS") from exc
@@ -235,9 +284,12 @@ def check_result_code(parsed: dict) -> None:
     code = _find_first(parsed, "resultCode")
     message = _find_first(parsed, "resultMsg") or ""
     success = _find_first(parsed, "successYN")
+    # JSON responses carry resultCode as a number, XML as text; compare as text
+    # so a successful 0 is not reported as an error.
+    code = None if code is None else str(code)
     if code not in (None, "", "00", "0", "000"):
         hint = ""
-        if str(code) == "101":
+        if code == "101":
             hint = " -- this API is not registered to your key; apply for it on KIPRIS Plus."
         raise KiprisError(f"KIPRIS error {code}: {message}{hint}")
     if success == "N":
@@ -256,8 +308,17 @@ def cmd_doctor(args: argparse.Namespace) -> int:
         except KiprisError:
             print(f"{gateway:14}: NO KEY")
     if USAGE_FILE.is_file():
-        data = json.loads(USAGE_FILE.read_text(encoding="utf-8"))
-        print(f"calls         : {data.get('calls', 0)} in {data.get('month')} (free tier: 1000/month)")
+        try:
+            data = json.loads(USAGE_FILE.read_text(encoding="utf-8"))
+            if not isinstance(data, dict):
+                raise ValueError("usage counter is not an object")
+        except (json.JSONDecodeError, OSError, ValueError):
+            # doctor exists to diagnose a broken setup; a corrupt counter is one
+            # of those setups, and _usage_bump resets it on the next call anyway.
+            print(f"calls         : unreadable counter at {USAGE_FILE}; "
+                  "it resets on the next call")
+        else:
+            print(f"calls         : {data.get('calls', 0)} in {data.get('month')} (free tier: 1000/month)")
     else:
         print("calls         : none recorded yet")
     return 0
@@ -294,7 +355,8 @@ def cmd_describe(args: argparse.Namespace) -> int:
 
 def cmd_call(args: argparse.Namespace) -> int:
     service = load_service(args.service)
-    if not service.get("service_path"):
+    service_path = args.service_path or service.get("service_path")
+    if not service_path:
         raise KiprisError(
             f"Service '{service['id']}' has no confirmed ServicePath in the catalog, "
             "so its URL cannot be built. Pass --service-path if you know it."
@@ -316,14 +378,20 @@ def cmd_call(args: argparse.Namespace) -> int:
         name, sep, value = pair.partition("=")
         if not sep:
             raise KiprisError(f"Bad --param '{pair}', expected name=value")
-        params[name.strip()] = value
-    service_path = args.service_path or service["service_path"]
+        name = name.strip()
+        if name == conf["auth_param"]:
+            # Overwriting the resolved key here would defeat the redaction below
+            # and print the caller's credential in _meta.url.
+            raise KiprisError(
+                f"--param {name} is not allowed; the {gateway} gateway's auth key is "
+                "supplied by the key resolution order (env, .env, config file)."
+            )
+        params[name] = value
     url = f"{conf['base']}/{service_path}/{args.operation}?" + urllib.parse.urlencode(
         params, quote_via=urllib.parse.quote, safe="")
 
     time.sleep(MIN_INTERVAL)
-    payload, content_type = _fetch(url)
-    usage = _usage_bump()
+    payload, content_type, usage = _fetch(url)
 
     if args.raw:
         sys.stdout.write(payload.decode("utf-8", errors="replace"))
@@ -340,7 +408,7 @@ def cmd_call(args: argparse.Namespace) -> int:
         "gateway_source": why,
         "key_source": key_origin,
         "path_confidence": service.get("path_confidence"),
-        "total_count": _find_first(parsed, "totalCount", "TotalSearchCount", "count"),
+        "total_count": _find_first(parsed, "totalCount", "TotalSearchCount"),
         "calls_this_month": usage.get("calls"),
         "url": url.replace(urllib.parse.quote(key, safe=""), "***").replace(key, "***"),
     }

@@ -19,3 +19,6 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Claude Code 에이전트 로컬 메모리 (공개 대상 아님)
+.claude/agent-memory/

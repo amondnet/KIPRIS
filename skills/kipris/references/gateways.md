@@ -6,12 +6,12 @@
 
 KIPRIS Plus는 같은 데이터를 두 경로로 제공하고, 각각 인증 파라미터 이름이 다르다.
 
-|               | OpenAPI                                                             | KIPO                                                                 |
-| ------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| URL           | `http://plus.kipris.or.kr/openapi/rest/{ServicePath}/{operationId}` | `http://plus.kipris.or.kr/kipo-api/kipi/{ServicePath}/{operationId}` |
-| 인증 파라미터 | `accessKey`                                                         | `ServiceKey`                                                         |
-| 키 발급처     | KIPRIS Plus 회원가입                                                | 공공데이터포털 활용신청                                              |
-| 페이징        | `docsStart` / `docsCount`                                           | `pageNo` / `numOfRows`                                               |
+|               | OpenAPI                                                              | KIPO                                                                  |
+| ------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| URL           | `https://plus.kipris.or.kr/openapi/rest/{ServicePath}/{operationId}` | `https://plus.kipris.or.kr/kipo-api/kipi/{ServicePath}/{operationId}` |
+| 인증 파라미터 | `accessKey`                                                          | `ServiceKey`                                                          |
+| 키 발급처     | KIPRIS Plus 회원가입                                                 | 공공데이터포털 활용신청                                               |
+| 페이징        | `docsStart` / `docsCount`                                            | `pageNo` / `numOfRows`                                                |
 
 같은 서비스라도 오퍼레이션마다 게이트웨이가 다를 수 있다. 확인된 범위에서 KIPO 쪽 오퍼레이션은 이름이 `get`으로 시작하고(`getAdvancedSearch`, `getBibliographyDetailInfoSearch`), OpenAPI 쪽은 그렇지 않다(`freeSearchInfo`, `applicantNameSearchInfo`). `kipris.py`는 확인된 오퍼레이션 매핑을 먼저 쓰고, 없으면 이 규칙으로 추정한 뒤 `_meta.gateway_source`에 어느 근거였는지 남긴다. 추정이 틀린 것 같으면 `--gateway`로 명시한다.
 

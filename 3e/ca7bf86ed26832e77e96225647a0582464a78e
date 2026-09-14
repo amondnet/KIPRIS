@@ -1,0 +1,23 @@
+tests/test_kipris.py
+  s_0bf0088ec7a831::t_018108bfe82305 373-386
+  s_0bf0088ec7a831::t_bb7eac5193a092 13
+  s_0bf0088ec7a831::t_c68e75aed074e7 387
+skills/kipris/scripts/kipris.py
+  s_0bf0088ec7a831::t_1647b5216acb46 20,232-243
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3eca7bf86ed26832e77e96225647a0582464a78e",
+  "prompts": {},
+  "sessions": {
+    "s_0bf0088ec7a831": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8da3c474-0afd-44e7-9867-ca7c8a1435f7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Minsu Lee <amond@amond.net>"
+    }
+  }
+}

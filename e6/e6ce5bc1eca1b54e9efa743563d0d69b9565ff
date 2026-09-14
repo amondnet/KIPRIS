@@ -1,0 +1,24 @@
+CODE_OF_CONDUCT.md
+  s_0bf0088ec7a831::t_2350429539f0cd 9
+SECURITY.md
+  s_0bf0088ec7a831::t_2350429539f0cd 6
+README.md
+  s_0bf0088ec7a831::t_2350429539f0cd 37
+  s_0bf0088ec7a831::t_0c23af6cb9bb70 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e6e6ce5bc1eca1b54e9efa743563d0d69b9565ff",
+  "prompts": {},
+  "sessions": {
+    "s_0bf0088ec7a831": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8da3c474-0afd-44e7-9867-ca7c8a1435f7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Minsu Lee <amond@amond.net>"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+skills/kipris/references/catalog/services/rejection_decision.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-768
+skills/kipris/references/catalog/services/patent_alloy.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-143
+skills/kipris/scripts/kipris.py
+  s_0bf0088ec7a831::t_c27768cb41c47c 1-387
+skills/kipris/references/catalog/services/design_map.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-288
+skills/kipris/references/catalog/services/patent_microorganism.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-261
+skills/kipris/references/catalog/services/thesaurus.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-103
+skills/kipris/references/catalog/services/classification_code.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-307
+skills/kipris/references/catalog/index.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-2,4-27,29-36,38-45,47-54,56-63,65-72,74-81,83-90,92-99,101-108,110-117,119-126,128-135,137-144,146-153,155-162,164-171,173-180,182-189,191-198,200-207,209-216,218-225,227-234,236-243,245-252,254-261,263-270,272-279,281-288,290-297,299-306,308-315,317-324,326-333,335-339,341-342,344-351,353-360,362-369,371-378,380-387,389-396,398-405,407-414,416-423,425-432,434-441,443-450,452-459,461-463
+  s_0bf0088ec7a831::t_b2ffc63d573b7c 3,28,37,46,55,64,73,82,91,100,109,118,127,136,145,154,163,172,181,190,199,208,217,226,235,244,253,262,271,280,289,298,307,316,325,334,340,343,352,361,370,379,388,397,406,415,424,433,442,451,460
+skills/kipris/references/catalog/services/trademark_classification_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-118
+skills/kipris/references/catalog/services/right_holder_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-127
+skills/kipris/references/catalog/services/applicant_name_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-162
+skills/kipris/references/catalog/services/opinion_notice.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-823
+skills/kipris/references/catalog/services/internet_tech_notice.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-123
+skills/kipris/references/catalog/services/patent_citation.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-260
+skills/kipris/references/catalog/services/legal_status.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-270
+skills/kipris/references/catalog/services/variety_protection.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-457
+skills/kipris/references/catalog/services/patent_family.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-295
+skills/kipris/references/catalog/services/patent_classification_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-147
+skills/kipris/references/catalog/services/amendment_gazette.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-1926
+skills/kipris/references/catalog/services/contest_idea.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-114
+skills/kipris/references/catalog/services/patent_extension.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-201
+skills/kipris/references/catalog/services/registration_decision.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-746
+skills/kipris/references/catalog/services/claim_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-157
+skills/kipris/references/catalog/services/representative_applicant.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-186
+skills/kipris/references/catalog/services/patent_cited.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-112
+skills/kipris/references/catalog/services/patent_admin_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-142
+skills/kipris/references/catalog/services/ipbiz_hanaro.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-74
+skills/kipris/references/catalog/services/kpa_english_abstract.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-2199
+skills/kipris/references/catalog/services/foreign_trademark.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-1988
+skills/kipris/references/catalog/services/trademark_admin_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-123
+skills/kipris/references/catalog/services/government_patent.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-103
+skills/kipris/references/gateways.md
+  s_0bf0088ec7a831::t_08c79e2d943bc7 9-14,40-46
+  s_0bf0088ec7a831::t_269bba69b99ae8 1-8,15-39,47-59
+skills/kipris/references/catalog/services/foreign_design.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-3323
+skills/kipris/references/catalog/services/trademark_origin.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-457
+skills/kipris/references/catalog/services/foreign_patent.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-8279
+skills/kipris/references/catalog/services/design_admin_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-123
+skills/kipris/references/catalog/services/patent_sequence.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-383
+skills/kipris/references/catalog/services/trial.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-3538
+skills/kipris/references/catalog/services/tm5_indicator.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-78
+skills/kipris/SKILL.md
+  s_0bf0088ec7a831::t_da73910e07397e 1-2,4-51,64-126
+  s_0bf0088ec7a831::t_08c79e2d943bc7 52-63
+  s_0bf0088ec7a831::t_02856614d6434d 3
+tools/package-skill.sh
+  s_0bf0088ec7a831::t_2f2bfec6a6d110 1-24
+skills/kipris/references/catalog/services/registration.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-1548
+skills/kipris/references/catalog/services/applicant_tech_field.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-128
+skills/kipris/references/catalog/services/patent_notice_deadline.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-259
+tools/build-catalog.ts
+  s_0bf0088ec7a831::t_b2ffc63d573b7c 124-133,416-417,424
+  s_0bf0088ec7a831::t_55ac12def01620 1-123,134-415,418-423,425-630
+skills/kipris/references/catalog/services/design.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-7019
+skills/kipris/references/catalog/services/inn_medicine.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-162
+skills/kipris/references/catalog/services/multi_citation.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-143
+skills/kipris/references/catalog/services/patent_utility.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-4,6-6074
+  s_0bf0088ec7a831::t_b2ffc63d573b7c 5
+skills/kipris/references/catalog/services/design_classification_history.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-152
+skills/kipris/references/catalog/services/trademark.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-9866
+skills/kipris/references/catalog/services/japan_patent_alloy.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-315
+skills/kipris/references/catalog/services/applicant_corporation.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-205
+skills/kipris/references/catalog/services/patent_cn_kr_corpus.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-99
+tests/test_kipris.py
+  s_0bf0088ec7a831::t_09f232bad402d3 1-196
+skills/kipris/references/catalog/services/machine_translation_abstract.json
+  s_0bf0088ec7a831::t_3d59af67f33096 1-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7a6ba3c891427c678e89c7299393c36f9a322479",
+  "prompts": {},
+  "sessions": {
+    "s_0bf0088ec7a831": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8da3c474-0afd-44e7-9867-ca7c8a1435f7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Minsu Lee <amond@amond.net>"
+    }
+  }
+}

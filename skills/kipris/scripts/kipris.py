@@ -17,6 +17,7 @@ import argparse
 import contextlib
 import json
 import os
+import ssl
 import sys
 import time
 import urllib.error
@@ -228,6 +229,18 @@ def _fetch(url: str) -> tuple[bytes, str, dict]:
                 raise KiprisError(f"HTTP {exc.code} {exc.reason} from KIPRIS") from exc
             last = exc
         except (urllib.error.URLError, TimeoutError) as exc:
+            reason = getattr(exc, "reason", None)
+            if isinstance(reason, ssl.SSLCertVerificationError):
+                # Deterministic and local -- retrying only spends more quota.
+                # KIPRIS serves a complete, valid chain, so this is virtually
+                # always a Python with no CA bundle rather than a bad server.
+                raise KiprisError(
+                    f"TLS certificate verification failed ({reason}). KIPRIS is reachable "
+                    "over HTTPS, so this is almost certainly a Python without a CA bundle, "
+                    "not a network block. On macOS run 'Install Certificates.command' from "
+                    "your Python's Applications folder, or point SSL_CERT_FILE at a bundle "
+                    "(/etc/ssl/cert.pem on macOS)."
+                ) from exc
             if attempt == MAX_RETRIES - 1:
                 raise KiprisError(
                     f"Could not reach KIPRIS ({exc}). The sandbox may block outbound "

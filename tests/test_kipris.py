@@ -10,6 +10,7 @@ import importlib.util
 import io
 import json
 import os
+import ssl
 import tempfile
 import unittest
 import urllib.error
@@ -368,6 +369,21 @@ class FetchRetryTest(unittest.TestCase):
             kipris._fetch("http://example.invalid/x")
         self.assertEqual(json.loads(kipris.USAGE_FILE.read_text())["calls"],
                          kipris.MAX_RETRIES)
+
+    def test_certificate_failure_fails_fast_with_a_local_diagnosis(self):
+        """A missing CA bundle is local and deterministic: retrying spends two
+        more calls to reproduce it, and the generic 'sandbox may block outbound
+        network access' wording sends the reader after the wrong cause."""
+        reason = ssl.SSLCertVerificationError("unable to get local issuer certificate")
+        self._install([urllib.error.URLError(reason)] * kipris.MAX_RETRIES)
+        with self.assertRaises(kipris.KiprisError) as caught:
+            kipris._fetch("https://example.invalid/x")
+        message = str(caught.exception)
+        self.assertIn("certificate", message.lower())
+        self.assertIn("SSL_CERT_FILE", message)
+        self.assertNotIn("sandbox", message.lower())
+        self.assertEqual(len(self.attempts), 1)
+        self.assertEqual(json.loads(kipris.USAGE_FILE.read_text())["calls"], 1)
 
 
 class DoctorCommandTest(unittest.TestCase):

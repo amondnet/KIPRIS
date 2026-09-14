@@ -108,7 +108,9 @@
           "desc": "기술분류",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

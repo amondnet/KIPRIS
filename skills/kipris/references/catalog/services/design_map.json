@@ -233,7 +233,8 @@
           "desc": "특성코드25",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "propertyCodeInfo",
@@ -282,7 +283,9 @@
           "desc": "물품명칭",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

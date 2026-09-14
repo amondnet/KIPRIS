@@ -5,6 +5,10 @@
 bun = "latest"     # 카탈로그 빌드 도구 (tools/build-catalog.ts)
 python = "3.13"    # 스킬 런타임 (skills/kipris/scripts/kipris.py, 표준 라이브러리만)
 
+[tasks.official-spec]
+description = "포털 원본 export(specs/official/raw) → 정규화 명세(specs/official/*.json)"
+run = "bun run tools/extract-official-spec.ts"
+
 [tasks.catalog]
 description = "참고 명세에서 KIPRIS 서비스 카탈로그 재생성"
 run = "bun run tools/build-catalog.ts"

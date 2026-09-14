@@ -108,7 +108,8 @@
           "desc": "공고번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -137,7 +138,9 @@
           "desc": "변동리스트",
           "note": "(국가코드,번호,참증일자,IPC) ※번호-(국내)출원번호, (해외)문헌번호"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

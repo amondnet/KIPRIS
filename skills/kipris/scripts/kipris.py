@@ -17,6 +17,7 @@ import argparse
 import contextlib
 import json
 import os
+import re
 import ssl
 import sys
 import time
@@ -59,6 +60,28 @@ OPERATION_GATEWAY = {
     ("foreign_patent", "applicantSearch"): "openapi",
     ("foreign_patent", "internationalApplicationNumberSearch"): "openapi",
 }
+
+
+# A config file under CONFIG_DIR is supposed to hold the bare key, but a
+# .env-style `NAME=value` line lands there often enough to be worth tolerating:
+# the whole line used to be sent as the key, so every request carried
+# `ServiceKey=KIPRIS_SERVICE_KEY=...` and came back as resultCode 30.
+ENV_ASSIGNMENT_PREFIX = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*=")
+
+
+def _strip_env_assignment(value: str) -> str | None:
+    """Return the assigned value of a `NAME=value` line, or None if there is none.
+
+    Anchoring at the start is not enough on its own: a base64 key is made of
+    identifier characters too, so `YWJjZGVmZ2g==` matches the pattern as an
+    assignment to `YWJjZGVmZ2g`. Base64 uses `=` only as trailing padding, so a
+    remainder that is empty or nothing but `=` is padding and the value is
+    returned to the caller untouched.
+    """
+    if not ENV_ASSIGNMENT_PREFIX.match(value):
+        return None
+    assigned = value.partition("=")[2].strip()
+    return assigned if assigned.strip("=") else None
 
 
 class KiprisError(Exception):
@@ -104,8 +127,13 @@ def resolve_key(gateway: str) -> tuple[str, str]:
         path = CONFIG_DIR / filename
         if path.is_file():
             value = path.read_text(encoding="utf-8").strip()
+            origin = str(path)
+            assigned = _strip_env_assignment(value)
+            if assigned is not None:
+                value = assigned
+                origin = f"{path} (env 형태 접두사 제거됨, 파일에는 값만 저장하세요)"
             if value:
-                return value, str(path)
+                return value, origin
     raise KiprisError(
         "No KIPRIS API key found. Set one of:\n"
         "  export KIPRIS_API_KEY='...'\n"
@@ -304,6 +332,13 @@ def check_result_code(parsed: dict) -> None:
         hint = ""
         if code == "101":
             hint = " -- this API is not registered to your key; apply for it on KIPRIS Plus."
+        elif code == "30":
+            hint = (" -- this gateway does not recognise the key. Check that the key file holds "
+                    "only the key value (no NAME= prefix, no quotes, no surrounding URL), that the "
+                    "service has an approved usage application (활용신청) on KIPRIS Plus, and that a "
+                    "freshly issued key can take a while to activate.")
+        elif code == "31":
+            hint = " -- the key's usage period has expired; renew or extend it on KIPRIS Plus."
         raise KiprisError(f"KIPRIS error {code}: {message}{hint}")
     if success == "N":
         raise KiprisError(f"KIPRIS reported failure: {message or 'no message'}")
@@ -352,6 +387,10 @@ def cmd_services(args: argparse.Namespace) -> int:
 
 def cmd_describe(args: argparse.Namespace) -> int:
     service = load_service(args.service)
+    # Operations the source documents without an id are not in operations[]
+    # because they cannot be called; say so rather than let the reader conclude
+    # the catalog lost them. stdout stays pure JSON.
+    unnamed = service.get("unnamed_operations") or []
     if args.op:
         matches = [o for o in service["operations"] if o["id"] == args.op]
         if not matches:
@@ -363,6 +402,10 @@ def cmd_describe(args: argparse.Namespace) -> int:
             {k: o[k] for k in ("id", "name", "deprecated")} for o in service["operations"]
         ]}
     print(json.dumps(service, ensure_ascii=False, indent=2))
+    if unnamed:
+        names = ", ".join(u["name"] for u in unnamed)
+        print(f"note: {len(unnamed)} operation(s) are documented without an id and "
+              f"cannot be called: {names}", file=sys.stderr)
     return 0
 
 

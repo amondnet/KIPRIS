@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generated_at": "2026-09-14T09:08:57Z",
+  "generated_at": "2026-09-14T15:11:45Z",
   "source": {
     "repo": "nuri428/kipris_skill",
     "license": "MIT",
@@ -25,7 +25,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 24
+      "operation_count": 23
     },
     {
       "id": "applicant_corporation",
@@ -34,7 +34,7 @@
       "path_confidence": "unknown",
       "gateway": "openapi",
       "auth_param": null,
-      "operation_count": 5
+      "operation_count": 4
     },
     {
       "id": "applicant_name_history",
@@ -43,7 +43,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 3
+      "operation_count": 2
     },
     {
       "id": "applicant_tech_field",
@@ -52,7 +52,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 2
+      "operation_count": 1
     },
     {
       "id": "claim_history",
@@ -88,7 +88,7 @@
       "path_confidence": "portal",
       "gateway": "kipo",
       "auth_param": "ServiceKey",
-      "operation_count": 51
+      "operation_count": 50
     },
     {
       "id": "design_admin_history",
@@ -106,7 +106,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 3
+      "operation_count": 2
     },
     {
       "id": "design_map",
@@ -124,7 +124,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 31
+      "operation_count": 30
     },
     {
       "id": "foreign_patent",
@@ -133,7 +133,7 @@
       "path_confidence": "verified",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 81
+      "operation_count": 80
     },
     {
       "id": "foreign_trademark",
@@ -142,7 +142,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 22
+      "operation_count": 21
     },
     {
       "id": "government_patent",
@@ -169,7 +169,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 2
+      "operation_count": 1
     },
     {
       "id": "ipbiz_hanaro",
@@ -196,7 +196,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 26
+      "operation_count": 25
     },
     {
       "id": "legal_status",
@@ -232,7 +232,7 @@
       "path_confidence": "unknown",
       "gateway": "openapi",
       "auth_param": null,
-      "operation_count": 12
+      "operation_count": 11
     },
     {
       "id": "patent_admin_history",
@@ -241,7 +241,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 3
+      "operation_count": 2
     },
     {
       "id": "patent_alloy",
@@ -259,7 +259,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 5
+      "operation_count": 4
     },
     {
       "id": "patent_cited",
@@ -268,7 +268,7 @@
       "path_confidence": "unknown",
       "gateway": "openapi",
       "auth_param": null,
-      "operation_count": 3
+      "operation_count": 2
     },
     {
       "id": "patent_classification_history",
@@ -277,7 +277,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 3
+      "operation_count": 2
     },
     {
       "id": "patent_cn_kr_corpus",
@@ -286,7 +286,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 1
+      "operation_count": 0
     },
     {
       "id": "patent_extension",
@@ -304,7 +304,7 @@
       "path_confidence": "unknown",
       "gateway": "kipo",
       "auth_param": null,
-      "operation_count": 5
+      "operation_count": 3
     },
     {
       "id": "patent_microorganism",
@@ -322,7 +322,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 6
+      "operation_count": 5
     },
     {
       "id": "patent_sequence",
@@ -340,7 +340,7 @@
       "path_confidence": "verified",
       "gateway": "both",
       "auth_param": null,
-      "operation_count": 61
+      "operation_count": 60
     },
     {
       "id": "registration",
@@ -349,7 +349,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 12
+      "operation_count": 11
     },
     {
       "id": "registration_decision",
@@ -367,7 +367,7 @@
       "path_confidence": "unknown",
       "gateway": "openapi",
       "auth_param": null,
-      "operation_count": 12
+      "operation_count": 11
     },
     {
       "id": "representative_applicant",
@@ -376,7 +376,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 4
+      "operation_count": 3
     },
     {
       "id": "right_holder_history",
@@ -385,7 +385,7 @@
       "path_confidence": "unknown",
       "gateway": "unknown",
       "auth_param": null,
-      "operation_count": 3
+      "operation_count": 2
     },
     {
       "id": "thesaurus",
@@ -394,7 +394,7 @@
       "path_confidence": "portal",
       "gateway": "openapi",
       "auth_param": "accessKey",
-      "operation_count": 2
+      "operation_count": 1
     },
     {
       "id": "tm5_indicator",
@@ -412,7 +412,7 @@
       "path_confidence": "portal",
       "gateway": "kipo",
       "auth_param": "ServiceKey",
-      "operation_count": 54
+      "operation_count": 52
     },
     {
       "id": "trademark_admin_history",
@@ -430,7 +430,7 @@
       "path_confidence": "unknown",
       "gateway": "openapi",
       "auth_param": null,
-      "operation_count": 2
+      "operation_count": 1
     },
     {
       "id": "trademark_origin",

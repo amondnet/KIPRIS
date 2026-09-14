@@ -93,7 +93,8 @@
           "desc": "디자인일련번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "personInfo",
@@ -227,7 +228,8 @@
           "desc": "심사과명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "contentInfo",
@@ -361,7 +363,8 @@
           "desc": "보정사유",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentInfo",
@@ -515,7 +518,8 @@
           "desc": "보정사유",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "imageInfo",
@@ -569,7 +573,8 @@
           "desc": "이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "detailInfo",
@@ -633,7 +638,8 @@
           "desc": "상세정보첨부내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -667,7 +673,8 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "pdfInfo",
@@ -696,7 +703,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "pdfInfoV2",
@@ -740,7 +748,9 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

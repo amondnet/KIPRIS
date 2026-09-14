@@ -25,7 +25,7 @@ Claude: KIPRIS 자유검색을 실행합니다...
 | -------------------------------------- | ----------------------------------------------------------------------- |
 | `skills/kipris/SKILL.md`               | 스킬 본체 — 트리거, 호출량 규율, 오퍼레이션 매핑, 결과 제시 규칙        |
 | `skills/kipris/scripts/kipris.py`      | KIPRIS 클라이언트. 인증키 탐색·URL 인코딩·XML→JSON·에러코드·호출량 집계 |
-| `skills/kipris/references/catalog/`    | 49개 서비스 · 540개 오퍼레이션의 기계 판독 카탈로그                     |
+| `skills/kipris/references/catalog/`    | 49개 서비스 · 호출 가능한 오퍼레이션 511개의 기계 판독 카탈로그         |
 | `skills/kipris/references/gateways.md` | 두 게이트웨이의 차이, 공통 파라미터, 응답 구조                          |
 | `.claude-plugin/`                      | 플러그인·마켓플레이스 매니페스트 — 위 두 설치 경로가 읽는다             |
 

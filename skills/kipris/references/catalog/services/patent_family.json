@@ -68,7 +68,8 @@
           "desc": "DOCDB공보번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "familyInfoSearchDOCPubNumber",
@@ -137,7 +138,8 @@
           "desc": "DOCDB공보번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "familyInfoSearchDOCAppNumber",
@@ -206,90 +208,18 @@
           "desc": "DOCDB공보번호",
           "note": ""
         }
-      ]
-    },
+      ],
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
     {
-      "id": null,
       "name": "변동정보",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "transferDate",
-          "desc": "변동일자",
-          "note": ""
-        },
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "기본-국내출원번호, DOCP-DOCDB공보번호, DOCA-DOCDB출원번호"
-        },
-        {
-          "name": "searchCountry",
-          "desc": "검색국가",
-          "note": "US-미국, JP-일본, CP-중국, EP-유럽, WO-WIPO 등"
-        }
-      ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferListInfo",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferCount",
-          "desc": "변동건수",
-          "note": ""
-        },
-        {
-          "name": "transferList",
-          "desc": "출원번호리스트",
-          "note": "(ex : [기본]출원번호1|출원번호2, [DOCP]DOCDB공보번호1|DOCDB공보번호2, [DOCA]DOCDB출원번호1|DOCDB출원번호2)"
-        }
-      ]
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     },
     {
-      "id": null,
       "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "기본-국내출원번호, DOCP-DOCDB공보번호, DOCA-DOCDB출원번호"
-        },
-        {
-          "name": "searchCountry",
-          "desc": "국가코드",
-          "note": ""
-        },
-        {
-          "name": "applicationNumber",
-          "desc": "출원번호",
-          "note": "기본, DOCA 인 경우만 해당"
-        },
-        {
-          "name": "gazetteNumber",
-          "desc": "공보번호",
-          "note": "DOCP인 경우만 해당"
-        }
-      ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

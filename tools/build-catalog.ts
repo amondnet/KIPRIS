@@ -9,6 +9,11 @@
  * srcDir defaults to /tmp/kipris_ref/docs/services.
  * Output goes to skills/kipris/references/catalog/.
  *
+ * Where specs/official/<service>.json exists (normalized KIPRIS Plus portal
+ * exports, see tools/extract-official-spec.ts), its request parameters win over
+ * the markdown: the reference repo invented some names by translating the Korean
+ * descriptions. Every override and every mismatch is reported on stderr.
+ *
  * Rule of the house: never invent data. Anything absent in the source is
  * emitted as null / "" and listed in the validation report — this catalog
  * drives real API calls, and a fabricated ServicePath or parameter name
@@ -32,12 +37,32 @@ interface Field {
   note: string;
 }
 
-interface Operation {
+/** Which source the operation's request parameters came from. */
+type ParamsSource = "official" | "reference";
+
+/** An operation as parsed from the markdown; the id may be missing there. */
+interface ParsedOperation {
   id: string | null;
   name: string;
   deprecated: boolean;
   params: Field[];
   response_fields: Field[];
+}
+
+/** A callable operation: one the catalog can address by id. */
+interface Operation {
+  id: string;
+  name: string;
+  deprecated: boolean;
+  params: Field[];
+  response_fields: Field[];
+  params_source: ParamsSource;
+}
+
+/** An operation the source documents but gives no id, so it cannot be called. */
+interface UnnamedOperation {
+  name: string;
+  note: string;
 }
 
 interface Service {
@@ -48,6 +73,7 @@ interface Service {
   gateway: Gateway;
   auth_param: string | null;
   operations: Operation[];
+  unnamed_operations: UnnamedOperation[];
   /** Counts the source file declares in its header block (may disagree with reality). */
   declared_operation_count: number | null;
   declared_deprecated_count: number | null;
@@ -59,6 +85,21 @@ interface Anomaly {
   detail: string;
 }
 
+/** Shape written by tools/extract-official-spec.ts. */
+interface OfficialSpec {
+  service_id: string;
+  service_name: string;
+  source_file: string;
+  operations: {
+    id: string;
+    name: string;
+    deprecated: boolean;
+    params: { name: string; desc?: string; note?: string }[];
+    response_fields: string[];
+  }[];
+  unnamed_operations: UnnamedOperation[];
+}
+
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
@@ -67,7 +108,11 @@ const DEFAULT_SRC = "/tmp/kipris_ref/docs/services";
 const REPO_ROOT = resolve(dirname(Bun.fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = join(REPO_ROOT, "skills/kipris/references/catalog");
 const SERVICES_DIR = join(OUT_DIR, "services");
+const OFFICIAL_DIR = join(REPO_ROOT, "specs/official");
 const REPORT_PATH = "/tmp/kipris-catalog-report.md";
+
+const UNNAMED_NOTE =
+  "source documents this operation without an id; it cannot be called until one is confirmed";
 
 const TABLE_HEADER_CELLS = new Set(["항목명", "설명", "비고"]);
 
@@ -197,13 +242,13 @@ function parseTable(segment: string[], heading: RegExp): Field[] | null {
   return fields;
 }
 
-function parseOperations(lines: string[], serviceId: string, anomalies: Anomaly[]): Operation[] {
+function parseOperations(lines: string[], serviceId: string, anomalies: Anomaly[]): ParsedOperation[] {
   const headingIdx: number[] = [];
   lines.forEach((l, i) => {
     if (l.startsWith("## ")) headingIdx.push(i);
   });
 
-  const operations: Operation[] = [];
+  const operations: ParsedOperation[] = [];
   for (let k = 0; k < headingIdx.length; k++) {
     const segment = lines.slice(headingIdx[k], headingIdx[k + 1] ?? lines.length);
     const headingRaw = segment[0].replace(/^##\s+/, "").trim();
@@ -416,6 +461,26 @@ function parseServiceFile(path: string, fileName: string): ParsedFile {
 
   const confidence = CONFIDENCE_OVERRIDES[serviceId] ?? pathConfidence;
 
+  // An operation without an id cannot be addressed by `describe`/`call`, so it
+  // is kept out of operations[] and recorded beside it instead of being emitted
+  // as a call target with id: null.
+  const named: Operation[] = [];
+  const unnamed: UnnamedOperation[] = [];
+  for (const op of operations) {
+    if (op.id === null) {
+      unnamed.push({ name: op.name, note: UNNAMED_NOTE });
+    } else {
+      named.push({
+        id: op.id,
+        name: op.name,
+        deprecated: op.deprecated,
+        params: op.params,
+        response_fields: op.response_fields,
+        params_source: "reference",
+      });
+    }
+  }
+
   return {
     service: {
       id: serviceId,
@@ -424,12 +489,125 @@ function parseServiceFile(path: string, fileName: string): ParsedFile {
       path_confidence: confidence,
       gateway,
       auth_param: authParam,
-      operations,
+      operations: named,
+      unnamed_operations: unnamed,
       declared_operation_count: declaredCount,
       declared_deprecated_count: declaredDeprecated,
     },
     anomalies,
   };
+}
+
+// ---------------------------------------------------------------------------
+// Official portal specs
+// ---------------------------------------------------------------------------
+
+interface OfficialNote {
+  kind: string;
+  service: string;
+  detail: string;
+}
+
+/** Read every normalized portal spec in specs/official (none is fine). */
+function loadOfficialSpecs(): Map<string, OfficialSpec> {
+  const specs = new Map<string, OfficialSpec>();
+  if (!existsSync(OFFICIAL_DIR)) return specs;
+  const files = readdirSync(OFFICIAL_DIR)
+    .filter((f) => f.endsWith(".json"))
+    .sort();
+  for (const f of files) {
+    // Defensive: a hand-placed file may still carry the portal's BOM.
+    const spec = JSON.parse(readFileSync(join(OFFICIAL_DIR, f), "utf8").replace(/^\uFEFF/, "")) as OfficialSpec;
+    if (specs.has(spec.service_id)) {
+      throw new Error(`two official specs claim service id "${spec.service_id}" (${f})`);
+    }
+    specs.set(spec.service_id, spec);
+  }
+  return specs;
+}
+
+/**
+ * The portal export is authoritative for request parameters: the reference
+ * markdown invented some names by translating the Korean description
+ * (getWordSearch's `articleName`/`searchYearRange` are really `searchString`/
+ * `searchRecentYear`, confirmed by a live call). Response fields are left alone
+ * — the catalog carries their descriptions, which the export flattens away.
+ */
+function applyOfficialSpec(service: Service, spec: OfficialSpec, notes: OfficialNote[]): void {
+  const byId = new Map(spec.operations.map((o) => [o.id, o]));
+  const unchanged: string[] = [];
+
+  for (const op of service.operations) {
+    const official = byId.get(op.id);
+    if (official === undefined) {
+      notes.push({
+        kind: "operation_missing_from_official",
+        service: service.id,
+        detail: `${op.id}: in the reference markdown but not in ${spec.source_file}; params stay "reference"`,
+      });
+      continue;
+    }
+    const before = op.params.map((p) => p.name);
+    const after = official.params.map((p) => p.name);
+    op.params = official.params.map((p) => ({ name: p.name, desc: p.desc ?? "", note: p.note ?? "" }));
+    op.params_source = "official";
+    if (before.join("\u0000") === after.join("\u0000")) {
+      unchanged.push(op.id);
+      continue;
+    }
+    const added = after.filter((n) => !before.includes(n));
+    const dropped = before.filter((n) => !after.includes(n));
+    notes.push({
+      kind: "params_overridden",
+      service: service.id,
+      detail:
+        `${op.id}: [${before.join(", ")}] -> [${after.join(", ")}]` +
+        ` (added: ${added.join(", ") || "none"}; dropped: ${dropped.join(", ") || "none"})`,
+    });
+  }
+
+  const known = new Set(service.operations.map((o) => o.id));
+  for (const o of spec.operations) {
+    if (!known.has(o.id)) {
+      notes.push({
+        kind: "operation_missing_from_reference",
+        service: service.id,
+        detail: `${o.id} ("${o.name}") is in ${spec.source_file} but not in the reference markdown; not added`,
+      });
+    }
+  }
+
+  if (unchanged.length > 0) {
+    notes.push({
+      kind: "params_confirmed",
+      service: service.id,
+      detail: `${unchanged.length} operations already matched the official spec: ${unchanged.join(", ")}`,
+    });
+  }
+  if (service.unnamed_operations.length > 0 || spec.unnamed_operations.length > 0) {
+    notes.push({
+      kind: "unnamed_operations",
+      service: service.id,
+      detail:
+        `reference: ${service.unnamed_operations.map((u) => u.name).join(", ") || "none"}; ` +
+        `official: ${spec.unnamed_operations.map((u) => u.name).join(", ") || "none"}`,
+    });
+  }
+}
+
+function officialReport(specs: Map<string, OfficialSpec>, notes: OfficialNote[]): string {
+  const out: string[] = [];
+  out.push(`official specs applied: ${specs.size} (${[...specs.keys()].join(", ") || "none"})`);
+  const byKind = new Map<string, OfficialNote[]>();
+  for (const n of notes) {
+    if (!byKind.has(n.kind)) byKind.set(n.kind, []);
+    byKind.get(n.kind)!.push(n);
+  }
+  for (const [kind, list] of [...byKind.entries()].sort()) {
+    out.push(`  ${kind} (${list.length}):`);
+    for (const n of list) out.push(`    - ${n.service}: ${n.detail}`);
+  }
+  return out.join("\n");
 }
 
 // ---------------------------------------------------------------------------
@@ -447,7 +625,11 @@ function sourceCommit(srcDir: string): string | null {
 // ---------------------------------------------------------------------------
 
 function buildReport(services: Service[], anomalies: Anomaly[], commit: string | null): string {
-  const totalOps = services.reduce((n, s) => n + s.operations.length, 0);
+  const totalNamed = services.reduce((n, s) => n + s.operations.length, 0);
+  const totalUnnamed = services.reduce((n, s) => n + s.unnamed_operations.length, 0);
+  // The cross-check below is against what the source documents, so it counts the
+  // unnamed operations too even though they are not emitted as call targets.
+  const totalOps = totalNamed + totalUnnamed;
   const totalDeprecated = services.reduce((n, s) => n + s.operations.filter((o) => o.deprecated).length, 0);
 
   const byConfidence = new Map<string, number>();
@@ -472,6 +654,7 @@ function buildReport(services: Service[], anomalies: Anomaly[], commit: string |
   out.push(`- Source commit: \`${commit ?? "unknown"}\` (nuri428/kipris_skill, MIT)`);
   out.push(`- Services parsed: **${services.length}**`);
   out.push(`- Operations parsed: **${totalOps}** (deprecated: ${totalDeprecated})`);
+  out.push(`- Callable operations emitted: **${totalNamed}**; without an id, kept in \`unnamed_operations\`: **${totalUnnamed}**`);
   out.push("");
 
   out.push("## Cross-check against the source repo's own claims");
@@ -506,12 +689,13 @@ function buildReport(services: Service[], anomalies: Anomaly[], commit: string |
 
   out.push("## Per-service operation counts");
   out.push("");
-  out.push("| service_id | name | declared | parsed | deprecated | path_confidence | gateway | auth_param |");
-  out.push("|---|---|---|---|---|---|---|---|");
+  out.push("| service_id | name | declared | parsed | unnamed | deprecated | path_confidence | gateway | auth_param |");
+  out.push("|---|---|---|---|---|---|---|---|---|");
   for (const s of services) {
     const dep = s.operations.filter((o) => o.deprecated).length;
+    const parsed = s.operations.length + s.unnamed_operations.length;
     out.push(
-      `| ${s.id} | ${s.name} | ${s.declared_operation_count ?? "—"} | ${s.operations.length} | ${dep} | ${s.path_confidence} | ${s.gateway} | ${s.auth_param ?? "null"} |`,
+      `| ${s.id} | ${s.name} | ${s.declared_operation_count ?? "—"} | ${parsed} | ${s.unnamed_operations.length} | ${dep} | ${s.path_confidence} | ${s.gateway} | ${s.auth_param ?? "null"} |`,
     );
   }
   out.push("");
@@ -562,6 +746,27 @@ function main(): void {
     anomalies.push(...parsed.anomalies);
   }
 
+  // specs/official is authoritative for request parameters where it exists.
+  const officialSpecs = loadOfficialSpecs();
+  const officialNotes: OfficialNote[] = [];
+  const matched = new Set<string>();
+  for (const s of services) {
+    const spec = officialSpecs.get(s.id);
+    if (spec === undefined) continue;
+    matched.add(s.id);
+    applyOfficialSpec(s, spec, officialNotes);
+  }
+  for (const id of officialSpecs.keys()) {
+    if (!matched.has(id)) {
+      officialNotes.push({
+        kind: "official_spec_without_service",
+        service: id,
+        detail: "no matching service in the reference markdown; nothing was overridden",
+      });
+    }
+  }
+  console.error(officialReport(officialSpecs, officialNotes));
+
   const commit = sourceCommit(srcDir);
 
   // Rebuild the output tree so a removed source file cannot leave a stale
@@ -578,6 +783,7 @@ function main(): void {
       gateway: s.gateway,
       auth_param: s.auth_param,
       operations: s.operations,
+      unnamed_operations: s.unnamed_operations,
     });
   }
 

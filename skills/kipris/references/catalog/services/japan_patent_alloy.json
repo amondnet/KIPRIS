@@ -103,7 +103,8 @@
           "desc": "국외발명의명칭",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "basicInfo",
@@ -177,7 +178,8 @@
           "desc": "주성분여부",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "petitionclauseInfo",
@@ -226,7 +228,8 @@
           "desc": "종속항번호목록",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "ipcInfo",
@@ -275,7 +278,8 @@
           "desc": "주분류여부",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -309,7 +313,9 @@
           "desc": "문헌번호리스트",
           "note": "(ex : 문헌번호?1|문헌번호?2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

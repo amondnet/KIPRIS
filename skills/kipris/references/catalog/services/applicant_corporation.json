@@ -43,7 +43,8 @@
           "desc": "사업자등록번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "corpBsApplicantInfoV2",
@@ -82,7 +83,8 @@
           "desc": "사업자등록번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "corpBsApplicantInfoV3",
@@ -121,7 +123,8 @@
           "desc": "사업자등록번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -160,46 +163,14 @@
           "desc": "변동리스트",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "기본-국내출원번호, DOCP-DOCDB공보번호, DOCA-DOCDB출원번호"
-        },
-        {
-          "name": "ApplicantNumber",
-          "desc": "특허고객번호",
-          "note": "oper1인 경우만 해당"
-        },
-        {
-          "name": "CorporationNumber",
-          "desc": "법인번호",
-          "note": "oper2인 경우만 해당"
-        },
-        {
-          "name": "BusinessRegistrationNumber",
-          "desc": "사업자번호",
-          "note": "oper3인 경우만 해당"
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

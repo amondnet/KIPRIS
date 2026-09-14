@@ -6,6 +6,7 @@
   "description": "KIPRIS 한국 지식재산 검색 스킬 (Claude Code / Claude Desktop)",
   "license": "MIT",
   "scripts": {
+    "official-spec": "bun run tools/extract-official-spec.ts",
     "catalog": "bun run tools/build-catalog.ts",
     "test": "python3 -m unittest discover -s tests -t .",
     "package": "bash tools/package-skill.sh",

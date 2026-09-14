@@ -68,7 +68,8 @@
           "desc": "지식재산유형",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -97,7 +98,9 @@
           "desc": "등록번호리스트",
           "note": "(ex : 등록번호1|등록번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

@@ -228,7 +228,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "freeSearch",
@@ -372,7 +373,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "agentsSearch",
@@ -516,7 +518,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantSearch",
@@ -660,7 +663,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationdateSearch",
@@ -804,7 +808,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationNumberSearch",
@@ -948,7 +953,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "articleNameSearch",
@@ -1092,7 +1098,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "creatorSearch",
@@ -1236,7 +1243,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designMainClassificationSearch",
@@ -1380,7 +1388,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "locarnoSearch",
@@ -1524,7 +1533,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityDateSearch",
@@ -1668,7 +1678,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "publicationDateSearch",
@@ -1812,7 +1823,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityNumberSearch",
@@ -1956,7 +1968,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "publicationNumberSearch",
@@ -2100,7 +2113,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registerDateSearch",
@@ -2244,7 +2258,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registerNumberSearch",
@@ -2388,7 +2403,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rightHolderSearch",
@@ -2532,7 +2548,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchAllInfo",
@@ -2800,7 +2817,8 @@
           "desc": "주소",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "foreignDesignInfo",
@@ -2869,7 +2887,8 @@
           "desc": "창작요약",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "foreignDesignDetailInfo",
@@ -2918,7 +2937,8 @@
           "desc": "화상디자인분류",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityInfo",
@@ -2957,7 +2977,8 @@
           "desc": "우선권주장일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "locarnoCodeInfo",
@@ -2991,7 +3012,8 @@
           "desc": "로카르노코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "dTermInfo",
@@ -3025,7 +3047,8 @@
           "desc": "D-Term",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantInfo",
@@ -3064,7 +3087,8 @@
           "desc": "주소",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "agentInfo",
@@ -3103,7 +3127,8 @@
           "desc": "주소",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "creatorInfo",
@@ -3142,7 +3167,8 @@
           "desc": "주소",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rightHolderInfo",
@@ -3181,7 +3207,8 @@
           "desc": "주소",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designImageInfo",
@@ -3215,7 +3242,8 @@
           "desc": "이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designThumbnail",
@@ -3249,7 +3277,8 @@
           "desc": "작은이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -3288,36 +3317,14 @@
           "desc": "문헌번호 리스트",
           "note": "(ex : 문헌번호1|문헌번호2|...)"
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "countryCode",
-          "desc": "국가코드",
-          "note": "(US : 미국, JP : 일본, CN : 중국)※다중 국가 선택 불가, 입력방식(ex : US)"
-        },
-        {
-          "name": "literatureNumber",
-          "desc": "문헌번호",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

@@ -188,7 +188,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getNumberSearch",
@@ -387,7 +388,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getAdvancedSearch",
@@ -716,7 +718,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designFormClassInfo",
@@ -935,7 +938,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "freeSearchInfo",
@@ -1169,7 +1173,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "articleNameSearchInfo",
@@ -1403,7 +1408,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designMainClassificationSearchInfo",
@@ -1637,7 +1643,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationNumberSearchInfo",
@@ -1871,7 +1878,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationNumberSearchInfo",
@@ -2105,7 +2113,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "publicationNumberSearchInfo",
@@ -2339,7 +2348,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openNumberSearchInfo",
@@ -2573,7 +2583,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityNumberSearchInfo",
@@ -2807,7 +2818,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationDateSearchInfo",
@@ -3041,7 +3053,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationDateSearchInfo",
@@ -3275,7 +3288,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "publicationDateSearchInfo",
@@ -3509,7 +3523,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openDateSearchInfo",
@@ -3743,7 +3758,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityDateSearchInfo",
@@ -3977,7 +3993,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "inventorNameSearchInfo",
@@ -4211,7 +4228,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantNameSearchInfo",
@@ -4445,7 +4463,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "agentNameSearchInfo",
@@ -4679,7 +4698,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "regPrivilegeNameSearchInfo",
@@ -4913,7 +4933,8 @@
           "desc": "큰이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getBibliographyDetailInfoSearch",
@@ -5417,7 +5438,8 @@
           "desc": "접수발송번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designClasscodeInfo",
@@ -5461,7 +5483,8 @@
           "desc": "한국분류구분코드",
           "note": "(S14001 : 주분류, S14002 : 부분류)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designLocarnoClasscodeInfo",
@@ -5500,7 +5523,8 @@
           "desc": "국제분류코드",
           "note": "(로카르노)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designShapeClasscodeInfo",
@@ -5539,7 +5563,8 @@
           "desc": "형태분류코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designClaimofpriorityInfo",
@@ -5593,7 +5618,8 @@
           "desc": "국가명칭",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getInventorInfo",
@@ -5647,7 +5673,8 @@
           "desc": "창작자국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getApplicantInfo",
@@ -5696,7 +5723,8 @@
           "desc": "출원인국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getAgentInfo",
@@ -5745,7 +5773,8 @@
           "desc": "대리인국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getCreativeSummaryInfo",
@@ -5784,7 +5813,8 @@
           "desc": "창작의요점",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getCreativeDescriptionInfo",
@@ -5823,7 +5853,8 @@
           "desc": "창작의내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getLegalStatusInfo",
@@ -5872,7 +5903,8 @@
           "desc": "처리상태코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getDesignBibliographicSummaryInfo",
@@ -6186,7 +6218,8 @@
           "desc": "페이지수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getSixImageInfoSearch",
@@ -6245,7 +6278,8 @@
           "desc": "이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getPubFullTextInfoSearch",
@@ -6274,7 +6308,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getAnnFullTextInfoSearch",
@@ -6303,7 +6338,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designUpdateGazetteInfo",
@@ -6342,7 +6378,8 @@
           "desc": "버전",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designOpeningGazetteInfo",
@@ -6391,7 +6428,8 @@
           "desc": "파일종류",
           "note": "(S10221:PDF) ※ 참고사항 : 2021.9.13일 기준으로 PDF 보유건에 대해서만 제공합니다."
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designRegistrationGazetteInfo",
@@ -6440,7 +6478,8 @@
           "desc": "파일종류",
           "note": "(S10221:PDF) ※ 참고사항 : 2021.9.13일 기준으로 PDF 보유건에 대해서만 제공합니다."
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getExamPubBookInfo",
@@ -6479,7 +6518,8 @@
           "desc": "파일이름",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getFullTextCheckInfo",
@@ -6538,7 +6578,8 @@
           "desc": "정정공보유무",
           "note": "(있음:Y 없음:N)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getChangeInfoSearch",
@@ -6567,7 +6608,8 @@
           "desc": "출원번호리스트",
           "note": "3019880015095|3019900010240|3019910011543|...|"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designTransferInfo2",
@@ -6601,7 +6643,8 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designCodeSearchInfo",
@@ -6650,7 +6693,8 @@
           "desc": "디자인물품명칭",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getShapeFirstInfo",
@@ -6694,7 +6738,8 @@
           "desc": "디자인형태분류코드설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getEipcSecInfo",
@@ -6743,7 +6788,8 @@
           "desc": "디자인형태분류코드설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getEipcClassInfo",
@@ -6802,7 +6848,8 @@
           "desc": "디자인형태분류코드설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getShapeGroupInfo",
@@ -6886,7 +6933,8 @@
           "desc": "유통시스템URL",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getShapeCodeInfo",
@@ -6940,7 +6988,8 @@
           "desc": "건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getBreakingInfo",
@@ -6989,31 +7038,14 @@
           "desc": "디자인물품명칭",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "applicationNumber",
-          "desc": "출원번호",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

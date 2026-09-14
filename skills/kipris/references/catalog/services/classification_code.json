@@ -53,7 +53,8 @@
           "desc": "영어설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchViennaCodeInfo",
@@ -92,7 +93,8 @@
           "desc": "비엔나코드설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchDesignCodeInfo",
@@ -131,7 +133,8 @@
           "desc": "디자인물품명칭",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchEPCInfo",
@@ -165,7 +168,8 @@
           "desc": "영문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchUPCInfo",
@@ -199,7 +203,8 @@
           "desc": "영문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchFIInfo",
@@ -233,7 +238,8 @@
           "desc": "영문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchFTERMInfo",
@@ -267,7 +273,8 @@
           "desc": "영문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchCPCInfo",
@@ -301,7 +308,9 @@
           "desc": "영문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

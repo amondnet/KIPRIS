@@ -183,7 +183,8 @@
           "desc": "번역제출일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentAbstractInfo",
@@ -227,7 +228,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentClassificationCodeInfo",
@@ -291,7 +293,8 @@
           "desc": "버전일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentDemandClauseInfo",
@@ -350,7 +353,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentDesignatedCountryInfo",
@@ -399,7 +403,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentETCInfo",
@@ -448,7 +453,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentRndInfo",
@@ -497,7 +503,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentSpecificationInfo",
@@ -546,7 +553,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentPriorArtSearchInfo",
@@ -600,7 +608,8 @@
           "desc": "공고순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentTrademarkAmendmentItemInfo",
@@ -714,7 +723,8 @@
           "desc": "공보순서",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentTrademarkAmendmentListInfo",
@@ -808,7 +818,8 @@
           "desc": "공보순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentTrademarkPersonInfo",
@@ -932,7 +943,8 @@
           "desc": "우편번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzetePatentTrademarkPriorityClaimInfo",
@@ -1026,106 +1038,8 @@
           "desc": "공보순번",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "변동정보",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "BIB-서지, AB-요약서, CD-분류코드, CL-청구항, DG-지정국, ETC-기타내용, RND-국가연구개발사업, DSC-명세서, PA-선행기술조사, AMI-정정사항, AML-정정공보목록, PS-인명정보, PRI-우선권주장"
-        },
-        {
-          "name": "transferDate",
-          "desc": "변동일자",
-          "note": ""
-        },
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "BIB-서지, AMI-정정사항, AML-정정공보목록, CLS-디자인분류, OAP-원출원정보, PS-인명정보, PRI-우선권주장, IMG-이미지정보"
-        },
-        {
-          "name": "transferDate",
-          "desc": "변동일자",
-          "note": ""
-        },
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "BIB-서지, AMI-정정사항, AML-정정공보목록, PS-인명정보, PRI-우선권주장, DS-지정상품"
-        },
-        {
-          "name": "transferDate",
-          "desc": "변동일자",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferListInfo",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferCount",
-          "desc": "변동건수",
-          "note": ""
-        },
-        {
-          "name": "transferList",
-          "desc": "출원번호리스트",
-          "note": "(ex : 출원번호1|출원번호2)"
-        },
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferListInfo",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferCount",
-          "desc": "변동건수",
-          "note": ""
-        },
-        {
-          "name": "transferList",
-          "desc": "출원번호리스트",
-          "note": "(ex : 출원번호1|출원번호2)"
-        },
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferListInfo",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferCount",
-          "desc": "변동건수",
-          "note": ""
-        },
-        {
-          "name": "transferList",
-          "desc": "출원번호리스트",
-          "note": "(ex : 출원번호1|출원번호2)"
-        }
-      ]
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignBibliographicInfo",
@@ -1284,7 +1198,8 @@
           "desc": "비밀유무",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignUpdateMattersInfo",
@@ -1353,7 +1268,8 @@
           "desc": "공개공고구분",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignUpdatePublicListInfo",
@@ -1412,7 +1328,8 @@
           "desc": "공개공고구분",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignClassificationInfo",
@@ -1466,7 +1383,8 @@
           "desc": "공개공고구분",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignOrgAppInfo",
@@ -1520,7 +1438,8 @@
           "desc": "일련번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignPersonInfo",
@@ -1599,7 +1518,8 @@
           "desc": "우편번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignPriorityInfo",
@@ -1658,7 +1578,8 @@
           "desc": "우선권주장일련번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteDesignImageInfo",
@@ -1742,7 +1663,8 @@
           "desc": "통합형디자인일련번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteTrademarkBibliographicInfo",
@@ -1871,7 +1793,8 @@
           "desc": "상표유형",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentGazzeteTrademarkDesignationGoodsInfo",
@@ -1920,7 +1843,14 @@
           "desc": "공보순번",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "변동정보",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

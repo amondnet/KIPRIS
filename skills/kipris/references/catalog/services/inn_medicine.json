@@ -63,7 +63,8 @@
           "desc": "참증이미지일련번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "nameINNInfo",
@@ -127,7 +128,8 @@
           "desc": "참증이미지일련번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -156,7 +158,9 @@
           "desc": "참증번호리스트",
           "note": "(ex : 참증번호1|참증번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

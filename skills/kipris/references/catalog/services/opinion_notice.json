@@ -183,7 +183,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "examinerInfo",
@@ -242,7 +243,8 @@
           "desc": "심사관명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "examineResultInfo",
@@ -346,7 +348,8 @@
           "desc": "보정서내용4",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rejectDecisionInfo",
@@ -420,7 +423,8 @@
           "desc": "안내내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "additionRejectInfo",
@@ -459,7 +463,8 @@
           "desc": "추가거절내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "bibliographicInfo",
@@ -598,7 +603,8 @@
           "desc": "출원일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "personInfo",
@@ -652,7 +658,8 @@
           "desc": "변리사명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "imageInfo",
@@ -686,7 +693,8 @@
           "desc": "이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -720,7 +728,8 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "pdfInfo",
@@ -749,7 +758,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "pdfInfoV2",
@@ -793,31 +803,14 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "applicationNumber",
-          "desc": "출원번호",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

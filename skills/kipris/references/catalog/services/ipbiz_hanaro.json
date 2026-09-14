@@ -68,7 +68,9 @@
           "desc": "소분류",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

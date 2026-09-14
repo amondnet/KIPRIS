@@ -183,7 +183,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "numberSearch",
@@ -362,7 +363,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "advancedSearch",
@@ -666,7 +668,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "freeSearch",
@@ -840,7 +843,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "ipcSearch",
@@ -1014,7 +1018,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "upcSearch",
@@ -1188,7 +1193,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "fiSearch",
@@ -1362,7 +1368,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "ftermSearch",
@@ -1536,7 +1543,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "epcSearch",
@@ -1710,7 +1718,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "inventionNameSearch",
@@ -1884,7 +1893,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "abstractSearch",
@@ -2058,7 +2068,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "claimExtendSearch",
@@ -2232,7 +2243,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "usPatentDocumentSearch",
@@ -2406,7 +2418,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationNumberSearch",
@@ -2580,7 +2593,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openNumberSearch",
@@ -2754,7 +2768,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registerNumberSearch",
@@ -2928,7 +2943,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityNumberSearch",
@@ -3102,7 +3118,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "internationalOpenNumberSearch",
@@ -3276,7 +3293,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "foreignRefNumberSearch",
@@ -3450,7 +3468,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "fieldSearch",
@@ -3624,7 +3643,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationdateSearch",
@@ -3798,7 +3818,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openDateSearch",
@@ -3972,7 +3993,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registerDateSearch",
@@ -4146,7 +4168,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityDateSearch",
@@ -4320,7 +4343,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantSearch",
@@ -4494,7 +4518,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "inventorsSearch",
@@ -4668,7 +4693,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "agentsSearch",
@@ -4842,7 +4868,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "internationalApplicationNumberSearch",
@@ -5016,7 +5043,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "relationUSSearch",
@@ -5190,7 +5218,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "internationalApplicationDateSearch",
@@ -5364,7 +5393,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "detailsDescriptionSearch",
@@ -5538,7 +5568,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "cpcSearch",
@@ -5712,7 +5743,8 @@
           "desc": "국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "priorityCountrySearch",
@@ -5891,7 +5923,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "bibliographicInfo",
@@ -6475,7 +6508,8 @@
           "desc": "CPC코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "bibliographicSummaryInfo",
@@ -6574,7 +6608,8 @@
           "desc": "정정공보유무",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "ipcInfo",
@@ -6608,7 +6643,8 @@
           "desc": "IPC버전",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "fiInfo",
@@ -6642,7 +6678,8 @@
           "desc": "FI코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "ftermInfo",
@@ -6671,7 +6708,8 @@
           "desc": "F-TERM코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "themeCodeInfo",
@@ -6700,7 +6738,8 @@
           "desc": "F_TERM주제코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "summation",
@@ -6729,7 +6768,8 @@
           "desc": "요약",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openNumberInfo",
@@ -6758,7 +6798,8 @@
           "desc": "공개번호/공개일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantInfo",
@@ -6797,7 +6838,8 @@
           "desc": "출원인국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "inventorsInfo",
@@ -6836,7 +6878,8 @@
           "desc": "발명자국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "prriorityNumberDateInfo",
@@ -6875,7 +6918,8 @@
           "desc": "우선권주장국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "docdbFamilyInfo",
@@ -6919,7 +6963,8 @@
           "desc": "DOCDB문헌식별코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "foreignBiblio",
@@ -6948,7 +6993,8 @@
           "desc": "DOCDB문헌번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "ipcVersionInfo",
@@ -6977,7 +7023,8 @@
           "desc": "IPC버전/IPC개정일자",
           "note": "IPC8판 적용일자"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "upcInfo",
@@ -7006,7 +7053,8 @@
           "desc": "UPC코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getfield",
@@ -7035,7 +7083,8 @@
           "desc": "검색항목",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "agentInfo",
@@ -7069,7 +7118,8 @@
           "desc": "대리인명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "internationalApplicationOpenInfo",
@@ -7118,7 +7168,8 @@
           "desc": "문헌번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "demandParagraphInfo",
@@ -7147,7 +7198,8 @@
           "desc": "청구범위내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "usPatentDocumentsInfo",
@@ -7211,7 +7263,8 @@
           "desc": "국가코드링크",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "foreignPatentDocumentsInfo",
@@ -7265,7 +7318,8 @@
           "desc": "UPC코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "otherPublicationsInfo",
@@ -7294,7 +7348,8 @@
           "desc": "외국참조번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "relatedUsApplicationDataInfo",
@@ -7343,7 +7398,8 @@
           "desc": "관련출원번호링크",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "relatedUsApplicationDataDetailInfo",
@@ -7397,7 +7453,8 @@
           "desc": "관련출원코드설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getOpenAnnounceNumber",
@@ -7426,7 +7483,8 @@
           "desc": "공개번호/공개일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "eclaInfo",
@@ -7455,7 +7513,8 @@
           "desc": "구분코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "designationInfo",
@@ -7489,7 +7548,8 @@
           "desc": "지정국가코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "cpcInfo",
@@ -7518,7 +7578,8 @@
           "desc": "CPC코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "familyInfo",
@@ -7617,7 +7678,8 @@
           "desc": "발명의명칭",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "fullTextInfo",
@@ -7646,7 +7708,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "representationImageInfo",
@@ -7690,7 +7753,8 @@
           "desc": "이미지명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "revisionAnnounceInfo",
@@ -7719,7 +7783,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openFullTextInfo",
@@ -7748,7 +7813,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationFullTextInfo",
@@ -7777,7 +7843,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "revisionInfo",
@@ -7806,7 +7873,8 @@
           "desc": "정정정보유무",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "fullTextDisplayInfo",
@@ -7845,7 +7913,8 @@
           "desc": "-",
           "note": "(미사용)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "openNumberLinkInfo",
@@ -7879,7 +7948,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationNumberLinkInfo",
@@ -7913,7 +7983,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "fullTextCheck",
@@ -7957,7 +8028,8 @@
           "desc": "-",
           "note": "미사용"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getIpcCode",
@@ -7991,7 +8063,8 @@
           "desc": "원문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getEpcCode",
@@ -8025,7 +8098,8 @@
           "desc": "원문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getUpcCode",
@@ -8059,7 +8133,8 @@
           "desc": "원문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getFiCode",
@@ -8093,7 +8168,8 @@
           "desc": "원문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getFtermCode",
@@ -8127,7 +8203,8 @@
           "desc": "원문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getLtrtno",
@@ -8171,7 +8248,8 @@
           "desc": "문헌번호",
           "note": "(LTRTNO)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getCpcCode",
@@ -8205,7 +8283,8 @@
           "desc": "원문설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -8244,36 +8323,14 @@
           "desc": "문헌번호 리스트",
           "note": "(ex : 문헌번호1|문헌번호2|...)"
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "countryCode",
-          "desc": "국가코드",
-          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
-        },
-        {
-          "name": "literatureNumber",
-          "desc": "문헌번호",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

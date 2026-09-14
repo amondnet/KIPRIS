@@ -88,41 +88,14 @@
           "desc": "소멸건수",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "변동정보",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "transferDate",
-          "desc": "변동일자",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferListInfo",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferCount",
-          "desc": "변동건수",
-          "note": ""
-        },
-        {
-          "name": "transferList",
-          "desc": "출원번호리스트",
-          "note": "(ex : 특허고객번호1|특허고객번호2)"
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "변동정보",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

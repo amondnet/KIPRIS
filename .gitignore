@@ -9,6 +9,10 @@
 # API 키를 절대 커밋하지 않는다
 *api_key*
 
+# KIPRIS Plus 포털 원본 export — 재배포하지 않는다.
+# 정규화본 specs/official/*.json 은 커밋한다 (디렉터리만 무시하므로 예외 규칙 불필요).
+specs/official/raw/
+
 # 의존성 / 빌드 산출물
 node_modules/
 dist/

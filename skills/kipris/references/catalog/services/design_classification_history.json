@@ -53,7 +53,8 @@
           "desc": "국내분류코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "locarnoClassificationInfo",
@@ -107,46 +108,14 @@
           "desc": "로카르노분류코드버전",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "변동정보",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "searchType",
-          "desc": "검색코드",
-          "note": "기본-국내분류코드, LOC-로카르노"
-        },
-        {
-          "name": "transferDate",
-          "desc": "변동일자",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferListInfo",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "transferCount",
-          "desc": "변동건수",
-          "note": ""
-        },
-        {
-          "name": "transferList",
-          "desc": "출원번호리스트",
-          "note": "(ex : 출원번호1|출원번호2)"
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "변동정보",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

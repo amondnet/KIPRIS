@@ -173,7 +173,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "freeSearch",
@@ -292,7 +293,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "tradeMarkNameSearch",
@@ -411,7 +413,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationNumberSearch",
@@ -530,7 +533,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationDateSearch",
@@ -649,7 +653,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationNumberSearch",
@@ -768,7 +773,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationDateSearch",
@@ -887,7 +893,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantSearch",
@@ -1006,7 +1013,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rightHolderSearch",
@@ -1125,7 +1133,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "tradeMarkClassificationCodeSearch",
@@ -1244,7 +1253,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "niceCodeSearch",
@@ -1363,7 +1373,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "viennaCodeSearch",
@@ -1482,7 +1493,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "searchAllInfo",
@@ -1651,7 +1663,8 @@
           "desc": "",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "foreignTradeMarkInfo",
@@ -1710,7 +1723,8 @@
           "desc": "상표설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicantInfo",
@@ -1749,7 +1763,8 @@
           "desc": "대표출원인여부",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rightHolderInfo",
@@ -1783,7 +1798,8 @@
           "desc": "권리자명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "classificationCodeInfo",
@@ -1822,7 +1838,8 @@
           "desc": "지정상품명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "niceCodeInfo",
@@ -1851,7 +1868,8 @@
           "desc": "니스코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "viennaCodeInfo",
@@ -1880,7 +1898,8 @@
           "desc": "도형분류코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "tradeMarkImageInfo",
@@ -1914,7 +1933,8 @@
           "desc": "이미지경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -1953,36 +1973,14 @@
           "desc": "문헌번호 리스트",
           "note": "(ex : 문헌번호1|문헌번호2|...)"
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "countryCode",
-          "desc": "국가코드",
-          "note": "국가코드(US : 미국, JP : 일본)※다중 국가 선택 불가, 입력방식(ex : US)"
-        },
-        {
-          "name": "literatureNumber",
-          "desc": "문헌번호",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

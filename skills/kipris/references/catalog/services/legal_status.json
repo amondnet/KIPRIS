@@ -58,7 +58,8 @@
           "desc": "법적상태설명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getLegStatusEventInfoSearch",
@@ -112,7 +113,8 @@
           "desc": "이벤트일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getTransferListInfoSearch",
@@ -151,7 +153,8 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "legalStatusBasicInfo",
@@ -215,7 +218,8 @@
           "desc": "법적상태설명",
           "note": "영문"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "legalStatusCodeInfo",
@@ -264,7 +268,9 @@
           "desc": "법적상태설명",
           "note": "(영문)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

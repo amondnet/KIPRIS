@@ -1,0 +1,4 @@
+# 생성물은 생성기가 형식을 소유한다. prettier가 다시 포맷하면
+# `mise run official-spec` 결과와 커밋된 파일이 매번 어긋난다.
+specs/official/*.json
+specs/official/raw/

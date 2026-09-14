@@ -38,7 +38,8 @@
           "desc": "출원인대표명",
           "note": "영문"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rpstApplicantInfoV2",
@@ -127,7 +128,8 @@
           "desc": "출원인대표명",
           "note": "영문"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "rpstApplicantTransferInfo",
@@ -156,31 +158,14 @@
           "desc": "변동리스트",
           "note": "※리스트 형식(특허고객번호,대표출원인번호|)"
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "rpstApplicantNumber",
-          "desc": "특허고객번호",
-          "note": "(대표출원인번호)"
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

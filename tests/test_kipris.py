@@ -74,6 +74,25 @@ class KeyResolutionTest(unittest.TestCase):
         self.assertEqual(key, "shared")
         self.assertEqual(origin, "env:KIPRIS_API_KEY")
 
+    def test_config_file_holding_an_env_assignment_yields_the_value_alone(self):
+        """A real key was saved as `KIPRIS_SERVICE_KEY=<value>`; the whole line
+        went out as the ServiceKey and every call came back resultCode 30, so the
+        prefix is stripped and the origin says so."""
+        (Path(self._tmp.name) / "api_key").write_text("KIPRIS_SERVICE_KEY=secret-value\n")
+        key, origin = kipris.resolve_key("kipo")
+        self.assertEqual(key, "secret-value")
+        self.assertIn("접두사 제거", origin)
+
+    def test_config_file_key_ending_in_base64_padding_is_untouched(self):
+        """KIPRIS keys are base64 and may end in `=` padding. Such a key is all
+        identifier characters, so it matches the assignment pattern too; only the
+        all-padding remainder tells the two apart, and stripping here would turn
+        a valid key into `=`."""
+        (Path(self._tmp.name) / "api_key").write_text("YWJjZGVmZ2g==\n")
+        key, origin = kipris.resolve_key("kipo")
+        self.assertEqual(key, "YWJjZGVmZ2g==")
+        self.assertNotIn("접두사 제거", origin)
+
     def test_missing_key_explains_how_to_set_one(self):
         with self.assertRaises(kipris.KiprisError) as ctx:
             kipris.resolve_key("openapi")
@@ -146,6 +165,27 @@ class ResponseParsingTest(unittest.TestCase):
         self.assertIn("101", str(ctx.exception))
         self.assertIn("not registered", str(ctx.exception).lower())
 
+    def test_unregistered_key_error_points_at_the_key_file(self):
+        """Code 30 is what a malformed key file produces, and the bare KIPRIS
+        message names no cause -- ten quota calls were spent finding one."""
+        xml = (b"<response><header><resultCode>30</resultCode>"
+               b"<resultMsg>SERVICE_KEY_IS_NOT_REGISTERED_ERROR</resultMsg></header></response>")
+        with self.assertRaises(kipris.KiprisError) as ctx:
+            kipris.check_result_code(kipris.parse_response(xml, "application/xml"))
+        message = str(ctx.exception)
+        self.assertIn("30", message)
+        self.assertIn("NAME= prefix", message)
+        self.assertIn("활용신청", message)
+
+    def test_expired_key_error_says_the_period_ended(self):
+        """Code 31 is not a bad key but an expired one; without the hint the user
+        re-issues a key that was never the problem."""
+        xml = (b"<response><header><resultCode>31</resultCode>"
+               b"<resultMsg>DEADLINE_HAS_EXPIRED_ERROR</resultMsg></header></response>")
+        with self.assertRaises(kipris.KiprisError) as ctx:
+            kipris.check_result_code(kipris.parse_response(xml, "application/xml"))
+        self.assertIn("expired", str(ctx.exception).lower())
+
     def test_numeric_result_code_zero_is_a_success(self):
         """JSON responses carry resultCode as a number, and 0 means OK."""
         parsed = kipris.parse_response(b'{"resultCode": 0, "resultMsg": "OK"}',
@@ -210,6 +250,24 @@ class CatalogTest(unittest.TestCase):
         for service in self.index["services"]:
             if service["service_path"]:
                 self.assertIn(service["gateway"], ("openapi", "kipo", "both"), service["id"])
+
+    def test_official_spec_wins_over_the_reference_parameter_names(self):
+        """The reference markdown invented getWordSearch's parameters by
+        translating the Korean descriptions (물품명칭 -> articleName). The portal
+        spec -- and a live call -- say searchString/searchRecentYear."""
+        detail = json.loads((CATALOG / "services" / "trademark.json").read_text(encoding="utf-8"))
+        operation = next(o for o in detail["operations"] if o["id"] == "getWordSearch")
+        self.assertEqual([p["name"] for p in operation["params"]][:2],
+                         ["searchString", "searchRecentYear"])
+        self.assertEqual(operation["params_source"], "official")
+
+    def test_trademark_emits_no_operation_without_an_id(self):
+        """An operation with id null cannot be addressed by describe or call; it
+        belongs in unnamed_operations, not in the list of call targets."""
+        detail = json.loads((CATALOG / "services" / "trademark.json").read_text(encoding="utf-8"))
+        self.assertEqual([o for o in detail["operations"] if not o["id"]], [])
+        self.assertEqual({u["name"] for u in detail["unnamed_operations"]},
+                         {"공존동의상표정보", "최종변동일자"})
 
     def test_every_verified_operation_mapping_is_real(self):
         known = {}

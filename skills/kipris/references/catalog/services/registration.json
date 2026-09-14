@@ -398,7 +398,8 @@
           "desc": "디자인무심사대상여부",
           "note": "심사, 일부심사, 무심사 * 20140701(무심사, 일부심사 분기)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationRightInfo",
@@ -532,7 +533,8 @@
           "desc": "우선권주장수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationRightHolderInfo",
@@ -611,7 +613,8 @@
           "desc": "사건의표시",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationRightRankInfo",
@@ -715,7 +718,8 @@
           "desc": "사후지정일자",
           "note": "(마드리드)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationFeeInfo",
@@ -759,7 +763,8 @@
           "desc": "납부금액",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationLastRightHolderInfo",
@@ -798,7 +803,8 @@
           "desc": "최종권리자국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationTransferListInfo",
@@ -832,7 +838,8 @@
           "desc": "등록번호리스트",
           "note": "(ex : 등록번호1|등록번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationRightHolderV2Info",
@@ -916,7 +923,8 @@
           "desc": "사건의표시",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationContinuanceTermInfo",
@@ -940,7 +948,8 @@
           "desc": "만료일자",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registrationInformationV2",
@@ -1439,7 +1448,8 @@
           "desc": "순위관련자주소",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "newRightfulPersonInfo",
@@ -1518,31 +1528,14 @@
           "desc": "순위관련자주소",
           "note": ""
         }
-      ]
-    },
-    {
-      "id": null,
-      "name": "최종변동일자",
-      "deprecated": false,
-      "params": [
-        {
-          "name": "registrationNumber",
-          "desc": "등록번호",
-          "note": ""
-        }
       ],
-      "response_fields": [
-        {
-          "name": "items",
-          "desc": "",
-          "note": ""
-        },
-        {
-          "name": "lastTransferDateInfo",
-          "desc": "최종변동일자",
-          "note": ""
-        }
-      ]
+      "params_source": "reference"
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "최종변동일자",
+      "note": "source documents this operation without an id; it cannot be called until one is confirmed"
     }
   ]
 }

@@ -1,0 +1,5798 @@
+{
+  "service_id": "trademark",
+  "service_name": "상표 출원 속보",
+  "source_file": "trademark-bulletin.json",
+  "extracted_at": "2026-09-14T15:09:51Z",
+  "operations": [
+    {
+      "id": "getWordSearch",
+      "name": "단어",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "searchString",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "searchRecentYear",
+          "desc": "검색년도범위",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "indexNo",
+        "applicationNumber",
+        "applicationDate",
+        "publicationNumber",
+        "publicationDate",
+        "registrationPublicNumber",
+        "registrationPublicDate",
+        "registrationNumber",
+        "registrationDate",
+        "priorityNumber",
+        "priorityDate",
+        "applicationStatus",
+        "classificationCode",
+        "viennaCode",
+        "applicantName",
+        "agentName",
+        "regPrivilegeName",
+        "title",
+        "fullText",
+        "drawing",
+        "bigDrawing",
+        "appReferenceNumber",
+        "regReferenceNumber",
+        "internationalRegisterNumber",
+        "internationalRegisterDate",
+        "count",
+        "numOfRows",
+        "pageNo",
+        "totalCount"
+      ]
+    },
+    {
+      "id": "getNumberSearch",
+      "name": "번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "searchNumber",
+          "desc": "출원번호/공고번호/등록번호",
+          "note": "※ searchRight와(과) 함께 입력해야 조회됨(세트 필수)"
+        },
+        {
+          "name": "searchYear",
+          "desc": "검색년도범위",
+          "note": ""
+        },
+        {
+          "name": "searchRight",
+          "desc": "검색권리",
+          "note": "※ searchNumber와(과) 함께 입력해야 조회됨(세트 필수)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "item",
+        "agentName",
+        "appReferenceNumber",
+        "applicantName",
+        "applicationDate",
+        "applicationNumber",
+        "applicationStatus",
+        "BigDrawing",
+        "classificationCode",
+        "drawing",
+        "fullText",
+        "indexNo",
+        "internationalRegisterDate",
+        "internationalRegisterNumber",
+        "priorityDate",
+        "priorityNumber",
+        "publicationDate",
+        "publicationNumber",
+        "regPrivilegeName",
+        "regReferenceNumber",
+        "registrationDate",
+        "registrationNumber",
+        "registrationPublicDate",
+        "registrationPublicNumber",
+        "title",
+        "viennaCode",
+        "count",
+        "numOfRows",
+        "pageNo",
+        "totalCount"
+      ]
+    },
+    {
+      "id": "getAdvancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trademarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trademarkNameMatch",
+          "desc": "상표명칭완전일치",
+          "note": ""
+        },
+        {
+          "name": "classification",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "asignProduct",
+          "desc": "지정상품",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "출원공고번호",
+          "note": ""
+        },
+        {
+          "name": "registrationPublicNumber",
+          "desc": "등록공고번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "publicationDate",
+          "desc": "출원공고일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "registrationPublicDate",
+          "desc": "등록공고일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고객번호 (출원인(AP)/코드)",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호 (대리인(AG)/코드)",
+          "note": ""
+        },
+        {
+          "name": "regPrivilegeName",
+          "desc": "등록권자",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형코드 (DR 비엔나)",
+          "note": ""
+        },
+        {
+          "name": "freeSearch",
+          "desc": "자유검색",
+          "note": ""
+        },
+        {
+          "name": "similarityCode",
+          "desc": "유사군코드",
+          "note": ""
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false ; ※ 권리구분 플래그(application·registration·refused·expiration·withdrawal·publication·cancel·abandonment) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false ; ※ 상표유형 플래그(trademark·serviceMark·businessEmblem·certMark·collectiveMark·geoCertMark·geoOrgMark·internationalMark·trademarkServiceMark) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false ; ※ 표장구성 플래그(character·figure·compositionCharacter·figureComposition·fragrance·sound·color·colorMixed·dimension·hologram·invisible·motion·visual) 중 1개 이상 true 필수(그룹 전체 미지정 시 오류)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "indexNo",
+        "applicationNumber",
+        "applicationDate",
+        "publicationNumber",
+        "publicationDate",
+        "registrationPublicNumber",
+        "registrationPublicDate",
+        "registrationNumber",
+        "registrationDate",
+        "priorityNumber",
+        "priorityDate",
+        "applicationStatus",
+        "classificationCode",
+        "viennaCode",
+        "applicantName",
+        "agentName",
+        "regPrivilegeName",
+        "title",
+        "fullText",
+        "drawing",
+        "bigDrawing",
+        "appReferenceNumber",
+        "regReferenceNumber",
+        "internationalRegisterNumber",
+        "internationalRegisterDate",
+        "count",
+        "numOfRows",
+        "pageNo",
+        "totalCount"
+      ]
+    },
+    {
+      "id": "freeSearchInfo",
+      "name": "자유검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "word",
+          "desc": "자유검색",
+          "note": ""
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자"
+        }
+      ],
+      "response_fields": [
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "applicationNumberSearchInfo",
+      "name": "출원번호 검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자"
+        }
+      ],
+      "response_fields": [
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "trademarkNameMatchSearchInfo",
+      "name": "상표명완전일치 검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trademarkNameMatch",
+          "desc": "상표명",
+          "note": ""
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "PD-공고일자, AD-출원일자, GD-등록일자, OPD-공개일자, FD-국제출원일자, FOD-국제공개일자, RD-우선권주장일자"
+        }
+      ],
+      "response_fields": [
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "trademarkNameSearchInfo",
+      "name": "상표명칭",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trademarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "classsificationSearchInfo",
+      "name": "상품분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "classification",
+          "desc": "(로그 확인 필수 파라미터)",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "designatedGoodsSearchInfo",
+      "name": "지정상품",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "asignProduct",
+          "desc": "지정상품",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "registerNumberSearchInfo",
+      "name": "등록번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "publicationNumberSearchInfo",
+      "name": "출원공고번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "publicationNumber",
+          "desc": "출원공고번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "internationalRegisterNumberSearchInfo",
+      "name": "국제등록번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "priorityNumberSearchInfo",
+      "name": "우선권주장번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "applicationDateSearchInfo",
+      "name": "출원일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "YYYYMMDD 또는 YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "registerDateSearchInfo",
+      "name": "등록일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "publicationDateSearchInfo",
+      "name": "출원공고일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "publicationDate",
+          "desc": "출원공고일자",
+          "note": "YYYYMMDD 또는 YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "internationalRegisterDateSearchInfo",
+      "name": "국제등록일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "priorityDateSearchInfo",
+      "name": "우선권주장일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "applicantNamesearchInfo",
+      "name": "출원인명/특허고객번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "agentNamesearchInfo",
+      "name": "대리인이름/번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "regPrivilegeNamesearchInfo",
+      "name": "등록권자이름",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "regPrivilegeName",
+          "desc": "등록권자명",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "viennaCodesearchInfo",
+      "name": "도형코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "viennaCode",
+          "desc": "도형코드 (비엔나)",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "similarityCodesearchInfo",
+      "name": "유사군",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "similarityCode",
+          "desc": "유사군코드",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "registrationPublicNumbersearchInfo",
+      "name": "등록공고번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationPublicNumber",
+          "desc": "등록공고번호",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "registrationPublicDatesearchInfo",
+      "name": "등록공고일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationPublicDate",
+          "desc": "등록공고일자",
+          "note": "YYYYMMDD~YYYYMMDD"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "true/false"
+        },
+        {
+          "name": "application",
+          "desc": "출원",
+          "note": "true/false"
+        },
+        {
+          "name": "cancel",
+          "desc": "무효",
+          "note": "true/false"
+        },
+        {
+          "name": "expiration",
+          "desc": "소멸",
+          "note": "true/false"
+        },
+        {
+          "name": "publication",
+          "desc": "공고",
+          "note": "true/false"
+        },
+        {
+          "name": "refused",
+          "desc": "거절",
+          "note": "true/false"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "true/false"
+        },
+        {
+          "name": "withdrawal",
+          "desc": "취하",
+          "note": "true/false"
+        },
+        {
+          "name": "businessEmblem",
+          "desc": "업무표장",
+          "note": "42 · true/false"
+        },
+        {
+          "name": "certMark",
+          "desc": "증명표장",
+          "note": "47 · true/false"
+        },
+        {
+          "name": "collectiveMark",
+          "desc": "단체표장",
+          "note": "43 · true/false"
+        },
+        {
+          "name": "geoCertMark",
+          "desc": "지리적증명표장",
+          "note": "48 · true/false"
+        },
+        {
+          "name": "geoOrgMark",
+          "desc": "지리적표시단체표장",
+          "note": "44 · true/false"
+        },
+        {
+          "name": "internationalMark",
+          "desc": "국제등록상표",
+          "note": "마드리드 · true/false"
+        },
+        {
+          "name": "serviceMark",
+          "desc": "서비스표",
+          "note": "41 · true/false"
+        },
+        {
+          "name": "trademark",
+          "desc": "상표 포함 여부",
+          "note": "40 · true/false"
+        },
+        {
+          "name": "trademarkServiceMark",
+          "desc": "상표/서비스표",
+          "note": "45 · true/false"
+        },
+        {
+          "name": "character",
+          "desc": "문자상표",
+          "note": "true/false"
+        },
+        {
+          "name": "compositionCharacter",
+          "desc": "복합문자",
+          "note": "true/false"
+        },
+        {
+          "name": "figure",
+          "desc": "도형상표",
+          "note": "true/false"
+        },
+        {
+          "name": "figureComposition",
+          "desc": "도형복합",
+          "note": "true/false"
+        },
+        {
+          "name": "fragrance",
+          "desc": "냄새상표",
+          "note": "true/false"
+        },
+        {
+          "name": "sound",
+          "desc": "소리상표",
+          "note": "true/false"
+        },
+        {
+          "name": "color",
+          "desc": "색채상표",
+          "note": "true/false"
+        },
+        {
+          "name": "colorMixed",
+          "desc": "색채복합",
+          "note": "true/false"
+        },
+        {
+          "name": "dimension",
+          "desc": "입체상표",
+          "note": "true/false"
+        },
+        {
+          "name": "hologram",
+          "desc": "홀로그램",
+          "note": "true/false"
+        },
+        {
+          "name": "invisible",
+          "desc": "기타시각적으로인식불가능",
+          "note": "true/false"
+        },
+        {
+          "name": "motion",
+          "desc": "동작상표",
+          "note": "true/false"
+        },
+        {
+          "name": "visual",
+          "desc": "기타시각적으로인식가능",
+          "note": "true/false"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬 기준 항목",
+          "note": "AD-출원일자 RD-등록일자 PD-공고일자 MD-국제등록일자 PRD-우선권주장일자"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬 방향",
+          "note": "true=내림차순/false=오름차순, sortSpec 함께 사용"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "TotalSearchCount",
+        "TradeMarkInfo",
+        "SerialNumber",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "PriorityClaimNumber",
+        "PriorityClaimDate",
+        "ApplicationStatus",
+        "GoodClassificationCode",
+        "ViennaCode",
+        "ApplicantName",
+        "AgentName",
+        "RegistrationRightholderName",
+        "Title",
+        "FulltextExistFlag",
+        "ImagePath",
+        "ThumbnailPath"
+      ]
+    },
+    {
+      "id": "getBibliographyDetailInfoSearch",
+      "name": "서지상세정보(공공데이터 포털 연계)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "item",
+        "administrativeMeasureInfoArray",
+        "administrativeMeasureInfo",
+        "processStateCode",
+        "receiptSendDate",
+        "receiptSendDocumentEngName",
+        "receiptSendDocumentName",
+        "receiptSendNumber",
+        "seq",
+        "agentInfoArray",
+        "agentInfo",
+        "agentAddress",
+        "agentCode",
+        "nameKoreanLong",
+        "nationalCode",
+        "applicantInfoArray",
+        "applicantInfo",
+        "applicantAddress",
+        "applicantCode",
+        "applicationNumberInfoArray",
+        "applicationNumberInfo",
+        "relatedApplicationDate",
+        "relatedApplicationNumber",
+        "asignProductArray",
+        "asignProduct",
+        "mainCode",
+        "productName",
+        "productNameEng",
+        "subCode",
+        "biblioSummaryInfoArray",
+        "biblioSummaryInfo",
+        "appReferenceNumber",
+        "applicationDate",
+        "applicationNumber",
+        "classVersion",
+        "designateDate",
+        "familyFlag",
+        "imageFlag",
+        "internationalRegisterDate",
+        "internationalRegisterNumber",
+        "lastDisposalCode",
+        "lastDisposalDate",
+        "originalApplicationFlag",
+        "priorityFlag",
+        "publicationDate",
+        "publicationFlag",
+        "publicationNumber",
+        "rePublicationFlag",
+        "regReferenceNumber",
+        "registerFlag",
+        "registerStatus",
+        "registrationDate",
+        "registrationNumber",
+        "registrationPublicDate",
+        "registrationPublicGazetteFlag",
+        "registrationPublicNumber",
+        "retroDate",
+        "retroDivisionCode",
+        "tmDivisionCode",
+        "tmNameAcquisitionDate",
+        "trademarkDivisionCode",
+        "trlFlag",
+        "CoAgreementInfoArray",
+        "CoAgreementInfo",
+        "inputDate",
+        "originalApplicationIndicationArray",
+        "originalApplicationIndication",
+        "originalApplicationDate",
+        "originalApplicationNumber",
+        "partialRejectInfoArray",
+        "partialRejectInfo",
+        "priorityClaimInfoArray",
+        "priorityClaimInfo",
+        "priorityApplicationCountry",
+        "priorityApplicationDate",
+        "priorityApplicationNumber",
+        "revisionPublicationInfoArray",
+        "revisionPublicationInfo",
+        "number",
+        "openingPublicTypeCodeName",
+        "path",
+        "pdfName",
+        "sampleImageInfoArray",
+        "sampleImageInfo",
+        "imageName",
+        "smallPath",
+        "similarityCodeInfoArray",
+        "similarityCodeInfo",
+        "similarCode",
+        "vfersionInfoArray",
+        "vfersionInfo",
+        "cd",
+        "enNm",
+        "koNm",
+        "ver",
+        "viennaCodeInfoArray",
+        "viennaCodeInfo",
+        "rowNumber",
+        "viennaCode",
+        "viennaCodeDescription",
+        "publicationInfoArray",
+        "publicationInfo"
+      ]
+    },
+    {
+      "id": "trademarkDesignationGoodstInfo",
+      "name": "지정상품정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "trademarkDesignationGoodstInfo",
+        "DesignationGoodsSerialNumber",
+        "DesignationGoodsClassificationInformationCode",
+        "SimilargroupCode",
+        "DesignationGoodsHangeulName",
+        "DesignationGoodsEnglishsentenceName",
+        "partialRejectInfoArray",
+        "partialRejectInfo"
+      ]
+    },
+    {
+      "id": "trademarkSimilarityCodeInfo",
+      "name": "유사군코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "trademarkSimilarityCodeInfo",
+        "SimilargroupCode"
+      ]
+    },
+    {
+      "id": "trademarkBiblioSummaryInfo",
+      "name": "서지요약정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "trademarkBiblioSummaryInfo",
+        "ApplicationNumber",
+        "AppReferenceNumber",
+        "ApplicationDate",
+        "PublicNumber",
+        "PublicDate",
+        "RegistrationNumber",
+        "RegReferenceNumber",
+        "RegistrationDate",
+        "TrademarkHangeulName",
+        "TrademarkEnglishsentenceName",
+        "LastDispositionCodeName",
+        "LastDispositionDate",
+        "TrademarkTypeCode",
+        "ClassVersion",
+        "TrademarkNameAcquisitionDate",
+        "TrademarkKindCodeName",
+        "ImageFlag",
+        "PublicGazetteFlag",
+        "UpdateGazetteFlag",
+        "OriginalApplicationFlag",
+        "RegistrationFlag",
+        "RelationApplicationNumberFlag",
+        "PriorityClaimYesorno",
+        "MadridInternationalRegistrationNumber",
+        "MadridInternationalRegistrationDate",
+        "MadridAfterfactDesignationDate",
+        "LastRetroactiveTypeCodeName",
+        "LastRetroactiveDate",
+        "TrialDemandFlag",
+        "RegistrationStatusCodeName",
+        "RegistrationPublicGazetteFlag",
+        "RegistrationPublicNumber",
+        "RegistrationPublicDate",
+        "ApplicationGazetteCancellationHistoryFlag"
+      ]
+    },
+    {
+      "id": "trademarkOriginalApplicationIndicationInfo",
+      "name": "원출원번호정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkOriginalApplicationIndicationInfo",
+        "originalApplicationNumber",
+        "originalApplicationDate"
+      ]
+    },
+    {
+      "id": "trademarkViennaCodeInfo",
+      "name": "비엔나도형분류코드정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkViennaCodeInfo",
+        "rowNumber",
+        "viennaCode",
+        "viennaCodeDescription"
+      ]
+    },
+    {
+      "id": "trademarkVfersionInfo",
+      "name": "상품분류 정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkAdministrativeMeasureInfo",
+        "ver",
+        "cd",
+        "koNm",
+        "enNm"
+      ]
+    },
+    {
+      "id": "trademarkApplicationNumberInfo",
+      "name": "관련출원번호(패밀리)정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkApplicationNumberInfo",
+        "relatedApplicationDate",
+        "relatedApplicationNumber"
+      ]
+    },
+    {
+      "id": "trademarkAdministrativeMeasureInfo",
+      "name": "행정처분사항 번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkAdministrativeMeasureInfo",
+        "receiptSendNumber",
+        "receiptSendDocumentName",
+        "receiptSendDocumentEngName",
+        "receiptSendDate",
+        "processStateCode",
+        "seq"
+      ]
+    },
+    {
+      "id": "trademarkAgentInfo",
+      "name": "대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkAgentInfo",
+        "nameKoreanLong",
+        "agentAddress",
+        "nationalCode",
+        "agentCode",
+        "seq"
+      ]
+    },
+    {
+      "id": "trademarkApplicantInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkApplicantInfo",
+        "nameKoreanLong",
+        "applicantAddress",
+        "nationalCode",
+        "applicantCode",
+        "seq"
+      ]
+    },
+    {
+      "id": "trademarkApplicationNumberByModifiedDateInfo",
+      "name": "변경 상표정보의 출원번호 제공",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변경날짜",
+          "note": "YYYYMMDD 또는 YYYYMMDD~YYYYMMDD"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkApplicationNumberByModifiedDateInfo",
+        "modifiedApplicationNumber"
+      ]
+    },
+    {
+      "id": "trademarkBiblioSummaryByModifedDateInfo",
+      "name": "변경 정보의 서지요약정보 제공",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변경날짜",
+          "note": "YYYYMMDD 또는 YYYYMMDD~YYYYMMDD"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkBiblioSummaryByModifedDateInfo",
+        "appReferenceNumber",
+        "applicationNumber",
+        "applicationDate",
+        "publicationNumber",
+        "publicationDate",
+        "registrationNumber",
+        "registrationDate",
+        "productName",
+        "productNameEng",
+        "lastDisposalCode",
+        "lastDisposalDate",
+        "trademarkDivisionCode",
+        "classVersion",
+        "imageFlag",
+        "publicationFlag",
+        "rePublicationFlag",
+        "originalApplicationFlag",
+        "trlFlag",
+        "regReferenceNumber",
+        "registerFlag",
+        "familyFlag",
+        "priorityFlag",
+        "tmNameAcquisitionDate",
+        "internationalRegisterNumber",
+        "retroDivisionCode",
+        "retroDate",
+        "internationalRegisterDate",
+        "designateDate",
+        "registerStatus",
+        "tmDivisionCode",
+        "registrationPublicGazetteFlag",
+        "registrationPublicNumber",
+        "registrationPublicDate"
+      ]
+    },
+    {
+      "id": "trademarkpriorityNumberSearchInfo",
+      "name": "우선권주장번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkpriorityNumberSearchInfo",
+        "priorityApplicationCountry",
+        "priorityApplicationDate",
+        "priorityApplicationNumber"
+      ]
+    },
+    {
+      "id": "getSampleImageInfoSearch",
+      "name": "견본이미지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "imageName",
+        "path",
+        "smallPath"
+      ]
+    },
+    {
+      "id": "getAnnFullTextInfoSearch",
+      "name": "공고 전문",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "pdfName",
+        "path"
+      ]
+    },
+    {
+      "id": "trademarkRevisionPublicationInfo",
+      "name": "정정공보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "revisionPublicationInfo",
+        "number",
+        "openingPublicTypeCodeName",
+        "path",
+        "pdfName",
+        "publicationDate"
+      ]
+    },
+    {
+      "id": "trademarkRegGazetteInfo",
+      "name": "등록공고공보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "trademarkRegGazetteInfo",
+        "path",
+        "pdfName"
+      ]
+    },
+    {
+      "id": "trademarkFullTextCheckInfo",
+      "name": "모든 전문 및 견본 이미지 유무",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkFullTextCheckInfo",
+        "publicationCheckResult",
+        "revisionPublicationCheckResult",
+        "registrationCheckResult",
+        "sampleImageCheckResult",
+        "registrationPublicGazetteCheckResult"
+      ]
+    },
+    {
+      "id": "getChangeInfoSearch",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "date",
+          "desc": "변동일자",
+          "note": "YYYYMMDD"
+        }
+      ],
+      "response_fields": [
+        "itme",
+        "count",
+        "transListString"
+      ]
+    },
+    {
+      "id": "trademarkAsignProductSearchInfo",
+      "name": "지정상품조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchWord",
+          "desc": "검색단어",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지 번호",
+          "note": "기본 1"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당 출력 건수",
+          "note": "기본 30, 최대 500"
+        }
+      ],
+      "response_fields": [
+        "trademarkAsignProductSearchInfo",
+        "version",
+        "classsification",
+        "productsNum",
+        "main",
+        "name",
+        "engName",
+        "productsDesc",
+        "simm"
+      ]
+    },
+    {
+      "id": "trademarkSimilarCodeSearchInfo",
+      "name": "유사군코드 조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "designatedGoodsName",
+          "desc": "지정상품명",
+          "note": ""
+        },
+        {
+          "name": "similarCode",
+          "desc": "유사군코드",
+          "note": "필수값"
+        },
+        {
+          "name": "startNum",
+          "desc": "검색시작번호",
+          "note": ""
+        },
+        {
+          "name": "endNum",
+          "desc": "검색카운트",
+          "note": "최대 60건까지 조회가능"
+        }
+      ],
+      "response_fields": [
+        "totalCount",
+        "trademarkSimilarCodeSearchInfo",
+        "rowNumber",
+        "niceCode",
+        "niceClassCode",
+        "version",
+        "similarCode",
+        "asignProductName",
+        "asignProductNameEnglish"
+      ]
+    },
+    {
+      "id": "trademarkTransferInfo",
+      "name": "변동정보2",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "BIB-서지, BIB_NEW-서지_신규입수건, IMG-이미지, ORG-원출원, VIN-비엔나, PRI-우선권, PB-출원공고/등록공고, REPB-정정공고, AP-출원인, AG-대리인, DEL-삭제 ; ※ transferDate와(과) 함께 입력해야 조회됨(세트 필수)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": "YYYYMMDD 또는 YYYYMMDD~YYYYMMDD ; ※ searchType와(과) 함께 입력해야 조회됨(세트 필수)"
+        }
+      ],
+      "response_fields": [
+        "trademarkTransferInfo",
+        "transferCount",
+        "transferList"
+      ]
+    },
+    {
+      "id": "trademarkSearchViennaCodeInfo",
+      "name": "도형 코드 조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchWord",
+          "desc": "검색단어",
+          "note": ""
+        },
+        {
+          "name": "sectionInfo",
+          "desc": "섹션번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        "items",
+        "trademarkFullTextCheckInfo",
+        "rowNumber",
+        "viennaCode",
+        "viennaCodeDescription"
+      ]
+    },
+    {
+      "id": "trademarkIntroInfo",
+      "name": "상품분류 지정상품 초기 정보",
+      "deprecated": false,
+      "params": [],
+      "response_fields": [
+        "items",
+        "trademarkIntroInfo",
+        "ver",
+        "cd",
+        "koNm",
+        "enNm"
+      ]
+    },
+    {
+      "id": "trademarkGoodClassificationInfo",
+      "name": "상품분류 설명(8-9판 분류대조표)",
+      "deprecated": false,
+      "params": [],
+      "response_fields": [
+        "items",
+        "trademarkGoodClassificationInfo",
+        "korClssCd",
+        "korClssGun",
+        "korDesc",
+        "niceClssCd8",
+        "niceClss8Gun",
+        "niceSgrCd8",
+        "niceDesc8",
+        "niceClssCd9",
+        "niceSgrCd9",
+        "niceDesc9",
+        "etc"
+      ]
+    },
+    {
+      "id": "trademarkBulletinAllListInfo",
+      "name": "속보서비스",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "firstLoadDate",
+          "desc": "속보일자",
+          "note": "YYYYMMDD 또는 YYYYMMDD~YYYYMMDD"
+        }
+      ],
+      "response_fields": [
+        "items",
+        "bulletinAllListInfo",
+        "titleKor",
+        "titleEng",
+        "applicationNumber",
+        "applicationDate",
+        "applicantName"
+      ]
+    }
+  ],
+  "unnamed_operations": [
+    {
+      "name": "공존동의상표정보",
+      "note": "포털 명세에 ASCII 오퍼레이션 id가 없다. 호출 불가 — 확인되면 카탈로그에 추가한다."
+    },
+    {
+      "name": "최종변동일자",
+      "note": "포털 명세에 ASCII 오퍼레이션 id가 없다. 호출 불가 — 확인되면 카탈로그에 추가한다."
+    }
+  ]
+}

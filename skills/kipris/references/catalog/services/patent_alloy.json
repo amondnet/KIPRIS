@@ -98,7 +98,8 @@
           "desc": "주성분여부",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -137,7 +138,9 @@
           "desc": "출원번호리스트",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

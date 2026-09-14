@@ -53,7 +53,8 @@
           "desc": "접수발송서류명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "amendmentHistoryDetailInfo",
@@ -117,7 +118,8 @@
           "desc": "변동청구항",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -151,7 +153,9 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

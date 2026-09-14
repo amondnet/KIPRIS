@@ -53,7 +53,8 @@
           "desc": "발송번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "extensionPatentGazetteAdditionalInfo",
@@ -127,7 +128,8 @@
           "desc": "용도내용",
           "note": "영문"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "extensionPatentGazettePdfInfo",
@@ -166,7 +168,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -195,7 +198,9 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

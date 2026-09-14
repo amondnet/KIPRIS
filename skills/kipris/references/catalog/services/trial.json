@@ -113,7 +113,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getNumberSearch",
@@ -252,7 +253,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getAdvancedSearch",
@@ -481,7 +483,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialdecisionDateSearchInfo",
@@ -635,7 +638,8 @@
           "desc": "전체건수",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "freeSearchInfo",
@@ -784,7 +788,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialDescSearchInfo",
@@ -933,7 +938,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialNumberSearchInfo",
@@ -1082,7 +1088,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialNumberNmSearchInfo",
@@ -1231,7 +1238,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "registerNumberSearchInfo",
@@ -1380,7 +1388,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "applicationNumberSearchInfo",
@@ -1529,7 +1538,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialRequestDateSearchInfo",
@@ -1678,7 +1688,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "plaintiffSearchInfo",
@@ -1827,7 +1838,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "plaintiffAgentSearchInfo",
@@ -1976,7 +1988,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "defendantSearchInfo",
@@ -2125,7 +2138,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "defendantAgentSearchInfo",
@@ -2274,7 +2288,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "eventindicationSearchInfo",
@@ -2423,7 +2438,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "titleSearchInfo",
@@ -2572,7 +2588,8 @@
           "desc": "피청구인",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getBibliographyDetailInfoSearch",
@@ -2936,7 +2953,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialBibliographicSummaryInfo",
@@ -3110,7 +3128,8 @@
           "desc": "파일경로",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialHistoryInfo",
@@ -3149,7 +3168,8 @@
           "desc": "서류처리상태",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialRelatedTrialNumberInfo",
@@ -3183,7 +3203,8 @@
           "desc": "심판번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialSpecifyCtegoryCodeInfo",
@@ -3212,7 +3233,8 @@
           "desc": "지정분류코드",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialPlaintiffInfo",
@@ -3251,7 +3273,8 @@
           "desc": "청구인국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialPlaintiffAgentInfo",
@@ -3295,7 +3318,8 @@
           "desc": "청구대리인번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialDefendantInfo",
@@ -3334,7 +3358,8 @@
           "desc": "피청구인국가",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialDefendantAgentInfo",
@@ -3378,7 +3403,8 @@
           "desc": "피청구대리인번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getChangeInfoSearch",
@@ -3391,7 +3417,8 @@
           "note": ""
         }
       ],
-      "response_fields": []
+      "response_fields": [],
+      "params_source": "reference"
     },
     {
       "id": "trialTransferInfo",
@@ -3425,7 +3452,8 @@
           "desc": "심판번호리스트",
           "note": "(ex : 심판번호1|심판번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "getJudDocumentInfoSearch",
@@ -3464,7 +3492,8 @@
           "desc": "공개여부",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialSupplementaryDecisionInfo",
@@ -3498,7 +3527,8 @@
           "desc": "파일종류",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "trialFullTextCheckInfo",
@@ -3532,7 +3562,9 @@
           "desc": "경정결정문유무",
           "note": "(있음:Y, 없음:N)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

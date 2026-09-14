@@ -213,7 +213,8 @@
           "desc": "원산지사유내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "nameAppellationOfOriginInfo",
@@ -422,7 +423,8 @@
           "desc": "종자명신고공고번호",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -451,7 +453,9 @@
           "desc": "참증번호리스트",
           "note": "(ex : 참증번호1|참증번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

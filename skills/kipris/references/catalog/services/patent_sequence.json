@@ -43,7 +43,8 @@
           "desc": "아미노산염기서열작성프로그램",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "biotechSeqlistingInfo",
@@ -92,7 +93,8 @@
           "desc": "아미노산염기서열생물종명",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "biotechSeqlistingFeatureInfo",
@@ -146,7 +148,8 @@
           "desc": "아미노산염기서열특징기타내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "biotechSeqlistingOriginaltextInfo",
@@ -190,7 +193,8 @@
           "desc": "아미노산염기서열내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "biotechJournalInfo",
@@ -294,7 +298,8 @@
           "desc": "아미노산염기서열특징위치내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "transferListInfo",
@@ -328,7 +333,8 @@
           "desc": "출원번호리스트",
           "note": "(ex : 출원번호1|출원번호2)"
         }
-      ]
+      ],
+      "params_source": "reference"
     },
     {
       "id": "biotechSeqlistingOriginaltextManufactureInfo",
@@ -377,7 +383,9 @@
           "desc": "아미노산염기서열내용",
           "note": ""
         }
-      ]
+      ],
+      "params_source": "reference"
     }
-  ]
+  ],
+  "unnamed_operations": []
 }

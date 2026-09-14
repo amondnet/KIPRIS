@@ -1,0 +1,62 @@
+.claude/settings.json
+  s_0bf0088ec7a831::t_94969ecd550e76 2-19
+  s_0bf0088ec7a831::t_f909fa2083fdaf 1,20-21
+CONTRIBUTING.md
+  s_0bf0088ec7a831::t_a9f76c8897fb92 1-33
+.github/pull_request_template.md
+  s_0bf0088ec7a831::t_0403886ab54992 1-16,18
+  s_0bf0088ec7a831::t_08c79e2d943bc7 17
+.github/ISSUE_TEMPLATE/service_path.md
+  s_0bf0088ec7a831::t_0403886ab54992 1-19,21
+  s_0bf0088ec7a831::t_08c79e2d943bc7 20
+bunfig.toml
+  s_0bf0088ec7a831::t_a756ba38256c2d 1-2
+LICENSE
+  s_0bf0088ec7a831::t_94969ecd550e76 1-21
+.lintstagedrc.json
+  s_0bf0088ec7a831::t_a756ba38256c2d 1-3
+.github/ISSUE_TEMPLATE/bug_report.md
+  s_0bf0088ec7a831::t_0403886ab54992 1-22,24-30,32
+  s_0bf0088ec7a831::t_08c79e2d943bc7 23,31
+.github/ISSUE_TEMPLATE/feature_request.md
+  s_0bf0088ec7a831::t_0403886ab54992 1-15
+.gitignore
+  s_0bf0088ec7a831::t_94969ecd550e76 1-21
+.worktreeinclude
+  s_0bf0088ec7a831::t_94969ecd550e76 1-6
+package.json
+  s_0bf0088ec7a831::t_2f2bfec6a6d110 11
+  s_0bf0088ec7a831::t_a756ba38256c2d 1-10,12-13,21
+  s_0bf0088ec7a831::t_a00a5f6b5be83e 14-20
+.husky/commit-msg
+  s_0bf0088ec7a831::t_c13ae1d509cf8a 1
+mise.toml
+  s_0bf0088ec7a831::t_94969ecd550e76 1-17,19-22
+  s_0bf0088ec7a831::t_2f2bfec6a6d110 18
+CODE_OF_CONDUCT.md
+  s_0bf0088ec7a831::t_a9f76c8897fb92 1-10
+.husky/pre-commit
+  s_0bf0088ec7a831::t_c13ae1d509cf8a 1-2
+SECURITY.md
+  s_0bf0088ec7a831::t_a9f76c8897fb92 1-25
+commitlint.config.js
+  s_0bf0088ec7a831::t_a756ba38256c2d 1-4
+bun.lock
+  s_0bf0088ec7a831::t_8a4209ce979a51 1-217
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a1ce0e75589f96468f24621e6f272b929e72643a",
+  "prompts": {},
+  "sessions": {
+    "s_0bf0088ec7a831": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8da3c474-0afd-44e7-9867-ca7c8a1435f7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Minsu Lee <amond@amond.net>"
+    }
+  }
+}

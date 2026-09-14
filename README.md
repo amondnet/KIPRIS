@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![KIPRIS Plus](https://img.shields.io/badge/KIPRIS-Plus%20Open%20API-003DA5.svg)](https://plus.kipris.or.kr)
+[![skills.sh](https://skills.sh/b/amondnet/KIPRIS)](https://skills.sh/amondnet/KIPRIS)
 
 > Search Korean patents, utility models, designs, trademarks, trials and foreign patents from Claude — via the KIPRIS Plus Open API.
 
@@ -26,19 +27,28 @@ Claude: KIPRIS 자유검색을 실행합니다...
 | `skills/kipris/scripts/kipris.py`      | KIPRIS 클라이언트. 인증키 탐색·URL 인코딩·XML→JSON·에러코드·호출량 집계 |
 | `skills/kipris/references/catalog/`    | 49개 서비스 · 540개 오퍼레이션의 기계 판독 카탈로그                     |
 | `skills/kipris/references/gateways.md` | 두 게이트웨이의 차이, 공통 파라미터, 응답 구조                          |
+| `.claude-plugin/`                      | 플러그인·마켓플레이스 매니페스트 — 위 두 설치 경로가 읽는다             |
 
 카탈로그 덕분에 Claude가 10만 자짜리 명세 문서를 읽지 않고 `describe trademark --op ...`로 필요한 오퍼레이션만 꺼내 씁니다.
 
 ## 설치
 
-### Claude Code
+### skills CLI — Claude Code · Codex · Cursor
 
 ```bash
-git clone https://github.com/amondnet/kipris.git
-ln -s "$(pwd)/kipris/skills/kipris" ~/.claude/skills/kipris
+npx skills add amondnet/KIPRIS
 ```
 
-프로젝트 단위로 쓰려면 `.claude/skills/kipris`에 두어도 됩니다.
+설치 위치는 에이전트가 정합니다 (Claude Code는 `.claude/skills/`, Codex·Cursor 등은 `.agents/skills/`). 전역 설치는 `-g`, 갱신은 `npx skills update kipris`입니다.
+
+### Claude Code 플러그인
+
+```
+/plugin marketplace add amondnet/KIPRIS
+/plugin install kipris@amondnet
+```
+
+저장소가 자기 자신을 마켓플레이스로 싣고 있어 별도 등록 없이 붙습니다.
 
 ### Claude Desktop / cowork
 
@@ -47,6 +57,15 @@ bun run package        # → dist/kipris.skill
 ```
 
 생성된 `dist/kipris.skill`을 Claude Desktop의 스킬 업로드에 올립니다. (`mise run package` 또는 `bash tools/package-skill.sh`도 동일합니다.)
+
+### 직접 연결
+
+```bash
+git clone https://github.com/amondnet/KIPRIS.git
+ln -s "$(pwd)/KIPRIS/skills/kipris" ~/.claude/skills/kipris
+```
+
+프로젝트 단위로 쓰려면 `.claude/skills/kipris`에 두어도 됩니다.
 
 ## API 키
 

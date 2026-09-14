@@ -19,6 +19,7 @@ KIPRIS Plus Open API를 검색하는 **Claude 스킬을 만드는 저장소**다
 | `tools/build-catalog.ts`               | 참고 명세(markdown) → 카탈로그(JSON) 변환. Bun/TS, 의존성 없음 |
 | `tools/package-skill.sh`               | `.skill` zip 생성 (Desktop 업로드용)                           |
 | `tests/test_kipris.py`                 | 클라이언트 테스트. stdlib unittest                             |
+| `.claude-plugin/`                      | 배포 매니페스트. `claude plugin validate .`로 검증             |
 
 ## 카탈로그는 생성물이다
 

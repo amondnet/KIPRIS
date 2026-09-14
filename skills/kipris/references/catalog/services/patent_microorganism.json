@@ -1,0 +1,261 @@
+{
+  "id": "patent_microorganism",
+  "name": "특허 기탁 미생물",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "patentDepositionMicroorganismInfo",
+      "name": "특허기탁미생물 기본조회",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "PatentDepositionMicroorganism",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "MicroorganismDepositionSerialnumber",
+          "desc": "미생물수탁일련번호",
+          "note": ""
+        },
+        {
+          "name": "MicroorganismDepositionNumber",
+          "desc": "미생물수탁번호",
+          "note": ""
+        },
+        {
+          "name": "MicroorganismDepositionDate",
+          "desc": "미생물수탁일자",
+          "note": ""
+        },
+        {
+          "name": "MicroorganismDepositionInstitution",
+          "desc": "미생물수탁기관",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": "patentDepositionMicroorganismInfoV2",
+      "name": "특허기탁미생물 기본조회 ver.2",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "patentDepositionMicroorganismV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionNumber",
+          "desc": "수탁번호",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionDate",
+          "desc": "기탁일자",
+          "note": ""
+        },
+        {
+          "name": "microorganismNm",
+          "desc": "미생물명",
+          "note": ""
+        },
+        {
+          "name": "microorganismKindNm",
+          "desc": "미생물종류",
+          "note": ""
+        },
+        {
+          "name": "depositoryInstitutionNm",
+          "desc": "기탁기관명",
+          "note": ""
+        },
+        {
+          "name": "depositor",
+          "desc": "기탁자",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionMemo",
+          "desc": "기타사항",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionInKoreaYn",
+          "desc": "국내외기탁",
+          "note": "Y : 국내기탁, N : 국제기탁"
+        }
+      ]
+    },
+    {
+      "id": "patentDepositionMicroorganismSearch",
+      "name": "특허기탁미생물 검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "microorganismDpathNm",
+          "desc": "기탁기관",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionDate",
+          "desc": "기탁일자",
+          "note": "(입력 예시 : YYYYMMDD~YYYYMMDD)"
+        },
+        {
+          "name": "depositor",
+          "desc": "기탁자",
+          "note": ""
+        },
+        {
+          "name": "microorganismNm",
+          "desc": "미생물명",
+          "note": ""
+        },
+        {
+          "name": "microorganismSpno",
+          "desc": "수탁번호",
+          "note": ""
+        },
+        {
+          "name": "microorganismKindNm",
+          "desc": "미생물종류",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionInKoreaYn",
+          "desc": "국내외기탁",
+          "note": "Y : 국내기탁, N : 국제기탁"
+        },
+        {
+          "name": "mcdtbNm",
+          "desc": "분양자",
+          "note": ""
+        },
+        {
+          "name": "mcdtbHistoryYN",
+          "desc": "분양이력여부",
+          "note": "Y : 분양(O), N : 분양(X)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "patentDepositionMicroorganismSearch",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionNumber",
+          "desc": "수탁번호",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "microorganismNm",
+          "desc": "미생물명",
+          "note": ""
+        },
+        {
+          "name": "microorganismKindNm",
+          "desc": "미생물종류",
+          "note": ""
+        },
+        {
+          "name": "microorganismDepositionDate",
+          "desc": "기탁일자",
+          "note": ""
+        },
+        {
+          "name": "microorganismDpathNm",
+          "desc": "기탁기관",
+          "note": ""
+        },
+        {
+          "name": "mcdtbHistoryYN",
+          "desc": "분양이력",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

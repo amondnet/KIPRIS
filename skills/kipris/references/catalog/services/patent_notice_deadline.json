@@ -1,0 +1,259 @@
+{
+  "id": "patent_notice_deadline",
+  "name": "특허·실용 통지서 마감기한",
+  "service_path": "DueDateService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "dueDateApplicationNoticeApplnoInfo",
+      "name": "출원통지서기한정보(출원번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "dueDateApplicationNoticeApplnoInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "AppReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "Mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "DocNm",
+          "desc": "문서명칭",
+          "note": ""
+        },
+        {
+          "name": "ExpirationDuedateDate",
+          "desc": "마감기한일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dueDateApplicationNoticeMlnoInfo",
+      "name": "출원통지서기한정보(발생원인발송번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "dueDateApplicationNoticeMlnoInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "AppReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "Mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "DocNm",
+          "desc": "문서명칭",
+          "note": ""
+        },
+        {
+          "name": "ExpirationDuedateDate",
+          "desc": "마감기한일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dueDateRegistratioNoticeRgstnoInfo",
+      "name": "등록통지서기한정보(등록번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "dueDateRegistratioNoticeRgstnoInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "DocNm",
+          "desc": "문서명칭",
+          "note": ""
+        },
+        {
+          "name": "ExpirationDuedateDate",
+          "desc": "마감기한일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dueDateTrialNoticeTrlnoInfo",
+      "name": "심판통지서기한정보(심판번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "dueDateTrialNoticeTrlnoInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TrialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "Mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "DocNm",
+          "desc": "문서명칭",
+          "note": ""
+        },
+        {
+          "name": "ExpirationDuedateDate",
+          "desc": "마감기한일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dueDateTrialNoticeMlnoInfo",
+      "name": "심판통지서기한정보(발생원인발송번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "dueDateTrialNoticeMlnoInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TrialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "Mailingnumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "DocNm",
+          "desc": "문서명칭",
+          "note": ""
+        },
+        {
+          "name": "ExpirationDuedateDate",
+          "desc": "마감기한일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "AP-출원통지서기한정보, RG-등록통지서기한정보, TR-심판통지서기한정보"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : [AP]출원번호(발송번호)1|출원번호(발송번호)2, [RG]등록번호1|등록번호2, [TR]심판번호(발송번호)|심판번호(발송번호))"
+        }
+      ]
+    }
+  ]
+}

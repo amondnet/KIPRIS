@@ -1,0 +1,457 @@
+{
+  "id": "variety_protection",
+  "name": "품종보호권 등록 식물 명칭",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "basicVarietyInfo",
+      "name": "품종 기본조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "referenceevidenceNumber",
+          "desc": "참증번호",
+          "note": "(내부관리번호)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "VarietyInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceNumber",
+          "desc": "참증번호",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceArticleHangeulName",
+          "desc": "참증물품한글명",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceArticleEnglishsentenceName",
+          "desc": "참증물품영문명",
+          "note": ""
+        },
+        {
+          "name": "RelationCountryCode",
+          "desc": "관련국가코드",
+          "note": ""
+        },
+        {
+          "name": "RegistrationNumberOrder",
+          "desc": "등록번호순서",
+          "note": ""
+        },
+        {
+          "name": "RegistrationNumber",
+          "desc": "등록번호?※특허제도와무관한등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegistrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "TrademarkReferenceevidenceDataOfferplaceName",
+          "desc": "상표참증자료제공처명",
+          "note": ""
+        },
+        {
+          "name": "InternationalorganizationClassificationCode",
+          "desc": "국제기구분류코드",
+          "note": ""
+        },
+        {
+          "name": "InternationalorganizationName",
+          "desc": "국제기구명",
+          "note": ""
+        },
+        {
+          "name": "LoadBasisName",
+          "desc": "탑재근거명",
+          "note": ""
+        },
+        {
+          "name": "LanguageTypeCode",
+          "desc": "언어구분코드",
+          "note": ""
+        },
+        {
+          "name": "CityNationalityName",
+          "desc": "시도국적명",
+          "note": ""
+        },
+        {
+          "name": "LoadBasisContent",
+          "desc": "탑재근거내용",
+          "note": ""
+        },
+        {
+          "name": "CropsTypeCode",
+          "desc": "작물구분코드",
+          "note": ""
+        },
+        {
+          "name": "PlantName",
+          "desc": "식물명",
+          "note": ""
+        },
+        {
+          "name": "SeedDescription",
+          "desc": "종자설명",
+          "note": ""
+        },
+        {
+          "name": "RacePetitionerName",
+          "desc": "품종신청인명",
+          "note": ""
+        },
+        {
+          "name": "SeedNameApplicationNumber",
+          "desc": "종자명출원번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameApplicationDate",
+          "desc": "종자명출원일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNamePublicNumber",
+          "desc": "종자명공고번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNamePublicDate",
+          "desc": "종자명공고일자",
+          "note": ""
+        },
+        {
+          "name": "RaceRegistrationNumber",
+          "desc": "품종등록번호",
+          "note": ""
+        },
+        {
+          "name": "RaceContinuanceStartDate",
+          "desc": "품종존속시작일자",
+          "note": ""
+        },
+        {
+          "name": "RaceContinuanceEndDate",
+          "desc": "품종존속종료일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameMotionNumber",
+          "desc": "종자명신청번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameMotionDate",
+          "desc": "종자명신청일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameRecordNumber",
+          "desc": "종자명등재번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameRecordDate",
+          "desc": "종자명등재일자",
+          "note": ""
+        },
+        {
+          "name": "RecordValidationTermStartDate",
+          "desc": "등재유효기간시작일자",
+          "note": ""
+        },
+        {
+          "name": "RecordValidationTermEndDate",
+          "desc": "등재유효기간종료일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementReceiptNumber",
+          "desc": "종자명신고접수번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementReceiptDate",
+          "desc": "종자명신고접수일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementCertificateNumber",
+          "desc": "종자명신고증서번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementCertificateDate",
+          "desc": "종자명신고증서일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementApplicationNumber",
+          "desc": "종자명신고출원번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementApplicationDate",
+          "desc": "종자명신고출원일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementPublicNumber",
+          "desc": "종자명신고공고번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nameVarietyInfo",
+      "name": "품종 명칭조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "referenceevidenceArticleName",
+          "desc": "참증물품명",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "VarietyInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceNumber",
+          "desc": "참증번호",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceArticleHangeulName",
+          "desc": "참증물품한글명",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceArticleEnglishsentenceName",
+          "desc": "참증물품영문명",
+          "note": ""
+        },
+        {
+          "name": "RelationCountryCode",
+          "desc": "관련국가코드",
+          "note": ""
+        },
+        {
+          "name": "RegistrationNumberOrder",
+          "desc": "등록번호순서",
+          "note": ""
+        },
+        {
+          "name": "RegistrationNumber",
+          "desc": "등록번호?※특허제도와무관한등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegistrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "TrademarkReferenceevidenceDataOfferplaceName",
+          "desc": "상표참증자료제공처명",
+          "note": ""
+        },
+        {
+          "name": "InternationalorganizationClassificationCode",
+          "desc": "국제기구분류코드",
+          "note": ""
+        },
+        {
+          "name": "InternationalorganizationName",
+          "desc": "국제기구명",
+          "note": ""
+        },
+        {
+          "name": "LoadBasisName",
+          "desc": "탑재근거명",
+          "note": ""
+        },
+        {
+          "name": "LanguageTypeCode",
+          "desc": "언어구분코드",
+          "note": ""
+        },
+        {
+          "name": "CityNationalityName",
+          "desc": "시도국적명",
+          "note": ""
+        },
+        {
+          "name": "LoadBasisContent",
+          "desc": "탑재근거내용",
+          "note": ""
+        },
+        {
+          "name": "CropsTypeCode",
+          "desc": "작물구분코드",
+          "note": ""
+        },
+        {
+          "name": "PlantName",
+          "desc": "식물명",
+          "note": ""
+        },
+        {
+          "name": "SeedDescription",
+          "desc": "종자설명",
+          "note": ""
+        },
+        {
+          "name": "RacePetitionerName",
+          "desc": "품종신청인명",
+          "note": ""
+        },
+        {
+          "name": "SeedNameApplicationNumber",
+          "desc": "종자명출원번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameApplicationDate",
+          "desc": "종자명출원일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNamePublicNumber",
+          "desc": "종자명공고번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNamePublicDate",
+          "desc": "종자명공고일자",
+          "note": ""
+        },
+        {
+          "name": "RaceRegistrationNumber",
+          "desc": "품종등록번호",
+          "note": ""
+        },
+        {
+          "name": "RaceContinuanceStartDate",
+          "desc": "품종존속시작일자",
+          "note": ""
+        },
+        {
+          "name": "RaceContinuanceEndDate",
+          "desc": "품종존속종료일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameMotionNumber",
+          "desc": "종자명신청번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameMotionDate",
+          "desc": "종자명신청일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameRecordNumber",
+          "desc": "종자명등재번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameRecordDate",
+          "desc": "종자명등재일자",
+          "note": ""
+        },
+        {
+          "name": "RecordValidationTermStartDate",
+          "desc": "등재유효기간시작일자",
+          "note": ""
+        },
+        {
+          "name": "RecordValidationTermEndDate",
+          "desc": "등재유효기간종료일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementReceiptNumber",
+          "desc": "종자명신고접수번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementReceiptDate",
+          "desc": "종자명신고접수일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementCertificateNumber",
+          "desc": "종자명신고증서번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementCertificateDate",
+          "desc": "종자명신고증서일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementApplicationNumber",
+          "desc": "종자명신고출원번호",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementApplicationDate",
+          "desc": "종자명신고출원일자",
+          "note": ""
+        },
+        {
+          "name": "SeedNameStatementPublicNumber",
+          "desc": "종자명신고공고번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "참증번호리스트",
+          "note": "(ex : 참증번호1|참증번호2)"
+        }
+      ]
+    }
+  ]
+}

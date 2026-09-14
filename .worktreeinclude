@@ -1,0 +1,6 @@
+# .worktreeinclude — worktree로 복사할 gitignored 파일 목록
+# .gitignore 문법. 상세: Skill("standards:dev-tooling") → references/worktree-setup.md
+
+.env
+.env.local
+.claude/settings.local.json

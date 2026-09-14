@@ -1,0 +1,24 @@
+# Claude Code 로컬 설정 (내부 마켓플레이스·텔레메트리 — 공개 저장소에 커밋하지 않는다)
+.claude/settings.local.json
+
+# 환경 변수 / 시크릿
+.env
+.env.local
+.env.*.local
+
+# API 키를 절대 커밋하지 않는다
+*api_key*
+
+# 의존성 / 빌드 산출물
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+
+# Claude Code 에이전트 로컬 메모리 (공개 대상 아님)
+.claude/agent-memory/

@@ -1,0 +1,270 @@
+{
+  "id": "legal_status",
+  "name": "법적 상태 이력",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "getLegStatusHistoryInfoSearch",
+      "name": "이력정보조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "Item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "legalStatusCode",
+          "desc": "법정상태코드",
+          "note": ""
+        },
+        {
+          "name": "legalStatusName",
+          "desc": "법적상태명",
+          "note": ""
+        },
+        {
+          "name": "legalStatusDate",
+          "desc": "법적상태일자",
+          "note": ""
+        },
+        {
+          "name": "legalStatusComment",
+          "desc": "법적상태설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getLegStatusEventInfoSearch",
+      "name": "이벤트정보조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "Item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "eventseq",
+          "desc": "이벤트일련번호",
+          "note": ""
+        },
+        {
+          "name": "eventCode",
+          "desc": "이벤트코드",
+          "note": ""
+        },
+        {
+          "name": "eventName",
+          "desc": "이벤트명",
+          "note": ""
+        },
+        {
+          "name": "eventDate",
+          "desc": "이벤트일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getTransferListInfoSearch",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1 : 이력정보조회, oper2 : 이벤트정보조회) ※ oper1, oper2 중 원하는 변동정보 검색코드 입력"
+        },
+        {
+          "name": "searchRight",
+          "desc": "권리",
+          "note": "(all : 전체, p : 특허, u : 실용신안, d : 디자인, t : 상표) ※입력방식(ex : p)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": "※ 입력방식(ex : 20160713)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": "legalStatusBasicInfo",
+      "name": "현재정보조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "legalStatusBasicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "legalStatusCode",
+          "desc": "법적상태코드",
+          "note": ""
+        },
+        {
+          "name": "legalStatusName",
+          "desc": "법적상태명",
+          "note": "한글"
+        },
+        {
+          "name": "legalStatusEngName",
+          "desc": "법적상태명",
+          "note": "영문"
+        },
+        {
+          "name": "legalStatusDate",
+          "desc": "법적상태일자",
+          "note": ""
+        },
+        {
+          "name": "legalStatusComment",
+          "desc": "법적상태설명",
+          "note": "한글"
+        },
+        {
+          "name": "legalStatusEngComment",
+          "desc": "법적상태설명",
+          "note": "영문"
+        }
+      ]
+    },
+    {
+      "id": "legalStatusCodeInfo",
+      "name": "코드정보조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "legalStatusCode",
+          "desc": "법적상태코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "legalStatusCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "legalStatusCode",
+          "desc": "법적상태코드",
+          "note": ""
+        },
+        {
+          "name": "legalStatusName",
+          "desc": "법적상태명",
+          "note": ""
+        },
+        {
+          "name": "legalStatusComment",
+          "desc": "법적상태설명",
+          "note": "한글"
+        },
+        {
+          "name": "legalStatusEngName",
+          "desc": "법적상태명",
+          "note": "(영문)"
+        },
+        {
+          "name": "legalStatusEngComment",
+          "desc": "법적상태설명",
+          "note": "(영문)"
+        }
+      ]
+    }
+  ]
+}

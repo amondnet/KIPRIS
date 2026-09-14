@@ -1,0 +1,288 @@
+{
+  "id": "design_map",
+  "name": "디자인맵 형태분류",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "designMapInfo",
+      "name": "디자인맵",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationCountry",
+          "desc": "출원국가",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "designMapInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "articleCode",
+          "desc": "물품코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationCountry",
+          "desc": "출원국가",
+          "note": ""
+        },
+        {
+          "name": "designClassificationCode",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "formsymbol",
+          "desc": "폼심볼",
+          "note": ""
+        },
+        {
+          "name": "originalcopyArticleName",
+          "desc": "원본물품명",
+          "note": ""
+        },
+        {
+          "name": "similarDesignFlag",
+          "desc": "유사디자인유무",
+          "note": ""
+        },
+        {
+          "name": "conflictDesignFlag",
+          "desc": "분쟁디자인유무",
+          "note": ""
+        },
+        {
+          "name": "propertyCode01",
+          "desc": "특성코드01",
+          "note": ""
+        },
+        {
+          "name": "propertyCode02",
+          "desc": "특성코드02",
+          "note": ""
+        },
+        {
+          "name": "propertyCode03",
+          "desc": "특성코드03",
+          "note": ""
+        },
+        {
+          "name": "propertyCode04",
+          "desc": "특성코드04",
+          "note": ""
+        },
+        {
+          "name": "propertyCode05",
+          "desc": "특성코드05",
+          "note": ""
+        },
+        {
+          "name": "propertyCode06",
+          "desc": "특성코드06",
+          "note": ""
+        },
+        {
+          "name": "propertyCode07",
+          "desc": "특성코드07",
+          "note": ""
+        },
+        {
+          "name": "propertyCode08",
+          "desc": "특성코드08",
+          "note": ""
+        },
+        {
+          "name": "propertyCode09",
+          "desc": "특성코드09",
+          "note": ""
+        },
+        {
+          "name": "propertyCode10",
+          "desc": "특성코드10",
+          "note": ""
+        },
+        {
+          "name": "propertyCode11",
+          "desc": "특성코드11",
+          "note": ""
+        },
+        {
+          "name": "propertyCode12",
+          "desc": "특성코드12",
+          "note": ""
+        },
+        {
+          "name": "propertyCode13",
+          "desc": "특성코드13",
+          "note": ""
+        },
+        {
+          "name": "propertyCode14",
+          "desc": "특성코드14",
+          "note": ""
+        },
+        {
+          "name": "propertyCode15",
+          "desc": "특성코드15",
+          "note": ""
+        },
+        {
+          "name": "propertyCode16",
+          "desc": "특성코드16",
+          "note": ""
+        },
+        {
+          "name": "propertyCode17",
+          "desc": "특성코드17",
+          "note": ""
+        },
+        {
+          "name": "propertyCode18",
+          "desc": "특성코드18",
+          "note": ""
+        },
+        {
+          "name": "propertyCode19",
+          "desc": "특성코드19",
+          "note": ""
+        },
+        {
+          "name": "propertyCode20",
+          "desc": "특성코드20",
+          "note": ""
+        },
+        {
+          "name": "propertyCode21",
+          "desc": "특성코드21",
+          "note": ""
+        },
+        {
+          "name": "propertyCode22",
+          "desc": "특성코드22",
+          "note": ""
+        },
+        {
+          "name": "propertyCode23",
+          "desc": "특성코드23",
+          "note": ""
+        },
+        {
+          "name": "propertyCode24",
+          "desc": "특성코드24",
+          "note": ""
+        },
+        {
+          "name": "propertyCode25",
+          "desc": "특성코드25",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "propertyCodeInfo",
+      "name": "특성분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "articleCode",
+          "desc": "물품코드",
+          "note": "(필수)"
+        },
+        {
+          "name": "propertyCode",
+          "desc": "특성코드",
+          "note": "(필수)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "propertyCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "depth",
+          "desc": "레벨",
+          "note": ""
+        },
+        {
+          "name": "classificationSystemName",
+          "desc": "분류체계명",
+          "note": ""
+        },
+        {
+          "name": "propertyCode",
+          "desc": "특성코드",
+          "note": ""
+        },
+        {
+          "name": "articleCode",
+          "desc": "물품코드",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

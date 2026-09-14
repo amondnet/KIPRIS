@@ -1,0 +1,114 @@
+{
+  "id": "contest_idea",
+  "name": "공모전 아이디어",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "ideaDBInfo",
+      "name": "아이디어DB",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ideaName",
+          "desc": "아이디어명",
+          "note": ""
+        },
+        {
+          "name": "openingDate",
+          "desc": "공개일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ideaDBInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "awardInformation",
+          "desc": "수상정보",
+          "note": ""
+        },
+        {
+          "name": "contestName",
+          "desc": "공모명",
+          "note": ""
+        },
+        {
+          "name": "contestYear",
+          "desc": "공모연도",
+          "note": ""
+        },
+        {
+          "name": "domesticDesignClassification",
+          "desc": "한국디자인분류",
+          "note": ""
+        },
+        {
+          "name": "hostInstitution",
+          "desc": "주최기관",
+          "note": ""
+        },
+        {
+          "name": "ideaContent",
+          "desc": "아이디어내용",
+          "note": ""
+        },
+        {
+          "name": "ideaName",
+          "desc": "아이디어명",
+          "note": ""
+        },
+        {
+          "name": "drawingPath",
+          "desc": "도면경로",
+          "note": ""
+        },
+        {
+          "name": "locarnoClassification",
+          "desc": "국제디자인분류",
+          "note": "로카르노분류"
+        },
+        {
+          "name": "ipcCode",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "interfaceApplicationNumber",
+          "desc": "연계출원번호",
+          "note": ""
+        },
+        {
+          "name": "openingDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openingMethod",
+          "desc": "공개방법",
+          "note": ""
+        },
+        {
+          "name": "originalLink",
+          "desc": "원문링크",
+          "note": ""
+        },
+        {
+          "name": "managementInstitution",
+          "desc": "주관기관",
+          "note": ""
+        },
+        {
+          "name": "technologyClassification",
+          "desc": "기술분류",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

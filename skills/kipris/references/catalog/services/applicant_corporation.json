@@ -1,0 +1,205 @@
+{
+  "id": "applicant_corporation",
+  "name": "출원인 법인",
+  "service_path": "CorpBsApplicantService",
+  "path_confidence": "unknown",
+  "gateway": "openapi",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "corpBsApplicantInfo",
+      "name": "출원인 법인 및 사업자 번호(특허고객번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ApplicantNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "corpBsApplicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicantNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "ApplicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "CorporationNumber",
+          "desc": "법인번호",
+          "note": ""
+        },
+        {
+          "name": "BusinessRegistrationNumber",
+          "desc": "사업자등록번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "corpBsApplicantInfoV2",
+      "name": "출원인 법인 및 사업자 번호(법인번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "corporationNumber",
+          "desc": "법인번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "corpBsApplicantInfoV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicantNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "ApplicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "CorporationNumber",
+          "desc": "법인번호",
+          "note": ""
+        },
+        {
+          "name": "BusinessRegistrationNumber",
+          "desc": "사업자등록번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "corpBsApplicantInfoV3",
+      "name": "출원인 법인 및 사업자 번호(사업자번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "BusinessRegistrationNumber",
+          "desc": "사업자등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "corpBsApplicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicantNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "ApplicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "CorporationNumber",
+          "desc": "법인번호",
+          "note": ""
+        },
+        {
+          "name": "BusinessRegistrationNumber",
+          "desc": "사업자등록번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1 : 출원인 법인 및 사업자 번호(특허고객번호), oper2 : 출원인 법인 및 사업자 번호(법인번호), oper3 : 출원인 법인 및 사업자 번호(사업자번호)) ※ oper1, oper2, oper3 중 원하는 변동정보 검색코드 입력"
+        },
+        {
+          "name": "year",
+          "desc": "연도",
+          "note": "※입력방식(ex : YYYY)"
+        },
+        {
+          "name": "quarter",
+          "desc": "분기",
+          "note": "※입력방식(1 : 1분기, 2: 2분기, 3 : 3분기, 4 : 4분기)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "변동리스트",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "기본-국내출원번호, DOCP-DOCDB공보번호, DOCA-DOCDB출원번호"
+        },
+        {
+          "name": "ApplicantNumber",
+          "desc": "특허고객번호",
+          "note": "oper1인 경우만 해당"
+        },
+        {
+          "name": "CorporationNumber",
+          "desc": "법인번호",
+          "note": "oper2인 경우만 해당"
+        },
+        {
+          "name": "BusinessRegistrationNumber",
+          "desc": "사업자번호",
+          "note": "oper3인 경우만 해당"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

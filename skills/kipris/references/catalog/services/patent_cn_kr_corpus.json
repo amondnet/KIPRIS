@@ -1,0 +1,99 @@
+{
+  "id": "patent_cn_kr_corpus",
+  "name": "특허 중한 코퍼스",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": null,
+      "name": "기본조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "inputnumber",
+          "desc": "입력번호",
+          "note": ""
+        },
+        {
+          "name": "inputnumberType",
+          "desc": "입력번호종류",
+          "note": "문헌번호(LN), 출원번호(AN)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "PatentChineseKoreanCorpusInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "CountryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "CountryCodeName",
+          "desc": "국가코드명",
+          "note": ""
+        },
+        {
+          "name": "Literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "LanguageCode",
+          "desc": "언어코드",
+          "note": ""
+        },
+        {
+          "name": "LanguageCodeName",
+          "desc": "언어코드명",
+          "note": ""
+        },
+        {
+          "name": "Internationalpatentclassification",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "LiteratureKindCode",
+          "desc": "문헌종류코드",
+          "note": ""
+        },
+        {
+          "name": "LiteratureKindName",
+          "desc": "문헌종류명",
+          "note": ""
+        },
+        {
+          "name": "Type",
+          "desc": "구분",
+          "note": ""
+        },
+        {
+          "name": "OriginalcopyLiterature",
+          "desc": "원본문헌",
+          "note": ""
+        },
+        {
+          "name": "TranslationLiterature",
+          "desc": "번역문헌",
+          "note": ""
+        },
+        {
+          "name": "LetterCount",
+          "desc": "글자수",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

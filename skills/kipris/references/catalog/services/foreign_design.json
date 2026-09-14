@@ -1,0 +1,3323 @@
+{
+  "id": "foreign_design",
+  "name": "해외디자인",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "advancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": "(전문)KW"
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": "IT"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": "PN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "RN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "PRN"
+        },
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": "PD"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "RD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "PRD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": "IV"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": "RG"
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": "DC"
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": "LC"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true,false)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": "한글"
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "freeSearch",
+      "name": "자유검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": "(전문)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "agentsSearch",
+      "name": "대리인검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantSearch",
+      "name": "출원인검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(출원인)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationdateSearch",
+      "name": "출원일자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "(출원일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationNumberSearch",
+      "name": "출원번호검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(출원번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "articleNameSearch",
+      "name": "물품명칭검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": "(물품명칭)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "creatorSearch",
+      "name": "창작자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": "IV"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designMainClassificationSearch",
+      "name": "한국분류검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "designMainClassification",
+          "desc": "한국분류",
+          "note": "(한국분류)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "locarnoSearch",
+      "name": "국제분류검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "locarnoCode",
+          "desc": "국제분류",
+          "note": "(국제분류)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityDateSearch",
+      "name": "우선권주장일자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityDateSearch",
+          "desc": "우선권주장일자",
+          "note": "(우선권주장일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "publicationDateSearch",
+      "name": "공고일자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "publicationDateSearch",
+          "desc": "공고일자",
+          "note": "(공고일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityNumberSearch",
+      "name": "우선권주장번호검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(우선권주장번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "publicationNumberSearch",
+      "name": "공고번호검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": "(공고번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registerDateSearch",
+      "name": "등록일자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerDateSearch",
+          "desc": "등록일자",
+          "note": "(등록일자검색)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registerNumberSearch",
+      "name": "등록번호검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(등록번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "rightHolderSearch",
+      "name": "권리자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "rightHolder",
+          "desc": "권리자",
+          "note": "RG"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류",
+          "note": ""
+        },
+        {
+          "name": "designSeq",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노분류",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "pubDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "pubNo",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchAllInfo",
+      "name": "전체조회",
+      "deprecated": false,
+      "params": [],
+      "response_fields": [
+        {
+          "name": "searchAllInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "foreignDesingInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "foreignDesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "creatContent",
+          "desc": "창작내용",
+          "note": ""
+        },
+        {
+          "name": "creatFunction",
+          "desc": "창작기능",
+          "note": ""
+        },
+        {
+          "name": "creatSummary",
+          "desc": "창작요약",
+          "note": ""
+        },
+        {
+          "name": "foreignDesignDetailInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "foreignDesignDetailInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭(국문)",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인주분류",
+          "note": ""
+        },
+        {
+          "name": "designSubClassification",
+          "desc": "디자인부분류",
+          "note": ""
+        },
+        {
+          "name": "cgdesignClassification",
+          "desc": "화상디자인분류",
+          "note": ""
+        },
+        {
+          "name": "priorityInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "priorityInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "prioritySequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "locarnoCodeInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "locarnoCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "locarnoSequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노코드",
+          "note": ""
+        },
+        {
+          "name": "dTermInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "dTermInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "dTermSequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "dTerm",
+          "desc": "D-Term",
+          "note": ""
+        },
+        {
+          "name": "applicantInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        },
+        {
+          "name": "agentsInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "agent",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        },
+        {
+          "name": "creatorInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "creatorInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        },
+        {
+          "name": "rightHolderInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "rightholder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "foreignDesignInfo",
+      "name": "국외디자인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "foreignDesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "creatContent",
+          "desc": "창작내용",
+          "note": ""
+        },
+        {
+          "name": "creatFunction",
+          "desc": "창작기능",
+          "note": ""
+        },
+        {
+          "name": "creatSummary",
+          "desc": "창작요약",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "foreignDesignDetailInfo",
+      "name": "국외디자인상세",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "foreignDesignDetailInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "articleNameKR",
+          "desc": "물품명칭(국문)",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인주분류",
+          "note": ""
+        },
+        {
+          "name": "designSubClassification",
+          "desc": "디자인부분류",
+          "note": ""
+        },
+        {
+          "name": "cgdesignClassification",
+          "desc": "화상디자인분류",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityInfo",
+      "name": "우선권주장",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "priorityInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "prioritySequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "locarnoCodeInfo",
+      "name": "국제분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "locarnoCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "locarnoSequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "locarnoCode",
+          "desc": "로카르노코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "dTermInfo",
+      "name": "DTERM",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "dTermInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "dTermSequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "dTerm",
+          "desc": "D-Term",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "agentInfo",
+      "name": "대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "agentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "agent",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "creatorInfo",
+      "name": "창작자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "creatorInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "creator",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "rightHolderInfo",
+      "name": "권리자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "rightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "sequence",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "rightholder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designImageInfo",
+      "name": "디자인이미지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "designImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "imageName",
+          "desc": "이미지명",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designThumbnail",
+      "name": "디자인썸네일",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US-미국, JP-일본, CN-중국) ※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "designThumbnailInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "thumbnailName",
+          "desc": "작은이미지명",
+          "note": ""
+        },
+        {
+          "name": "thumbnailPath",
+          "desc": "작은이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1 : 전체조회, oper2 : 국외디자인, oper3 : 국외디자인상세, oper4 : 우선권주장, oper5 : 국제분류, oper6 : DTERM, oper7 : 출원인, oper8 : 대리인, oper9 : 창작자, oper10 : 권리자) ※ oper1, oper2, oper3, oper4, oper5, oper6, oper7, oper8, oper9, oper10 중 원하는 변동정보 검색코드 입력"
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US : 미국, JP : 일본, CN : 중국)※다중 국가 선택 불가, 입력방식(ex : US)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "문헌번호 리스트",
+          "note": "(ex : 문헌번호1|문헌번호2|...)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(US : 미국, JP : 일본, CN : 중국)※다중 국가 선택 불가, 입력방식(ex : US)"
+        },
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

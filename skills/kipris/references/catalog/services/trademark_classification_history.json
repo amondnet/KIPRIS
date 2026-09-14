@@ -1,0 +1,118 @@
+{
+  "id": "trademark_classification_history",
+  "name": "상표 분류코드 변동 이력",
+  "service_path": "TradeMarkClassificationInfoService",
+  "path_confidence": "unknown",
+  "gateway": "openapi",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "tradeMarkClassificationInfo",
+      "name": "이력정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "identificationNumber",
+          "desc": "출원번호/등록번호",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "tradeMarkClassificationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "identificationNumber",
+          "desc": "출원번호/등록번호",
+          "note": ""
+        },
+        {
+          "name": "status",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "classOfGoodSerialNumber",
+          "desc": "지정상품일련번호",
+          "note": ""
+        },
+        {
+          "name": "classificationTypeCodeName",
+          "desc": "분류구분코드명",
+          "note": ""
+        },
+        {
+          "name": "classificationVersion",
+          "desc": "NICE분류판",
+          "note": ""
+        },
+        {
+          "name": "goodsClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "classofgoodServiceName",
+          "desc": "지정상품명",
+          "note": ""
+        },
+        {
+          "name": "additionDeletionCode",
+          "desc": "추가삭제코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호/등록번호1|출원번호/등록번호2)"
+        }
+      ]
+    }
+  ]
+}

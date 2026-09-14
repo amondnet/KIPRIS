@@ -1,0 +1,78 @@
+{
+  "id": "tm5_indicator",
+  "name": "TM5 공통상태 지표",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "trademarkTM5Info",
+      "name": "TM5 공통상태 지표",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "trademarkTM5Info",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "tm5CodeName",
+          "desc": "TM5코드명",
+          "note": ""
+        },
+        {
+          "name": "tm5CodeDescription",
+          "desc": "TM5코드설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1-TM5공통상태지표)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변공건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    }
+  ]
+}

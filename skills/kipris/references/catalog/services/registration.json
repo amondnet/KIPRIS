@@ -1,0 +1,1548 @@
+{
+  "id": "registration",
+  "name": "등록사항",
+  "service_path": "RegistrationService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "registrationInfo",
+      "name": "등록사항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderInfoA",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorSerialNumber",
+          "desc": "순위관련자일련번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorType",
+          "desc": "순위관련자종류",
+          "note": "권리자, 의무자 등"
+        },
+        {
+          "name": "rankCorrelatorName",
+          "desc": "순위관련자명",
+          "note": "권리자명, 의무자명 등"
+        },
+        {
+          "name": "rankCorrelatorAddress",
+          "desc": "순위관련자주소",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderInfoB",
+          "desc": "권리자정보B",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseName",
+          "desc": "등록원인명",
+          "note": ""
+        },
+        {
+          "name": "indicationOfEvent",
+          "desc": "사건의표시",
+          "note": ""
+        },
+        {
+          "name": "registrationRightRankInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "pertinentPartition",
+          "desc": "해당란",
+          "note": ""
+        },
+        {
+          "name": "contactId",
+          "desc": "담당자ID",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "documentCode",
+          "desc": "서류코드",
+          "note": ""
+        },
+        {
+          "name": "originalRegistrationNumber",
+          "desc": "원등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationPurpose",
+          "desc": "등록목적",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationCsCode",
+          "desc": "등록원인코드",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseName",
+          "desc": "등록원인명",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseDate",
+          "desc": "등록원인일자",
+          "note": ""
+        },
+        {
+          "name": "registrationTpCode",
+          "desc": "등록구분코드",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "disappearanceFlag",
+          "desc": "주말유무",
+          "note": "(Y/N)"
+        },
+        {
+          "name": "disappearanceCauseName",
+          "desc": "주말원인내용",
+          "note": ""
+        },
+        {
+          "name": "disappCscd",
+          "desc": "주말원인코드",
+          "note": ""
+        },
+        {
+          "name": "disappearanceDate",
+          "desc": "주말일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegRecordDateMD",
+          "desc": "국제등록기록일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "expirationDateMD",
+          "desc": "존속기간만료일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "latestRenewalDateMD",
+          "desc": "최근갱신일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "subDesignationDateMD",
+          "desc": "사후지정일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "registrationFeeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "startAnnual",
+          "desc": "시작연차",
+          "note": ""
+        },
+        {
+          "name": "lastAnnual",
+          "desc": "마지막연차",
+          "note": ""
+        },
+        {
+          "name": "paymentDegree",
+          "desc": "납부차수",
+          "note": ""
+        },
+        {
+          "name": "paymentFee",
+          "desc": "납부금액",
+          "note": ""
+        },
+        {
+          "name": "paymentDate",
+          "desc": "납부일자",
+          "note": ""
+        },
+        {
+          "name": "registrationLastRightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderNumber",
+          "desc": "최종권리자번호(특허고객번호)",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderName",
+          "desc": "최종권리자명",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderAddress",
+          "desc": "최종권리자주소",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderCountry",
+          "desc": "최종권리자국가",
+          "note": ""
+        },
+        {
+          "name": "registrationRightInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "assessmentDate",
+          "desc": "사정일자",
+          "note": ""
+        },
+        {
+          "name": "expirationDate",
+          "desc": "존속기간만료일자",
+          "note": ""
+        },
+        {
+          "name": "terminationCauseName",
+          "desc": "소멸원인명",
+          "note": ""
+        },
+        {
+          "name": "terminationDate",
+          "desc": "소멸일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "internationRegistrationNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationRegistrationDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationNumber",
+          "desc": "원출원번호",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationDate",
+          "desc": "원출원일자",
+          "note": ""
+        },
+        {
+          "name": "trademarkRegistrationPublicDate",
+          "desc": "상표등록공고일자",
+          "note": ""
+        },
+        {
+          "name": "trademarkRegistrationPublicNumber",
+          "desc": "상표등록공고번호",
+          "note": ""
+        },
+        {
+          "name": "classCode",
+          "desc": "분류코드",
+          "note": ""
+        },
+        {
+          "name": "titleOfInvention",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": "한글"
+        },
+        {
+          "name": "titleOfInventionEng",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": "영문"
+        },
+        {
+          "name": "claimCount",
+          "desc": "청구항수",
+          "note": ""
+        },
+        {
+          "name": "priorityCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityCount",
+          "desc": "우선권주장수",
+          "note": ""
+        },
+        {
+          "name": "dsNonExaminationTarget",
+          "desc": "디자인무심사대상여부",
+          "note": "심사, 일부심사, 무심사 * 20140701(무심사, 일부심사 분기)"
+        }
+      ]
+    },
+    {
+      "id": "registrationRightInfo",
+      "name": "권리정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationRightInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "assessmentDate",
+          "desc": "사정일자",
+          "note": ""
+        },
+        {
+          "name": "expirationDate",
+          "desc": "존속기간만료일자",
+          "note": ""
+        },
+        {
+          "name": "terminationCauseName",
+          "desc": "소멸원인명",
+          "note": ""
+        },
+        {
+          "name": "terminationDate",
+          "desc": "소멸일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "internationRegistrationNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationRegistrationDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationNumber",
+          "desc": "원출원번호",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationDate",
+          "desc": "원출원일자",
+          "note": ""
+        },
+        {
+          "name": "classCode",
+          "desc": "분류코드",
+          "note": ""
+        },
+        {
+          "name": "titleOfInvention",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": "한글"
+        },
+        {
+          "name": "titleOfInventionEng",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": "영문"
+        },
+        {
+          "name": "claimCount",
+          "desc": "청구항수",
+          "note": ""
+        },
+        {
+          "name": "priorityCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityCount",
+          "desc": "우선권주장수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationRightHolderInfo",
+      "name": "권리자정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationRightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderInfoA",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorSerialNumber",
+          "desc": "순위관련자일련번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorType",
+          "desc": "순위관련자종류",
+          "note": "권리자, 의무자 등"
+        },
+        {
+          "name": "rankCorrelatorName",
+          "desc": "순위관련자명",
+          "note": "권리자명, 의무자명 등"
+        },
+        {
+          "name": "rankCorrelatorAddress",
+          "desc": "순위관련자주소",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderInfoB",
+          "desc": "권리자정보B",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseName",
+          "desc": "등록원인명",
+          "note": ""
+        },
+        {
+          "name": "indicationOfEvent",
+          "desc": "사건의표시",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationRightRankInfo",
+      "name": "권리순위정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationRightRankInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "pertinentPartition",
+          "desc": "해당란",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "originalRegistrationNumber",
+          "desc": "원등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationPurpose",
+          "desc": "등록목적",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseName",
+          "desc": "등록원인명",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseDate",
+          "desc": "등록원인일자",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "disappearanceFlag",
+          "desc": "주말유무",
+          "note": "(Y/N)"
+        },
+        {
+          "name": "disappearanceCauseName",
+          "desc": "주말원인명",
+          "note": ""
+        },
+        {
+          "name": "disappearanceDate",
+          "desc": "주말일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegRecordDateMD",
+          "desc": "국제등록기록일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "expirationDateMD",
+          "desc": "존속기간만료일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "latestRenewalDateMD",
+          "desc": "최근갱신일자",
+          "note": "(마드리드)"
+        },
+        {
+          "name": "subDesignationDateMD",
+          "desc": "사후지정일자",
+          "note": "(마드리드)"
+        }
+      ]
+    },
+    {
+      "id": "registrationFeeInfo",
+      "name": "등록료정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationFeeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "startAnnual",
+          "desc": "시작연차",
+          "note": ""
+        },
+        {
+          "name": "lastAnnual",
+          "desc": "마지막연차",
+          "note": ""
+        },
+        {
+          "name": "paymentDegree",
+          "desc": "납부차수",
+          "note": ""
+        },
+        {
+          "name": "paymentFee",
+          "desc": "납부금액",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationLastRightHolderInfo",
+      "name": "최종권리자정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationLastRightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderNumber",
+          "desc": "최종권리자번호(특허고객번호)",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderName",
+          "desc": "최종권리자명",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderAddress",
+          "desc": "최종권리자주소",
+          "note": ""
+        },
+        {
+          "name": "lastRightHolderCountry",
+          "desc": "최종권리자국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationTransferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "(BIB:서지, FEE:등록료, ORD:권리순위, HLD:권리자)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationTransferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "등록번호리스트",
+          "note": "(ex : 등록번호1|등록번호2)"
+        }
+      ]
+    },
+    {
+      "id": "registrationRightHolderV2Info",
+      "name": "권리자정보V2",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationRightHolderV2Info",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderV2InfoA",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorSerialNumber",
+          "desc": "순위관련자일련번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorType",
+          "desc": "순위관련자종류",
+          "note": "권리자, 의무자 등"
+        },
+        {
+          "name": "rankCorrelatorCode",
+          "desc": "순위관련자명",
+          "note": "권리자명, 의무자명 등"
+        },
+        {
+          "name": "rankCorrelatorName",
+          "desc": "순위관련자코드",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorAddress",
+          "desc": "순위관련자주소",
+          "note": ""
+        },
+        {
+          "name": "registrationRightHolderV2InfoB",
+          "desc": "권리자정보B",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "registrationCauseName",
+          "desc": "등록원인명",
+          "note": ""
+        },
+        {
+          "name": "indicationOfEvent",
+          "desc": "사건의표시",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationContinuanceTermInfo",
+      "name": "존속기간만료예정일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationContinuanceTermInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "continuanceDate",
+          "desc": "만료일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationInformationV2",
+      "name": "등록사항 조회(권리란, 권리자란, 전용·통상사용권자란)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "searchCode",
+          "desc": "검색코드",
+          "note": "(권리란 : 20901, 권리자란 : 20902, 전용권자란 : 20903, 통상권자란 : 20904)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationInformationV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "registrationRightRankV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rgstno",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "ptprtCd",
+          "desc": "해당란코드",
+          "note": ""
+        },
+        {
+          "name": "ptprtCdNm",
+          "desc": "해당란",
+          "note": ""
+        },
+        {
+          "name": "rkno",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "rgstTpcd",
+          "desc": "등록구분코드",
+          "note": ""
+        },
+        {
+          "name": "rgstTpcdNm",
+          "desc": "등록구분코드명",
+          "note": ""
+        },
+        {
+          "name": "docCd",
+          "desc": "서류코드",
+          "note": ""
+        },
+        {
+          "name": "docNm",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "rcptDt",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "idsappFg",
+          "desc": "주말유무",
+          "note": ""
+        },
+        {
+          "name": "disappCscd",
+          "desc": "주말원인코드",
+          "note": ""
+        },
+        {
+          "name": "disappCsCont",
+          "desc": "주말원인내용",
+          "note": ""
+        },
+        {
+          "name": "disappDt",
+          "desc": "주말일자",
+          "note": ""
+        },
+        {
+          "name": "rgstCscd",
+          "desc": "등록원인코드",
+          "note": ""
+        },
+        {
+          "name": "rgstCsNm",
+          "desc": "등록원인명",
+          "note": ""
+        },
+        {
+          "name": "rgstCsDt",
+          "desc": "등록원인일자",
+          "note": ""
+        },
+        {
+          "name": "rgstPupos",
+          "desc": "등록목적",
+          "note": ""
+        },
+        {
+          "name": "divRgstno",
+          "desc": "분할등록번호",
+          "note": ""
+        },
+        {
+          "name": "lcnsUsprdStrtDt",
+          "desc": "실시권사용기간시작일자",
+          "note": ""
+        },
+        {
+          "name": "lcnsUsprdEndDt",
+          "desc": "실시권사용기간종료일자",
+          "note": ""
+        },
+        {
+          "name": "wrkgContCd",
+          "desc": "실시내용코드",
+          "note": ""
+        },
+        {
+          "name": "wrkgCont",
+          "desc": "실시내용",
+          "note": ""
+        },
+        {
+          "name": "wrkgRgsNm",
+          "desc": "실시지역명",
+          "note": ""
+        },
+        {
+          "name": "etcLcnsMtr",
+          "desc": "기타실시권사항",
+          "note": ""
+        },
+        {
+          "name": "rmvWavItcnt",
+          "desc": "말소포기항수",
+          "note": ""
+        },
+        {
+          "name": "cntryRsmptAdmnrNm",
+          "desc": "국가승계관리자성명",
+          "note": ""
+        },
+        {
+          "name": "cntryRsmptIntndNm",
+          "desc": "국가승계관리청명",
+          "note": ""
+        },
+        {
+          "name": "rsmptOffcNm",
+          "desc": "승계청명",
+          "note": ""
+        },
+        {
+          "name": "pldgCdamtCont",
+          "desc": "질권채권액내용",
+          "note": ""
+        },
+        {
+          "name": "pldgExptnDt",
+          "desc": "질권채권변제일자",
+          "note": ""
+        },
+        {
+          "name": "pldgSpcntMtr",
+          "desc": "질권특약사항",
+          "note": ""
+        },
+        {
+          "name": "cmmssMtrLwatcNo",
+          "desc": "위임사항법조항번호",
+          "note": ""
+        },
+        {
+          "name": "trpreTrlno",
+          "desc": "심판예고심판번호",
+          "note": ""
+        },
+        {
+          "name": "trpreDmndDt",
+          "desc": "심판예고청구일자",
+          "note": ""
+        },
+        {
+          "name": "trpreEvtIndicCont",
+          "desc": "심판예고사건표시내용",
+          "note": ""
+        },
+        {
+          "name": "trpreDmndObjt",
+          "desc": "심판예고청구취지",
+          "note": ""
+        },
+        {
+          "name": "dotdcTrlno",
+          "desc": "심결확정심판번호",
+          "note": ""
+        },
+        {
+          "name": "dotdcDt",
+          "desc": "심결확정일자",
+          "note": ""
+        },
+        {
+          "name": "dotdcInvldDmndItcnt",
+          "desc": "심결확정무효청구항수",
+          "note": ""
+        },
+        {
+          "name": "dotdcAbs",
+          "desc": "심결확정요지",
+          "note": ""
+        },
+        {
+          "name": "wthdwTrlno",
+          "desc": "취하심판번호",
+          "note": ""
+        },
+        {
+          "name": "wthdwDt",
+          "desc": "취하일자",
+          "note": ""
+        },
+        {
+          "name": "seizrEvtIndicCont",
+          "desc": "촉탁사건표시내용",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextApplno",
+          "desc": "존속기간연장출원번호",
+          "note": ""
+        },
+        {
+          "name": "cndrtExaplDt",
+          "desc": "존속기간연장출원일자",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextDcsnDt",
+          "desc": "존속기간연장결정일자",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextDays",
+          "desc": "존속기간연장일수",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextYear",
+          "desc": "존속기간연장년",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextMm",
+          "desc": "존속기간연장월",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextDd",
+          "desc": "존속기간연장일",
+          "note": ""
+        },
+        {
+          "name": "extnTrnsfCndrtDt",
+          "desc": "연장이전존속기간일자",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextDmndItcnt",
+          "desc": "존속기간연장청구항수",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextPmsnCont",
+          "desc": "존속기간연장허가내용",
+          "note": ""
+        },
+        {
+          "name": "cntnTmextTgtDmndScope",
+          "desc": "존속기간연장대상청구범위",
+          "note": ""
+        },
+        {
+          "name": "opstnPbancDemrno",
+          "desc": "이의신청예고이의신청번호",
+          "note": ""
+        },
+        {
+          "name": "opstnPbancOpstnDt",
+          "desc": "이의신청예고이의신청일자",
+          "note": ""
+        },
+        {
+          "name": "opstnPbancOpstnCs",
+          "desc": "이의신청예고이의신청이유",
+          "note": ""
+        },
+        {
+          "name": "dmdcsDemrno",
+          "desc": "이의결정이의신청번호",
+          "note": ""
+        },
+        {
+          "name": "dmdcsDt",
+          "desc": "이의결정일자",
+          "note": ""
+        },
+        {
+          "name": "dmdcsAbs",
+          "desc": "이의결정요지",
+          "note": ""
+        },
+        {
+          "name": "cndrtTnwlApplDt",
+          "desc": "존속기간갱신출원일자",
+          "note": ""
+        },
+        {
+          "name": "cndrtRnwlApplno",
+          "desc": "존속기간갱신출원번호",
+          "note": ""
+        },
+        {
+          "name": "cndrtRnwlDcsnDt",
+          "desc": "존속기간갱신결정일자",
+          "note": ""
+        },
+        {
+          "name": "dvtrRgstno",
+          "desc": "분할이전등록번호",
+          "note": ""
+        },
+        {
+          "name": "cofgdAddApplDt",
+          "desc": "지정상품추가출원일자",
+          "note": ""
+        },
+        {
+          "name": "cofgdAddApplno",
+          "desc": "지정상품추가출원번호",
+          "note": ""
+        },
+        {
+          "name": "orgnlRgstno",
+          "desc": "원등록번호",
+          "note": ""
+        },
+        {
+          "name": "hgrnkTcevlDmndno",
+          "desc": "상위기술평가청구번호",
+          "note": ""
+        },
+        {
+          "name": "tcevlDmndDt",
+          "desc": "기술평가청구일자",
+          "note": ""
+        },
+        {
+          "name": "tcevlDmndObjt",
+          "desc": "기술평가청구취지",
+          "note": ""
+        },
+        {
+          "name": "tcevlCfmtnDt",
+          "desc": "기술평가확정일자",
+          "note": ""
+        },
+        {
+          "name": "tcevlCfmtnAbs",
+          "desc": "기술평가확정요지",
+          "note": ""
+        },
+        {
+          "name": "lcnsPriceAmtCont",
+          "desc": "실시권대가금액내용",
+          "note": ""
+        },
+        {
+          "name": "lcnsPricePayMthd",
+          "desc": "실시권대가지급방법",
+          "note": ""
+        },
+        {
+          "name": "lcnsPricePmeraCont",
+          "desc": "실시권대가지급시기내용",
+          "note": ""
+        },
+        {
+          "name": "partRmvWavClausCont",
+          "desc": "일부말소포기항내용",
+          "note": ""
+        },
+        {
+          "name": "pldgIrAgmntCont",
+          "desc": "질권이자약정내용",
+          "note": ""
+        },
+        {
+          "name": "pldgPntyAgmntCont",
+          "desc": "질권위약금약정내용",
+          "note": ""
+        },
+        {
+          "name": "dcsnCoargInvldPtclsCont",
+          "desc": "결정등록취소무효청구항내용",
+          "note": ""
+        },
+        {
+          "name": "remnClausCont",
+          "desc": "유지항내용",
+          "note": ""
+        },
+        {
+          "name": "dcsnDelItcnt",
+          "desc": "결정삭제항수",
+          "note": ""
+        },
+        {
+          "name": "dcsnRgstDlclsCont",
+          "desc": "결정등록삭제항내용",
+          "note": ""
+        },
+        {
+          "name": "mdItrgtRecDt",
+          "desc": "마드리드국제등록기록일자",
+          "note": ""
+        },
+        {
+          "name": "mdCndrtExptnDt",
+          "desc": "마드리드존속기간만료일자",
+          "note": ""
+        },
+        {
+          "name": "mdLtstRnwlDt",
+          "desc": "마드리드최근갱신일자",
+          "note": ""
+        },
+        {
+          "name": "mdItrgtEfocrDt",
+          "desc": "마드리드국제등록효력발생일자",
+          "note": ""
+        },
+        {
+          "name": "anxtnTgtIntnlRgstno",
+          "desc": "병합대상국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "dcsnCoargInvldDmndItcnt",
+          "desc": "결정등록취소무효청구항수",
+          "note": "권리란(20901)"
+        },
+        {
+          "name": "registrationRightHolderInfoV3",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rkCrltrSeq",
+          "desc": "순위관련자일련번호",
+          "note": ""
+        },
+        {
+          "name": "rkCrltrTpcd",
+          "desc": "순위관련자코드",
+          "note": ""
+        },
+        {
+          "name": "rkCrltrTpcdNm",
+          "desc": "순위관련자코드명",
+          "note": "권리자,의무자 등(입력값 관련 권리란, 권리권자란, 전용권자란, 통상권자란에 해당하는 인명정보)"
+        },
+        {
+          "name": "rkCrltrNm",
+          "desc": "순위관련자명",
+          "note": "권리자명, 의무자명 등"
+        },
+        {
+          "name": "rkCrltrAddr",
+          "desc": "순위관련자주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "newRightfulPersonInfo",
+      "name": "(신규)권리자 정보를 제공",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "newRightInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rkno",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "doc_nm",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "rcpt_dt",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "rgst_cs_nm",
+          "desc": "등록원인",
+          "note": ""
+        },
+        {
+          "name": "evt_indic_seizr",
+          "desc": "사건의표시",
+          "note": ""
+        },
+        {
+          "name": "newRightPersonInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rkno",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "rk_psn_nm",
+          "desc": "순위관련자명",
+          "note": "권리자명,의무자명 등"
+        },
+        {
+          "name": "rk_rel_psn_seq",
+          "desc": "순위관련자일련번호",
+          "note": ""
+        },
+        {
+          "name": "rk_rel_psn_tpcd",
+          "desc": "순위관련자종류",
+          "note": "권리자,의무자 등"
+        },
+        {
+          "name": "rk_rel_psn_addr",
+          "desc": "순위관련자주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

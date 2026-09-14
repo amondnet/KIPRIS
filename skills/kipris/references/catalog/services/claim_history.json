@@ -1,0 +1,157 @@
+{
+  "id": "claim_history",
+  "name": "청구항 변동 이력",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "amendmentHistoryInfo",
+      "name": "보정이력순서",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "?출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentHistoryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptSendSerialNumber",
+          "desc": "접수발송일련번호",
+          "note": ""
+        },
+        {
+          "name": "receiptSendNumber",
+          "desc": "접수발송번호",
+          "note": ""
+        },
+        {
+          "name": "receiptSendDate",
+          "desc": "접수발송일자",
+          "note": ""
+        },
+        {
+          "name": "receiptSendDocumentCode",
+          "desc": "접수발송서류코드",
+          "note": ""
+        },
+        {
+          "name": "receiptSendDocumentName",
+          "desc": "접수발송서류명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentHistoryDetailInfo",
+      "name": "보정이력상세내역",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "?출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentHistoryDetailInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptSendSerialNumber",
+          "desc": "접수발송일련번호",
+          "note": ""
+        },
+        {
+          "name": "receiptSendNumber",
+          "desc": "접수발송번호",
+          "note": ""
+        },
+        {
+          "name": "petitionclauseNumber",
+          "desc": "청구항번호",
+          "note": ""
+        },
+        {
+          "name": "changeTypeCode",
+          "desc": "변경구분코드",
+          "note": ""
+        },
+        {
+          "name": "changeTypeName",
+          "desc": "변경구분명",
+          "note": ""
+        },
+        {
+          "name": "petitionclause",
+          "desc": "청구항",
+          "note": ""
+        },
+        {
+          "name": "transferReceiptDocNumber",
+          "desc": "변동대상접수문서번호",
+          "note": ""
+        },
+        {
+          "name": "transferPetitionclause",
+          "desc": "변동청구항",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1-보정이력순서, oper2-보정이력상세내역)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "inn_medicine",
+  "name": "의약품 국제일반명칭",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "basicINNInfo",
+      "name": "INN 기본조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "referenceevidenceNumber",
+          "desc": "참증번호",
+          "note": "(내부관리번호)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "INNInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceNumber",
+          "desc": "참증번호",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceArticleEnglishName",
+          "desc": "참증물품영문명",
+          "note": ""
+        },
+        {
+          "name": "FigureImageExistFlag",
+          "desc": "도형이미지존재유무",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineRequestNumber",
+          "desc": "국제의약품요청번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineLatinName",
+          "desc": "국제의약품라틴어명",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineEnglishName",
+          "desc": "국제의약품영어명",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineFranceName",
+          "desc": "국제의약품프랑스어명",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceImageSerialnumber",
+          "desc": "참증이미지일련번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nameINNInfo",
+      "name": "INN 명칭조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "nameType",
+          "desc": "명칭타입",
+          "note": "(LATIN:라틴어, ENGLISH:영어, FRENCH:프랑스어)"
+        },
+        {
+          "name": "internationalMedicineName",
+          "desc": "국제의약품명칭",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "INNInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceNumber",
+          "desc": "참증번호",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceArticleEnglishName",
+          "desc": "참증물품영문명",
+          "note": ""
+        },
+        {
+          "name": "FigureImageExistFlag",
+          "desc": "도형이미지존재유무",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineRequestNumber",
+          "desc": "국제의약품요청번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineLatinName",
+          "desc": "국제의약품라틴어명",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineEnglishName",
+          "desc": "국제의약품영어명",
+          "note": ""
+        },
+        {
+          "name": "InternationalMedicineFranceName",
+          "desc": "국제의약품프랑스어명",
+          "note": ""
+        },
+        {
+          "name": "ReferenceevidenceImageSerialnumber",
+          "desc": "참증이미지일련번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "참증번호리스트",
+          "note": "(ex : 참증번호1|참증번호2)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1988 @@
+{
+  "id": "foreign_trademark",
+  "name": "해외상표",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "advancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": "KW"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "OAD"
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": "RN"
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": "ORN"
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": "RG"
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": "NC"
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": "OI"
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": "VC"
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": "FTN"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본,US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "freeSearch",
+      "name": "자유검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": ""
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tradeMarkNameSearch",
+      "name": "상표명칭검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": "FTN"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationNumberSearch",
+      "name": "출원번호검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationDateSearch",
+      "name": "출원일자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "OAD"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationNumberSearch",
+      "name": "등록번호검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": "RN"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationDateSearch",
+      "name": "등록일자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": "ORD"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantSearch",
+      "name": "출원인검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "rightHolderSearch",
+      "name": "권리자검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": "RG"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tradeMarkClassificationCodeSearch",
+      "name": "상품분류검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": "OD"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "niceCodeSearch",
+      "name": "니스코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": "NC"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "viennaCodeSearch",
+      "name": "도형분류코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "viennaCode",
+          "desc": "동형분류코드",
+          "note": "VC"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightHolder",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkClassificationCode",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkName",
+          "desc": "상표명칭",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchAllInfo",
+      "name": "전체조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchAllInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "foreignTradeMarkInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "foreignTradeMarkInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registartionStatusInfo",
+          "desc": "등록상태",
+          "note": ""
+        },
+        {
+          "name": "trademarkPronunciation",
+          "desc": "상표발음명",
+          "note": ""
+        },
+        {
+          "name": "trademarkDescription",
+          "desc": "상표설명",
+          "note": ""
+        },
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "representationApplicantYN",
+          "desc": "대표출원인여부",
+          "note": ""
+        },
+        {
+          "name": "rightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "rightHolderName",
+          "desc": "권리자명",
+          "note": ""
+        },
+        {
+          "name": "classificationCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "code",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "languageCode",
+          "desc": "언어코드",
+          "note": ""
+        },
+        {
+          "name": "classOfGoodServiceBusinessName",
+          "desc": "지정상품명",
+          "note": ""
+        },
+        {
+          "name": "niceCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "code",
+          "desc": "니스코드",
+          "note": ""
+        },
+        {
+          "name": "viennaCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "code",
+          "desc": "도형분류코드",
+          "note": ""
+        },
+        {
+          "name": "applicantInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rightHolderInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "classificationCodeInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "niceCodeInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "viennaCodeInfoList",
+          "desc": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "foreignTradeMarkInfo",
+      "name": "국외상표",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "foreignTradeMarkInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "자국출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "자국출원일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "자국등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "자국등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationStatusInfo",
+          "desc": "자국등록상태정보",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkPronunciation",
+          "desc": "상표발음명",
+          "note": ""
+        },
+        {
+          "name": "tradeMarkDescription",
+          "desc": "상표설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "representationApplicantYN",
+          "desc": "대표출원인여부",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "rightHolderInfo",
+      "name": "권리자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "rightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "rightHolderName",
+          "desc": "권리자명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "classificationCodeInfo",
+      "name": "상품분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "classificationCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "code",
+          "desc": "상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "languageCode",
+          "desc": "언어코드",
+          "note": ""
+        },
+        {
+          "name": "classOfGoodServiceBusinessName",
+          "desc": "지정상품명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "niceCodeInfo",
+      "name": "니스코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "niceCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "code",
+          "desc": "니스코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "viennaCodeInfo",
+      "name": "도형분류코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "viennaCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "code",
+          "desc": "도형분류코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tradeMarkImageInfo",
+      "name": "상표이미지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(JP-일본, US-미국)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "tradeMarkImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "imageName",
+          "desc": "이미지명",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1 : 전체조회, oper2 : 국외상표, oper3 : 출원인, oper4 : 권리자, oper5 : 상품분류, oper6 : 니스코드, oper7 : 도형분류코드) ※ oper1, oper2, oper3, oper4, oper5, oper6, oper7 중 원하는 변동정보 검색코드 입력"
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "국가코드(US : 미국, JP : 일본)※다중 국가 선택 불가, 입력방식(ex : US)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": "※ 입력방식(ex : 20160713)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "문헌번호 리스트",
+          "note": "(ex : 문헌번호1|문헌번호2|...)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "국가코드(US : 미국, JP : 일본)※다중 국가 선택 불가, 입력방식(ex : US)"
+        },
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "ipbiz_hanaro",
+  "name": "IP-Biz 하나로 서비스 기술분류",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "ipbizHanaroInfo",
+      "name": "IpBiz하나로",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "managementNumber",
+          "desc": "관리번호",
+          "note": ""
+        },
+        {
+          "name": "applicationCountry",
+          "desc": "출원국가",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ipbizHanaroInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "managementNumber",
+          "desc": "관리번호",
+          "note": ""
+        },
+        {
+          "name": "productClassification",
+          "desc": "제품분류",
+          "note": ""
+        },
+        {
+          "name": "applicationCountry",
+          "desc": "출원국가",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "largeClassification",
+          "desc": "대분류",
+          "note": ""
+        },
+        {
+          "name": "middleClassification",
+          "desc": "중분류",
+          "note": ""
+        },
+        {
+          "name": "smallClassification",
+          "desc": "소분류",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

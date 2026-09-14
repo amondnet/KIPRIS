@@ -1,0 +1,147 @@
+{
+  "id": "patent_classification_history",
+  "name": "특허·실용 분류코드 변동 이력",
+  "service_path": "PatentClassificationInfoService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "ipcClassificationInfo",
+      "name": "이력정보(IPC)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ipcClassificationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "groupSerialNumber",
+          "desc": "그룹일련번호",
+          "note": ""
+        },
+        {
+          "name": "breakdownSerialNumber",
+          "desc": "내역일련번호",
+          "note": ""
+        },
+        {
+          "name": "ipcCode",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "version",
+          "desc": "분류코드버전",
+          "note": ""
+        },
+        {
+          "name": "versionDate",
+          "desc": "분류코드버전일자",
+          "note": "(※ 일부 과거건의 경우 일자 대신 버전 정보 출력)"
+        }
+      ]
+    },
+    {
+      "id": "cpcClassificationInfo",
+      "name": "이력정보(CPC)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "cpcClassificationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "groupSerialNumber",
+          "desc": "그룹일련번호",
+          "note": ""
+        },
+        {
+          "name": "breakdownSerialNumber",
+          "desc": "내역일련번호",
+          "note": ""
+        },
+        {
+          "name": "cpcCode",
+          "desc": "CPC코드",
+          "note": ""
+        },
+        {
+          "name": "version",
+          "desc": "분류코드버전",
+          "note": ""
+        },
+        {
+          "name": "versionDate",
+          "desc": "분류코드버전일자",
+          "note": "(※ 일부 과거건의 경우 일자 대신 버전 정보 출력)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "IPC, CPC"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "internet_tech_notice",
+  "name": "인터넷 기술공지",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "internetTechNoticeInfo",
+      "name": "인터넷기술공지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "announcementTitle",
+          "desc": "공지제목",
+          "note": ""
+        },
+        {
+          "name": "drawupDate",
+          "desc": "작성일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "internetTechNoticeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "developer",
+          "desc": "개발자",
+          "note": ""
+        },
+        {
+          "name": "drawingPath",
+          "desc": "도면경로",
+          "note": ""
+        },
+        {
+          "name": "announcementNumber",
+          "desc": "공지번호",
+          "note": ""
+        },
+        {
+          "name": "announcementTitle",
+          "desc": "공지제목",
+          "note": ""
+        },
+        {
+          "name": "drawupDate",
+          "desc": "작성일자",
+          "note": ""
+        },
+        {
+          "name": "drawupPerson",
+          "desc": "작성자",
+          "note": ""
+        },
+        {
+          "name": "drawupPersonAddress",
+          "desc": "작성자주소",
+          "note": ""
+        },
+        {
+          "name": "technologyConfiguration",
+          "desc": "기술구성",
+          "note": ""
+        },
+        {
+          "name": "technologyEffect",
+          "desc": "기술효과",
+          "note": ""
+        },
+        {
+          "name": "technologyCorrelatorField",
+          "desc": "기술관련분야",
+          "note": ""
+        },
+        {
+          "name": "technologyPurpose",
+          "desc": "기술목적",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 공지제목1|공지제목2)"
+        }
+      ]
+    }
+  ]
+}

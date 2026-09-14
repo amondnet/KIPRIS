@@ -1,0 +1,2199 @@
+{
+  "id": "kpa_english_abstract",
+  "name": "한국특허영문초록(KPA)",
+  "service_path": "KpaGeneralSearchService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "anySearch",
+      "name": "자유",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchAny",
+          "desc": "자유검색",
+          "note": "(ex : spring*IP=[G02C5/22])"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "wordSearch",
+      "name": "단어",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchWord",
+          "desc": "검색단어",
+          "note": ""
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nameSearch",
+      "name": "이름",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchName",
+          "desc": "출원인명/발명자명",
+          "note": "(출원인, 발명자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "numberSearch",
+      "name": "번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchNumber",
+          "desc": "번호",
+          "note": "(번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "advancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "abstracts",
+          "desc": "초록",
+          "note": "AB"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "EAN"
+        },
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "TL"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IV"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "EIP"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "PR"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "PD"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "EPN"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ipcSearch",
+      "name": "IPC",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventionNameSearch",
+      "name": "발명의명칭",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "invention",
+          "desc": "발명의명칭",
+          "note": "(발명의 명칭)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "abstractSearch",
+      "name": "초록정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "abstracts",
+          "desc": "초록",
+          "note": "(초록)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationNumberSearch",
+      "name": "출원번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(출원번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registerNumberSearch",
+      "name": "등록번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": "(공개건의 경우는 공개번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityNumberSearch",
+      "name": "우선권번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationdateSearch",
+      "name": "출원일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "(출원일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        }
+      ]
+    },
+    {
+      "id": "registerDateSearch",
+      "name": "등록일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(공개건의 경우는 공개일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantSearch",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(출원인)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventorsSearch",
+      "name": "발명자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(발명자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "시작번호",
+          "note": "(index)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(AP)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "(EAN)"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": "(TL)"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(IV)"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(EIP)"
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PY)"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(PR)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "(EPN)"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": "(KR:KPA)"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "bibliographicInfo",
+      "name": "서지상세정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "bibliographicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "bibliographicSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "usKind",
+          "desc": "번호종류",
+          "note": ""
+        },
+        {
+          "name": "usNo",
+          "desc": "해당번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "국외문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "issueDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "imageStandardCode",
+          "desc": "대표도면출처상태코드",
+          "note": "(S10301:존재, S10399:미존재)"
+        },
+        {
+          "name": "pubFg",
+          "desc": "공고공보유무",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정공보유무",
+          "note": ""
+        },
+        {
+          "name": "ipcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ipcCd",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "ipcVersion",
+          "desc": "IPC버전",
+          "note": ""
+        },
+        {
+          "name": "summation",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "astrtCont",
+          "desc": "요약",
+          "note": ""
+        },
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicantAddress",
+          "desc": "출원인주소",
+          "note": ""
+        },
+        {
+          "name": "applicantCountry",
+          "desc": "출원인국가",
+          "note": ""
+        },
+        {
+          "name": "inventorsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "발명자명",
+          "note": ""
+        },
+        {
+          "name": "inventorAddress",
+          "desc": "발명자주소",
+          "note": ""
+        },
+        {
+          "name": "inventorCountry",
+          "desc": "발명자국가",
+          "note": ""
+        },
+        {
+          "name": "legalStatusInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "commonCodeName",
+          "desc": "공통코드명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "bibliographicSummaryInfo",
+      "name": "서지요약정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "bibliographicSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "usKind",
+          "desc": "번호종류",
+          "note": ""
+        },
+        {
+          "name": "usNo",
+          "desc": "해당번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "국외문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "issueDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "imageStandardCode",
+          "desc": "대표도면출처상태코드",
+          "note": "(S10301:존재, S10399:미존재)"
+        },
+        {
+          "name": "pubFg",
+          "desc": "공고공보유무",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정공보유무",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ipcInfo",
+      "name": "IPC",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ipcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ipcCd",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "ipcVersion",
+          "desc": "IPC버전",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "summation",
+      "name": "초록",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "summation",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "astrtCont",
+          "desc": "요약",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicantAddress",
+          "desc": "출원인주소",
+          "note": ""
+        },
+        {
+          "name": "applicantCountry",
+          "desc": "출원인국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventorsInfo",
+      "name": "발명자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "inventorsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "발명자명",
+          "note": ""
+        },
+        {
+          "name": "inventorAddress",
+          "desc": "발명자주소",
+          "note": ""
+        },
+        {
+          "name": "inventorCountry",
+          "desc": "발명자국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityNumberDateInfo",
+      "name": "우선권정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "priorityNumberDateInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "patentDocumentsInfo",
+      "name": "인용문헌",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "patentDocumentsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "corgPatno",
+          "desc": "인용문헌번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "인용문헌종류코드",
+          "note": ""
+        },
+        {
+          "name": "exam",
+          "desc": "심사관인용여부",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "인용문헌공보일자",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "인용문헌국가코드",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "연계문헌번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "legalStatusInfo",
+      "name": "행정처리",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "legalStatusInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "서류명",
+          "note": ""
+        },
+        {
+          "name": "commonCodeName",
+          "desc": "공통코드명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "representationImageInfo",
+      "name": "도면/전문(대표도면)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "representationImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "tifPath",
+          "desc": "이미지파일경로",
+          "note": ""
+        },
+        {
+          "name": "tifFileName",
+          "desc": "이미지파일명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "BIB-서지, IPC, AB-초록, AP-출원인, IN-발명자, PRI-우선권정보, DOC-인용문헌, ADM-행정처리"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    }
+  ]
+}

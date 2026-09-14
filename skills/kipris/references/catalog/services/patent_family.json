@@ -1,0 +1,295 @@
+{
+  "id": "patent_family",
+  "name": "특허 패밀리",
+  "service_path": "patFamInfoSearchService",
+  "path_confidence": "unknown",
+  "gateway": "kipo",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "getAppNoPatFamInfoSearch",
+      "name": "특허패밀리정보조회(국내출원번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "Items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "docdbFamilyID",
+          "desc": "DOCDB패밀리ID",
+          "note": ""
+        },
+        {
+          "name": "applicationCountryCode",
+          "desc": "DOCDB출원국가코드",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "DOCDB출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationKindCode",
+          "desc": "DOCDB출원종류코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "DOCDB출원번호",
+          "note": ""
+        },
+        {
+          "name": "publicationCountryCode",
+          "desc": "DOCDB공보국가코드",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "DOCDB공보일자",
+          "note": ""
+        },
+        {
+          "name": "publicationKindCode",
+          "desc": "DOCDB공보종류코드",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "DOCDB공보번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "familyInfoSearchDOCPubNumber",
+      "name": "패밀리정보조회(DOCDB공보번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "gazetteNumber",
+          "desc": "DOCDB공보번호",
+          "note": ""
+        },
+        {
+          "name": "gazetteCountryCode",
+          "desc": "DOCDB공보국가코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "familyInfoSearchDOCPubNumber",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "familyIdentification",
+          "desc": "DOCDB패밀리ID",
+          "note": ""
+        },
+        {
+          "name": "applicationCountryCode",
+          "desc": "DOCDB출원국가코드",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "DOCDB출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationKindCode",
+          "desc": "DOCDB출원종류코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "DOCDB출원번호",
+          "note": ""
+        },
+        {
+          "name": "gazetteCountryCode",
+          "desc": "DOCDB공보국가코드",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "DOCDB공보일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteKindCode",
+          "desc": "DOCDB공보종류코드",
+          "note": ""
+        },
+        {
+          "name": "gazetteNumber",
+          "desc": "DOCDB공보번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "familyInfoSearchDOCAppNumber",
+      "name": "패밀리정보조회(DOCDB출원번호)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "DOCDB출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationCountryCode",
+          "desc": "DOCDB출원국가코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "familyInfoSearchDOCAppNumber",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "familyIdentification",
+          "desc": "DOCDB패밀리ID",
+          "note": ""
+        },
+        {
+          "name": "applicationCountryCode",
+          "desc": "DOCDB출원국가코드",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "DOCDB출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationKindCode",
+          "desc": "DOCDB출원종류코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "DOCDB출원번호",
+          "note": ""
+        },
+        {
+          "name": "gazetteCountryCode",
+          "desc": "DOCDB공보국가코드",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "DOCDB공보일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteKindCode",
+          "desc": "DOCDB공보종류코드",
+          "note": ""
+        },
+        {
+          "name": "gazetteNumber",
+          "desc": "DOCDB공보번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        },
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "기본-국내출원번호, DOCP-DOCDB공보번호, DOCA-DOCDB출원번호"
+        },
+        {
+          "name": "searchCountry",
+          "desc": "검색국가",
+          "note": "US-미국, JP-일본, CP-중국, EP-유럽, WO-WIPO 등"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : [기본]출원번호1|출원번호2, [DOCP]DOCDB공보번호1|DOCDB공보번호2, [DOCA]DOCDB출원번호1|DOCDB출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "기본-국내출원번호, DOCP-DOCDB공보번호, DOCA-DOCDB출원번호"
+        },
+        {
+          "name": "searchCountry",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "기본, DOCA 인 경우만 해당"
+        },
+        {
+          "name": "gazetteNumber",
+          "desc": "공보번호",
+          "note": "DOCP인 경우만 해당"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

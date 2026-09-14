@@ -1,0 +1,143 @@
+{
+  "id": "patent_alloy",
+  "name": "특허 합금조성비",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "alloyCompositionInfo",
+      "name": "합금조성비",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "alloyCompositionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "openingPublicTypeCode",
+          "desc": "공개공고구분코드",
+          "note": ""
+        },
+        {
+          "name": "openingPublicTypeName",
+          "desc": "공개공고구분명",
+          "note": ""
+        },
+        {
+          "name": "petitionclauseSerialNumber",
+          "desc": "청구항일련번호",
+          "note": ""
+        },
+        {
+          "name": "petitionclause",
+          "desc": "청구항",
+          "note": ""
+        },
+        {
+          "name": "compositionYN",
+          "desc": "조성비여부",
+          "note": ""
+        },
+        {
+          "name": "subordinationClauseYN",
+          "desc": "종속항여부",
+          "note": ""
+        },
+        {
+          "name": "elementSymbolNumber",
+          "desc": "원소기호번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "elementNameKR",
+          "desc": "원소한글명",
+          "note": ""
+        },
+        {
+          "name": "elementNameEN",
+          "desc": "원소영문명",
+          "note": ""
+        },
+        {
+          "name": "miniumValue",
+          "desc": "최소값",
+          "note": ""
+        },
+        {
+          "name": "maximumValue",
+          "desc": "최대값",
+          "note": ""
+        },
+        {
+          "name": "elementUnit",
+          "desc": "원소단위",
+          "note": ""
+        },
+        {
+          "name": "mainComponentYN",
+          "desc": "주성분여부",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1-합금조성비)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

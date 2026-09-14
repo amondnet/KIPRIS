@@ -1,0 +1,315 @@
+{
+  "id": "japan_patent_alloy",
+  "name": "일본 특허 합금조성비",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "bibliographyInfo",
+      "name": "서지조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "inputnumber",
+          "desc": "입력번호",
+          "note": ""
+        },
+        {
+          "name": "inputnumberType",
+          "desc": "입력번호종류",
+          "note": "문헌번호(LN), 표준출원번호(SAN), 표준공보번호(SGN),국제출원번호(IAN), 국외출원번호(OAN), 국외등록번호(ORN), 국외공개번호(OON), 국외공보번호(OGN)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "JapanAlloycompositionratioBibliographyInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "Serialnumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "StandardApplicationnumber",
+          "desc": "표준출원번호",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationApplicationnumber",
+          "desc": "국외출원번호",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationApplicationDate",
+          "desc": "국외출원일자",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationRegistrationnumber",
+          "desc": "국외등록번호",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationRegistrationDate",
+          "desc": "국외등록일자",
+          "note": ""
+        },
+        {
+          "name": "InternationalApplicationnumber",
+          "desc": "국제출원번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationLaid-Opennumber",
+          "desc": "국외공개번호",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationOpeningDate",
+          "desc": "국외공개일자",
+          "note": ""
+        },
+        {
+          "name": "StandardGazettenumber",
+          "desc": "표준공보번호",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationGazettenumber",
+          "desc": "국외공보번호",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationGazetteDate",
+          "desc": "국외공보일자",
+          "note": ""
+        },
+        {
+          "name": "OutsidenationTitleofinvention",
+          "desc": "국외발명의명칭",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "basicInfo",
+      "name": "조성비조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "JapanAlloycompositionratioBasicInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "Serialnumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "PetitionclauseSerialnumber",
+          "desc": "청구항일련번호",
+          "note": ""
+        },
+        {
+          "name": "CompositoinratioSerialnumber",
+          "desc": "조성비일련번호",
+          "note": ""
+        },
+        {
+          "name": "ElementSymbolName",
+          "desc": "원소부호명",
+          "note": ""
+        },
+        {
+          "name": "ElementHangeulName",
+          "desc": "원소한글명",
+          "note": ""
+        },
+        {
+          "name": "ElementEnglishName",
+          "desc": "원소영문명",
+          "note": ""
+        },
+        {
+          "name": "ElementMiniumPercentage",
+          "desc": "원소최소비율",
+          "note": ""
+        },
+        {
+          "name": "ElementMaximumPercentage",
+          "desc": "원소최대비율",
+          "note": ""
+        },
+        {
+          "name": "ElementUnitName",
+          "desc": "원소단위명",
+          "note": ""
+        },
+        {
+          "name": "MainIngredientYn",
+          "desc": "주성분여부",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "petitionclauseInfo",
+      "name": "청구항조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "JapanAlloycompositionratioPetitionclauseInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "Serialnumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "PetitionclauseSerialnumber",
+          "desc": "청구항일련번호",
+          "note": ""
+        },
+        {
+          "name": "PetitionclauseDetailContent",
+          "desc": "청구항상세내용",
+          "note": ""
+        },
+        {
+          "name": "CompositoinratioYn",
+          "desc": "조성비여부",
+          "note": ""
+        },
+        {
+          "name": "DependentclaimNumberList",
+          "desc": "종속항번호목록",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ipcInfo",
+      "name": "IPC조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "JapanAlloycompositionratioIpcInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Literaturenumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "Serialnumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "ClassificationSerialnumber",
+          "desc": "분류일련번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalpatentclassificationCode",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "ClassificationDate",
+          "desc": "분류일자",
+          "note": ""
+        },
+        {
+          "name": "MainClassificationYn",
+          "desc": "주분류여부",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        },
+        {
+          "name": "searchType",
+          "desc": "검색종류",
+          "note": "서지(BIB), 조성비(BASIC), 청구항(PTCLS), IPC(IPC)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "문헌번호리스트",
+          "note": "(ex : 문헌번호?1|문헌번호?2)"
+        }
+      ]
+    }
+  ]
+}

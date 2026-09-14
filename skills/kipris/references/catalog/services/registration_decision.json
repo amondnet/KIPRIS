@@ -1,0 +1,746 @@
+{
+  "id": "registration_decision",
+  "name": "등록결정서",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "bibliographicInfo",
+      "name": "서지정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "bibliographicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "documentSendNumber",
+          "desc": "문서발송번호",
+          "note": ""
+        },
+        {
+          "name": "sendDate",
+          "desc": "발송일자",
+          "note": ""
+        },
+        {
+          "name": "documentSentence",
+          "desc": "문서문구",
+          "note": ""
+        },
+        {
+          "name": "documentType",
+          "desc": "문서타입",
+          "note": ""
+        },
+        {
+          "name": "documentPublicationInstitution",
+          "desc": "문서발행기관",
+          "note": ""
+        },
+        {
+          "name": "documentName",
+          "desc": "문서명",
+          "note": ""
+        },
+        {
+          "name": "documentDrawupDate",
+          "desc": "문서작성일자",
+          "note": ""
+        },
+        {
+          "name": "documentApplicationNumber",
+          "desc": "문서출원번호",
+          "note": ""
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "demandItemcount",
+          "desc": "청구항수",
+          "note": ""
+        },
+        {
+          "name": "originalRegistrationNumber",
+          "desc": "원등록번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "personInfo",
+      "name": "인명정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "personInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "personType",
+          "desc": "인명구분",
+          "note": ""
+        },
+        {
+          "name": "contentType",
+          "desc": "내용구분",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "content",
+          "desc": "내용",
+          "note": ""
+        },
+        {
+          "name": "applicationRelationpersonName",
+          "desc": "출원관련인명",
+          "note": ""
+        },
+        {
+          "name": "designationPatentattorneyName",
+          "desc": "지정변리사명",
+          "note": ""
+        },
+        {
+          "name": "examinationdepartmentName",
+          "desc": "심사국명",
+          "note": ""
+        },
+        {
+          "name": "examinationsectionName",
+          "desc": "심사과명",
+          "note": ""
+        },
+        {
+          "name": "contentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "personType",
+          "desc": "인명구분",
+          "note": ""
+        },
+        {
+          "name": "contentType",
+          "desc": "내용구분",
+          "note": ""
+        },
+        {
+          "name": "content",
+          "desc": "내용",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "applicationRelationpersonName",
+          "desc": "출원관련인명",
+          "note": ""
+        },
+        {
+          "name": "designationPatentattorneyName",
+          "desc": "지정변리사명",
+          "note": ""
+        },
+        {
+          "name": "examinationdepartmentName",
+          "desc": "심사국명",
+          "note": ""
+        },
+        {
+          "name": "examinationsectionName",
+          "desc": "심사과명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "contentInfo",
+      "name": "등록결정 및 안내정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "contentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "contentType",
+          "desc": "내용구분",
+          "note": ""
+        },
+        {
+          "name": "amendmentTitle",
+          "desc": "직권보정타이틀",
+          "note": ""
+        },
+        {
+          "name": "content",
+          "desc": "내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentItem",
+          "desc": "보정항목",
+          "note": ""
+        },
+        {
+          "name": "amendmentLocation",
+          "desc": "보정위치",
+          "note": ""
+        },
+        {
+          "name": "amendmentBeforeContent",
+          "desc": "보정전내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentAfterContent",
+          "desc": "보정후내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentCause",
+          "desc": "보정사유",
+          "note": ""
+        },
+        {
+          "name": "amendmentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "amendmentTitle",
+          "desc": "직권보정타이틀",
+          "note": ""
+        },
+        {
+          "name": "contentType",
+          "desc": "내용구분",
+          "note": ""
+        },
+        {
+          "name": "content",
+          "desc": "내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentItem",
+          "desc": "보정항목",
+          "note": ""
+        },
+        {
+          "name": "amendmentLocation",
+          "desc": "보정위치",
+          "note": ""
+        },
+        {
+          "name": "amendmentBeforeContent",
+          "desc": "보정전내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentAfterContent",
+          "desc": "보정후내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentCause",
+          "desc": "보정사유",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentInfo",
+      "name": "직권보정정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "amendmentTitle",
+          "desc": "직권보정타이틀",
+          "note": ""
+        },
+        {
+          "name": "imageFileName",
+          "desc": "이미지파일명",
+          "note": ""
+        },
+        {
+          "name": "imageWidth",
+          "desc": "이미지너비",
+          "note": ""
+        },
+        {
+          "name": "amendmentItem",
+          "desc": "보정항목",
+          "note": ""
+        },
+        {
+          "name": "imageHeight",
+          "desc": "이미지높이",
+          "note": ""
+        },
+        {
+          "name": "amendmentLocation",
+          "desc": "보정위치",
+          "note": ""
+        },
+        {
+          "name": "amendmentBeforeContent",
+          "desc": "보정전내용",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "amendmentAfterContent",
+          "desc": "보정후내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentCause",
+          "desc": "보정사유",
+          "note": ""
+        },
+        {
+          "name": "imageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "amendmentTitle",
+          "desc": "직권보정타이틀",
+          "note": ""
+        },
+        {
+          "name": "imageFileName",
+          "desc": "이미지파일명",
+          "note": ""
+        },
+        {
+          "name": "imageWidth",
+          "desc": "이미지너비",
+          "note": ""
+        },
+        {
+          "name": "amendmentItem",
+          "desc": "보정항목",
+          "note": ""
+        },
+        {
+          "name": "amendmentLocation",
+          "desc": "보정위치",
+          "note": ""
+        },
+        {
+          "name": "imageHeight",
+          "desc": "이미지높이",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "amendmentBeforeContent",
+          "desc": "보정전내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentAfterContent",
+          "desc": "보정후내용",
+          "note": ""
+        },
+        {
+          "name": "amendmentCause",
+          "desc": "보정사유",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "imageInfo",
+      "name": "이미지수록정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "imageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "imageFileName",
+          "desc": "이미지파일명",
+          "note": ""
+        },
+        {
+          "name": "imageWidth",
+          "desc": "이미지너비",
+          "note": ""
+        },
+        {
+          "name": "imageHeight",
+          "desc": "이미지높이",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "detailInfo",
+      "name": "상세정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "detailInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "detailInfoTitle",
+          "desc": "상세정보타이틀",
+          "note": ""
+        },
+        {
+          "name": "detailInfoCountryCode",
+          "desc": "상세정보국가코드",
+          "note": ""
+        },
+        {
+          "name": "detailInfoNumber",
+          "desc": "상세정보번호",
+          "note": ""
+        },
+        {
+          "name": "detailInfoCode",
+          "desc": "상세정보코드",
+          "note": ""
+        },
+        {
+          "name": "detailInfoDesignSerialNumber",
+          "desc": "상세정보디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "detailInfoAttachmentContent",
+          "desc": "상세정보첨부내용",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1-서지정보, oper2-인명정보, oper3-등록결정 및 안내정보, oper4-직권보정정보, oper5-이미지수록정보, oper6-상세정보, oper7-PDF)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "검색건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": "pdfInfo",
+      "name": "PDF",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "pdfInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "filePath",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "pdfInfoV2",
+      "name": "PDF_V2",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "pdfInfoV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "filePath",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

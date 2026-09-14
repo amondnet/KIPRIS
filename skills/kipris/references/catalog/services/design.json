@@ -1,0 +1,7019 @@
+{
+  "id": "design",
+  "name": "디자인 공보",
+  "service_path": "designInfoSearchService",
+  "path_confidence": "portal",
+  "gateway": "kipo",
+  "auth_param": "ServiceKey",
+  "operations": [
+    {
+      "id": "getWordSearch",
+      "name": "단어",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": "(물품명칭, 출원인, 창작자 및 창작자 주소)"
+        },
+        {
+          "name": "searchYearRange",
+          "desc": "검색년도범위",
+          "note": "(0:전체, 최근 1~10년)"
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "등록상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "형태분류",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "count",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getNumberSearch",
+      "name": "번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "number",
+          "desc": "숫자키워드",
+          "note": ""
+        },
+        {
+          "name": "searchYear",
+          "desc": "검색년도범위",
+          "note": "(0:전체 년도입력 ex:1999)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "count",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getAdvancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "형태분류",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(AN)"
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": "(RN)"
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": "(PN)"
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "(AD)"
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": "(RD)"
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": "(PD)"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(PRD)"
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인번호",
+          "note": "(AG)"
+        },
+        {
+          "name": "regPrivilegeName",
+          "desc": "등록권자",
+          "note": "(RG)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": ""
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": ""
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": ""
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": ""
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": ""
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": ""
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": ""
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": ""
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": ""
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": ""
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "출원상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "형태분류",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "count",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designFormClassInfo",
+      "name": "형태분류 검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "dsShpClssCd",
+          "desc": "형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자, OD-공개일자, RD-등록일자, PD-공고일자, PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원잠조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "출원상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "fullText",
+          "desc": "전문유무",
+          "note": "(Y/N)"
+        },
+        {
+          "name": "inventorName",
+          "desc": "발명자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "freeSearchInfo",
+      "name": "자유검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "articleNameSearchInfo",
+      "name": "물품명칭",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designMainClassificationSearchInfo",
+      "name": "디자인분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationNumberSearchInfo",
+      "name": "출원번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationNumberSearchInfo",
+      "name": "등록번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "publicationNumberSearchInfo",
+      "name": "공고번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "openNumberSearchInfo",
+      "name": "공개번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityNumberSearchInfo",
+      "name": "우선권주장번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationDateSearchInfo",
+      "name": "출원일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationDateSearchInfo",
+      "name": "등록일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "publicationDateSearchInfo",
+      "name": "공고일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "openDateSearchInfo",
+      "name": "공개일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityDateSearchInfo",
+      "name": "우선권주장일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventorNameSearchInfo",
+      "name": "창작자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantNameSearchInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "agentNameSearchInfo",
+      "name": "대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "regPrivilegeNameSearchInfo",
+      "name": "등록권자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "regPrivilegeName",
+          "desc": "등록권자명",
+          "note": ""
+        },
+        {
+          "name": "etc",
+          "desc": "기타디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "part",
+          "desc": "부분디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "simi",
+          "desc": "유사디자인",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "abandonment",
+          "desc": "포기",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "cancle",
+          "desc": "취하",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "destroy",
+          "desc": "소멸",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "invalid",
+          "desc": "무효",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "notice",
+          "desc": "공고",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "open",
+          "desc": "공개",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "registration",
+          "desc": "등록",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "rejection",
+          "desc": "거절",
+          "note": "(포함 : true 미포함 : false)"
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(AD-출원일자 OD-공개일자 RD-등록일자 PD-공고일자 PRD-우선권주장일자)"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "DesignInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(국제등록번호)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "priorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "applicationStatus",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명/특허고개번호",
+          "note": "출원인명 특허고객번호"
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명/대리인번호",
+          "note": "대리인명 대리인번호"
+        },
+        {
+          "name": "fullText",
+          "desc": "전문존재유무",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "designMainClassification",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "imagePathLarge",
+          "desc": "큰이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getBibliographyDetailInfoSearch",
+      "name": "서지상세정보(공공데이터 포털 연계)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentAddress",
+          "desc": "대리인주소",
+          "note": ""
+        },
+        {
+          "name": "agentCode",
+          "desc": "대리인번호",
+          "note": ""
+        },
+        {
+          "name": "agentCountry",
+          "desc": "대리인국가",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "applicantInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantAddress",
+          "desc": "출원인주소",
+          "note": ""
+        },
+        {
+          "name": "applicantCode",
+          "desc": "출원인번호",
+          "note": ""
+        },
+        {
+          "name": "applicantCountry",
+          "desc": "출원인국가",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "biblioSummaryInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "biblioInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "biblioSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "admstStat",
+          "desc": "행정처분상태",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designBasicSimilarYn",
+          "desc": "기본유사유무",
+          "note": ""
+        },
+        {
+          "name": "designCount",
+          "desc": "의장의수",
+          "note": ""
+        },
+        {
+          "name": "designCountNumber",
+          "desc": "의장의수(실제숫자)",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designPriorityApplicationCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        },
+        {
+          "name": "designPriorityApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "designPriorityApplicationNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "dsScgrtDmndYn",
+          "desc": "비밀의장여부",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imgFg",
+          "desc": "견본이미지유무",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "lastDispositionCode",
+          "desc": "최종처분코드",
+          "note": ""
+        },
+        {
+          "name": "lastDispositionDate",
+          "desc": "최종처분일자",
+          "note": ""
+        },
+        {
+          "name": "lastDispositionDescription",
+          "desc": "최종처분설명",
+          "note": ""
+        },
+        {
+          "name": "lastRetroDate",
+          "desc": "최종소급일자",
+          "note": ""
+        },
+        {
+          "name": "lastRetroDescription",
+          "desc": "최종소급구분설명",
+          "note": ""
+        },
+        {
+          "name": "lastRetroTpcd",
+          "desc": "최종소급구분코드",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationDate",
+          "desc": "원출원일자",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationNumber",
+          "desc": "원출원번호",
+          "note": ""
+        },
+        {
+          "name": "partDesignFg",
+          "desc": "부분의장여부",
+          "note": ""
+        },
+        {
+          "name": "pubFg",
+          "desc": "공고공보유무",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "regFg",
+          "desc": "등록유무",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "relationApplicationNumber",
+          "desc": "관련출원번호",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정공보유무",
+          "note": ""
+        },
+        {
+          "name": "rgstTpcd",
+          "desc": "등록상태",
+          "note": ""
+        },
+        {
+          "name": "rgstTpcdDscr",
+          "desc": "등록상태설명",
+          "note": ""
+        },
+        {
+          "name": "classificationCodeInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "classificationCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "classificationCode",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "designImageInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "imageName",
+          "desc": "이미지명",
+          "note": ""
+        },
+        {
+          "name": "largePath",
+          "desc": "큰이미지경로",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "smallPath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "fullTextInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "fullTextInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "fullTextFileKindCode",
+          "desc": "전문파일종류코드",
+          "note": ""
+        },
+        {
+          "name": "fullTextFilePath",
+          "desc": "전문파일경로",
+          "note": ""
+        },
+        {
+          "name": "pageCount",
+          "desc": "페이지수",
+          "note": ""
+        },
+        {
+          "name": "creativeDescriptionInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "creativeDescriptionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designDescription",
+          "desc": "창작의내용",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디지안일련번호",
+          "note": ""
+        },
+        {
+          "name": "creativeSummaryInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "creativeSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디지안일련번호",
+          "note": ""
+        },
+        {
+          "name": "designSummary",
+          "desc": "창작의요점",
+          "note": ""
+        },
+        {
+          "name": "inventorInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventorInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디지안일련번호",
+          "note": ""
+        },
+        {
+          "name": "inventorAddress",
+          "desc": "창작자주소",
+          "note": ""
+        },
+        {
+          "name": "inventorCode",
+          "desc": "특허고객번호(창작자번호)",
+          "note": ""
+        },
+        {
+          "name": "inventorCountry",
+          "desc": "창작자국가",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "legalStatusInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "legalStatusInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "procSTCD",
+          "desc": "처리상태코드",
+          "note": ""
+        },
+        {
+          "name": "rsDate",
+          "desc": "접수발송일자",
+          "note": ""
+        },
+        {
+          "name": "rsDocumentName",
+          "desc": "접수발송서류명",
+          "note": "한글"
+        },
+        {
+          "name": "rsDocumentNameEng",
+          "desc": "접수발송서류명",
+          "note": "영문"
+        },
+        {
+          "name": "rsNo",
+          "desc": "접수발송번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designClasscodeInfo",
+      "name": "한국분류(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialnumber",
+          "desc": "디자인일련번호",
+          "note": "(옵션)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "DesignClasscodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DesignSerialnumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "DesignClasscode",
+          "desc": "한국분류코드",
+          "note": ""
+        },
+        {
+          "name": "DesignClassificationTypeCode",
+          "desc": "한국분류구분코드",
+          "note": "(S14001 : 주분류, S14002 : 부분류)"
+        }
+      ]
+    },
+    {
+      "id": "designLocarnoClasscodeInfo",
+      "name": "국제분류(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialnumber",
+          "desc": "디자인일련번호",
+          "note": "(옵션)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "DesignLocarnoClasscodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DesignSerialnumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "LocarnoClasscode",
+          "desc": "국제분류코드",
+          "note": "(로카르노)"
+        }
+      ]
+    },
+    {
+      "id": "designShapeClasscodeInfo",
+      "name": "형태분류(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialnumber",
+          "desc": "디자인일련번호",
+          "note": "(옵션)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "DesignShapeClasscodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DesignSerialnumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "ShapeClasscode",
+          "desc": "형태분류코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designClaimofpriorityInfo",
+      "name": "우선권정보(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialnumber",
+          "desc": "디자인일련번호",
+          "note": "(옵션)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "DesignClaimofpriorityInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DesignSerialnumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "ClaimofpriorityNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "ClaimofpriorityDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "CountryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "CountryName",
+          "desc": "국가명칭",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getInventorInfo",
+      "name": "창작자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designInventorInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designInventorInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "창작자명",
+          "note": ""
+        },
+        {
+          "name": "inventorCode",
+          "desc": "특허고객번호(창작자번호)",
+          "note": "특허고객번호(창작자번호)"
+        },
+        {
+          "name": "inventorAddress",
+          "desc": "창작자주소",
+          "note": ""
+        },
+        {
+          "name": "inventorCountry",
+          "desc": "창작자국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getApplicantInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designApplicantInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designApplicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicantCode",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "applicantAddress",
+          "desc": "출원인주소",
+          "note": ""
+        },
+        {
+          "name": "applicantCountry",
+          "desc": "출원인국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getAgentInfo",
+      "name": "대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designAgentInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designAgentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "agentCode",
+          "desc": "대리인번호",
+          "note": ""
+        },
+        {
+          "name": "agentAddress",
+          "desc": "대리인주소",
+          "note": ""
+        },
+        {
+          "name": "agentCountry",
+          "desc": "대리인국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getCreativeSummaryInfo",
+      "name": "창작의 요점",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designCreativeSummaryInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designCreativeSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designSummary",
+          "desc": "창작의요점",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getCreativeDescriptionInfo",
+      "name": "창작의 내용",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designCreativeDescriptionInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designCreativeDescriptionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designDescription",
+          "desc": "창작의내용",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getLegalStatusInfo",
+      "name": "행정처리사항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designLegalStatusInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designLegalStatusInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "rsNo",
+          "desc": "접수발송번호",
+          "note": ""
+        },
+        {
+          "name": "rsDocumentName",
+          "desc": "접수발송서류명",
+          "note": ""
+        },
+        {
+          "name": "rsDate",
+          "desc": "접수발송일자",
+          "note": ""
+        },
+        {
+          "name": "procSTCD",
+          "desc": "처리상태코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getDesignBibliographicSummaryInfo",
+      "name": "서지요약정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "biblioSummaryInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "biblioSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "admstStat",
+          "desc": "법적상태",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "designBasicSimilarYn",
+          "desc": "기본유사유무",
+          "note": ""
+        },
+        {
+          "name": "designCount",
+          "desc": "단독디자인다디자인구분",
+          "note": ""
+        },
+        {
+          "name": "designCountNumber",
+          "desc": "의장의수",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designPriorityApplicationCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        },
+        {
+          "name": "designPriorityApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "designPriorityApplicationNumber",
+          "desc": "우?권주장번호",
+          "note": ""
+        },
+        {
+          "name": "dsScgrtDmndYn",
+          "desc": "비밀의장여부",
+          "note": ""
+        },
+        {
+          "name": "dsShpClssCd",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "imgFg",
+          "desc": "견본이미지유무",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "lastDispositionCode",
+          "desc": "심사진행상태코드",
+          "note": ""
+        },
+        {
+          "name": "lastDispositionDate",
+          "desc": "심사진행일자",
+          "note": ""
+        },
+        {
+          "name": "lastDispositionDescription",
+          "desc": "심사진행상태명",
+          "note": ""
+        },
+        {
+          "name": "lastRetroDate",
+          "desc": "최종소급일자",
+          "note": ""
+        },
+        {
+          "name": "lastRetroDescription",
+          "desc": "최종소급구분설명",
+          "note": ""
+        },
+        {
+          "name": "lastRetroTpcd",
+          "desc": "최종소급구분코드",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationDate",
+          "desc": "원출원일자",
+          "note": ""
+        },
+        {
+          "name": "originalApplicationNumber",
+          "desc": "원출원번호",
+          "note": ""
+        },
+        {
+          "name": "partDesignFg",
+          "desc": "부분의장여부",
+          "note": ""
+        },
+        {
+          "name": "pubFg",
+          "desc": "공고공보유무",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "regFg",
+          "desc": "등록유무",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "relationApplicationNumber",
+          "desc": "관련출원번호",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정공보유무",
+          "note": ""
+        },
+        {
+          "name": "rgstTpcd",
+          "desc": "등록상태",
+          "note": ""
+        },
+        {
+          "name": "rgstTpcdDscr",
+          "desc": "등록상태설명",
+          "note": ""
+        },
+        {
+          "name": "classificationCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "classificationCode",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "designImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "imageName",
+          "desc": "디자인이미지파일이름",
+          "note": ""
+        },
+        {
+          "name": "largePath",
+          "desc": "큰이미지경로",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "smallPath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "fullTextInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "fullTextFileKindCode",
+          "desc": "전문파일종류코드",
+          "note": ""
+        },
+        {
+          "name": "fullTextFilePath",
+          "desc": "전문파일경로",
+          "note": ""
+        },
+        {
+          "name": "pageCount",
+          "desc": "페이지수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getSixImageInfoSearch",
+      "name": "디자인 육면도",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "imagePath",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "imageName",
+          "desc": "이미지명",
+          "note": ""
+        },
+        {
+          "name": "largePath",
+          "desc": "큰이미지경로",
+          "note": ""
+        },
+        {
+          "name": "number",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "smallPath",
+          "desc": "이미지경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getPubFullTextInfoSearch",
+      "name": "공개 전문",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getAnnFullTextInfoSearch",
+      "name": "공고 전문",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designUpdateGazetteInfo",
+      "name": "정정공보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "designUpdateGazetteInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "filePath",
+          "desc": "파일경로",
+          "note": ""
+        },
+        {
+          "name": "updateDate",
+          "desc": "정정일자",
+          "note": ""
+        },
+        {
+          "name": "version",
+          "desc": "버전",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designOpeningGazetteInfo",
+      "name": "공개전문(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialnumber",
+          "desc": "디자인일련번호",
+          "note": "(옵션)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "DesignOpeningGazetteInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DesignSerialnumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "FileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "FilePath",
+          "desc": "파일경로",
+          "note": ""
+        },
+        {
+          "name": "FileKindCode",
+          "desc": "파일종류",
+          "note": "(S10221:PDF) ※ 참고사항 : 2021.9.13일 기준으로 PDF 보유건에 대해서만 제공합니다."
+        }
+      ]
+    },
+    {
+      "id": "designRegistrationGazetteInfo",
+      "name": "공고전문(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialnumber",
+          "desc": "디자인일련번호",
+          "note": "(옵션)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "DesignRegistrationGazetteInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DesignSerialnumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "FileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "FilePath",
+          "desc": "파일경로",
+          "note": ""
+        },
+        {
+          "name": "FileKindCode",
+          "desc": "파일종류",
+          "note": "(S10221:PDF) ※ 참고사항 : 2021.9.13일 기준으로 PDF 보유건에 대해서만 제공합니다."
+        }
+      ]
+    },
+    {
+      "id": "getExamPubBookInfo",
+      "name": "공고책자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designExamPubBookInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designExamPubBookInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "경로",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일이름",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getFullTextCheckInfo",
+      "name": "모든 전문 및 육면도 유무",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designFullTextCheckInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "unexPubfullDocPDFCheckResult",
+          "desc": "공개전문유무",
+          "note": "(있음:Y 없음:N)"
+        },
+        {
+          "name": "examPubfullDocPDFCheckResult",
+          "desc": "공고전문유무",
+          "note": "(있음:Y 없음:N)"
+        },
+        {
+          "name": "unexPubBookCheckResult",
+          "desc": "공개책자유무",
+          "note": "(있음:Y 없음:N)"
+        },
+        {
+          "name": "examPubBookCheckResult",
+          "desc": "공고책자유무",
+          "note": "(있음:Y 없음:N)"
+        },
+        {
+          "name": "sixImageCheckResult",
+          "desc": "육면도유무",
+          "note": "(있음:Y 없음:N)"
+        },
+        {
+          "name": "registrationCheckResult",
+          "desc": "등록사항유무",
+          "note": "(있음:Y 없음:N)"
+        },
+        {
+          "name": "revisionPublicationCheckResult",
+          "desc": "정정공보유무",
+          "note": "(있음:Y 없음:N)"
+        }
+      ]
+    },
+    {
+      "id": "getChangeInfoSearch",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "date",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "itme",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "count",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transListString",
+          "desc": "출원번호리스트",
+          "note": "3019880015095|3019900010240|3019910011543|...|"
+        }
+      ]
+    },
+    {
+      "id": "designTransferInfo2",
+      "name": "변동정보2(2021)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "종류",
+          "note": "(한국분류:DCC, 국제분류:DLC, 형태분류:DSC, 공개전문:DOG, 공고전문:DRG, 우선권정보:DCP)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "designTransferInfo2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": "designCodeSearchInfo",
+      "name": "디자인 분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "designNumber",
+          "desc": "디자인분류코드/디자인물품명칭",
+          "note": ""
+        },
+        {
+          "name": "startNumber",
+          "desc": "페이지번호",
+          "note": "(검색한 결과물의 출력할 번호)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "getSearchDesignCodeInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "getSearchDesignCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getShapeFirstInfo",
+      "name": "형태분류(초기검색 리스트)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "-",
+          "desc": "",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "designShapeFirstInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designShapeFirstInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "eipcSec",
+          "desc": "디자인섹션",
+          "note": ""
+        },
+        {
+          "name": "eipcDesc",
+          "desc": "디자인형태분류코드설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getEipcSecInfo",
+      "name": "형태분류(섹션조회)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "eipcSec",
+          "desc": "섹션",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "designEipcSecInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designEipcSecInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "eipcCls",
+          "desc": "디자인클래스",
+          "note": ""
+        },
+        {
+          "name": "eipcSec",
+          "desc": "디자인섹션",
+          "note": ""
+        },
+        {
+          "name": "eipcDesc",
+          "desc": "디자인형태분류코드설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getEipcClassInfo",
+      "name": "형태분류(클래스조회)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "eipcSec",
+          "desc": "섹션",
+          "note": ""
+        },
+        {
+          "name": "eipcCls",
+          "desc": "클래스",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "designClassInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designClassInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "eipcCls",
+          "desc": "디자인클래스",
+          "note": ""
+        },
+        {
+          "name": "eipcSec",
+          "desc": "디자인섹션",
+          "note": ""
+        },
+        {
+          "name": "eipcGro",
+          "desc": "디자인그룹",
+          "note": ""
+        },
+        {
+          "name": "eipcDesc",
+          "desc": "디자인형태분류코드설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getShapeGroupInfo",
+      "name": "형태분류(그룹조회)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "eipcSec",
+          "desc": "섹션",
+          "note": ""
+        },
+        {
+          "name": "eipcCls",
+          "desc": "클래스",
+          "note": ""
+        },
+        {
+          "name": "eipcGro",
+          "desc": "그룹",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "designShapeGroupInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designShapeGroupInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "eipcSec",
+          "desc": "디자인섹션",
+          "note": ""
+        },
+        {
+          "name": "eipcCls",
+          "desc": "디자인클래스",
+          "note": ""
+        },
+        {
+          "name": "eipcGro",
+          "desc": "디자인그룹",
+          "note": ""
+        },
+        {
+          "name": "eipcShp",
+          "desc": "디자인형태분류",
+          "note": ""
+        },
+        {
+          "name": "eipcMain",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "eipcDesc",
+          "desc": "디자인형태분류코드설명",
+          "note": ""
+        },
+        {
+          "name": "uciFlag",
+          "desc": "UCI코드존재유무",
+          "note": "(Y : 존재 N: 미정)"
+        },
+        {
+          "name": "kadoUrl",
+          "desc": "유통시스템URL",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getShapeCodeInfo",
+      "name": "형태분류(코드조회)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "eipcMain",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "designShapeGroupInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designShapeGroupInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "eipcMain",
+          "desc": "디자인형태분류코드",
+          "note": ""
+        },
+        {
+          "name": "eipcDesc",
+          "desc": "디자인형태분류코드설명",
+          "note": ""
+        },
+        {
+          "name": "kadoUrl",
+          "desc": "유통시스템URL",
+          "note": ""
+        },
+        {
+          "name": "eipcCount",
+          "desc": "건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getBreakingInfo",
+      "name": "속보서비스",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "date",
+          "desc": "속보일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designBreakingInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designBreakingInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationName",
+          "desc": "출원인",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "디자인물품명칭",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

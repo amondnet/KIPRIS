@@ -1,0 +1,103 @@
+{
+  "id": "thesaurus",
+  "name": "시소러스",
+  "service_path": "ThesaurusInfoService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "thesaurusInfo",
+      "name": "시소러스",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "standardWord",
+          "desc": "시소러스기준단어언어코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "thesaurusInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ipcSection",
+          "desc": "시소러스IPC섹션구분코드",
+          "note": ""
+        },
+        {
+          "name": "standardWord",
+          "desc": "시소러스기준단어명",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "시소러스단어일련번호",
+          "note": ""
+        },
+        {
+          "name": "시소러스기준단어언어코드",
+          "desc": "시소러스기준단어언어코드",
+          "note": "(S10801-한글 S10802-영문 S10803-일문)"
+        },
+        {
+          "name": "relationWord",
+          "desc": "시소러스관련단어명",
+          "note": ""
+        },
+        {
+          "name": "relationWordClassificationCode",
+          "desc": "시소러스단어분류코드",
+          "note": "(S10701-동의어, S10702-관련어, S10703-이형어, S10704-한/영 번역대역어, S10705-한/일 번역대역어)"
+        },
+        {
+          "name": "weight",
+          "desc": "시소러스관련단어가중치",
+          "note": ""
+        },
+        {
+          "name": "importanceTypeCode",
+          "desc": "시소러스관련단어중요도구분코드",
+          "note": "(null, S12101-높음, S12102-낮음, S12201-사용)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 시소러스기준단어언어코드1|시소러스기준단어언어코드2)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1926 @@
+{
+  "id": "amendment_gazette",
+  "name": "정정공보",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "amendmentGazzetePatentBibliographicInfo",
+      "name": "서지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentBibliographicInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "ApplicationKind",
+          "desc": "출원종류",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DemandItemcount",
+          "desc": "청구항수",
+          "note": ""
+        },
+        {
+          "name": "ExaminationDemandDate",
+          "desc": "심사청구일자",
+          "note": ""
+        },
+        {
+          "name": "ExaminationDemandYesorno",
+          "desc": "심사청구여부",
+          "note": ""
+        },
+        {
+          "name": "InternationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": ""
+        },
+        {
+          "name": "InternationalApplicationNumber",
+          "desc": "국제출원번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalOpeningDate",
+          "desc": "국제공개일자",
+          "note": ""
+        },
+        {
+          "name": "InternationalOpeningNumber",
+          "desc": "국제공개번호",
+          "note": ""
+        },
+        {
+          "name": "Titleofinvention",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "TitleofinventionEntryLanguage",
+          "desc": "발명의명칭기재언어",
+          "note": ""
+        },
+        {
+          "name": "LicenseApprovalHopeYesorno",
+          "desc": "실시권허여희망여부",
+          "note": ""
+        },
+        {
+          "name": "OpeningDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "OpeningNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "OriginalApplicationExaminationDemandDate",
+          "desc": "원출원심사청구일자",
+          "note": ""
+        },
+        {
+          "name": "OriginalApplicationKind",
+          "desc": "원출원종류",
+          "note": ""
+        },
+        {
+          "name": "OriginalApplicationRegistrationDate",
+          "desc": "원출원등록일자",
+          "note": ""
+        },
+        {
+          "name": "OriginalApplicationRegistrationNumber",
+          "desc": "원출원등록번호",
+          "note": ""
+        },
+        {
+          "name": "PublicationInstitution",
+          "desc": "발행기관",
+          "note": ""
+        },
+        {
+          "name": "PublicDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "PublicNumber",
+          "desc": "공고번호",
+          "note": ""
+        },
+        {
+          "name": "PublicKind",
+          "desc": "공고종류",
+          "note": ""
+        },
+        {
+          "name": "RegistrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "RegistrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RetroactiveType",
+          "desc": "소급구분",
+          "note": ""
+        },
+        {
+          "name": "TechnologyEvaluationDemandYesorno",
+          "desc": "기술평가청구여부",
+          "note": ""
+        },
+        {
+          "name": "TechnologyLeadingHopeYesorno",
+          "desc": "기술지도희망여부",
+          "note": ""
+        },
+        {
+          "name": "TechnologyTransferenceHopeYesorno",
+          "desc": "기술양도희망여부",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        },
+        {
+          "name": "TranslationSubmitDate",
+          "desc": "번역제출일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentAbstractInfo",
+      "name": "요약서",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentAbstractInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "AbstractContent",
+          "desc": "요약서내용",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "AbstractSerialnumber",
+          "desc": "요약서일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentClassificationCodeInfo",
+      "name": "분류코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentClassificationCodeInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "ClassificationCode",
+          "desc": "분류코드",
+          "note": ""
+        },
+        {
+          "name": "ClassificationType",
+          "desc": "분류타입",
+          "note": ""
+        },
+        {
+          "name": "ClassificationVersion",
+          "desc": "분류버전",
+          "note": ""
+        },
+        {
+          "name": "MainClassificationSubClassificationType",
+          "desc": "주분류부분류구분",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "ClassificationSerialnumber",
+          "desc": "분류일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        },
+        {
+          "name": "VersionDate",
+          "desc": "버전일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentDemandClauseInfo",
+      "name": "청구항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentDemandClauseInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "DemandClauseContent",
+          "desc": "청구항내용",
+          "note": ""
+        },
+        {
+          "name": "DemandClauseContentType",
+          "desc": "청구항내용구분",
+          "note": ""
+        },
+        {
+          "name": "DemandClauseNumber",
+          "desc": "청구항번호",
+          "note": ""
+        },
+        {
+          "name": "DemandClauseStatus",
+          "desc": "청구항상태",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "DemandClauseSerialnumber",
+          "desc": "청구항일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentDesignatedCountryInfo",
+      "name": "지정국",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentDesignatedCountryInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "AttachedDesignationCountry",
+          "desc": "부속지정국가",
+          "note": ""
+        },
+        {
+          "name": "CountrySequencenumber",
+          "desc": "국가순번",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "InternationalApplicationDesignationCountry",
+          "desc": "국제출원국가",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentETCInfo",
+      "name": "기타내용",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentETCInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "EtceteraContent",
+          "desc": "기타내용",
+          "note": ""
+        },
+        {
+          "name": "EtceteraContentType",
+          "desc": "기타내용구분",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "SerialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentRndInfo",
+      "name": "국가연구개발사업",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentETCInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "EtceteraContent",
+          "desc": "기타내용",
+          "note": ""
+        },
+        {
+          "name": "EtceteraContentType",
+          "desc": "기타내용구분",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "SerialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentSpecificationInfo",
+      "name": "명세서",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentSpecificationInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "SpecificationSequencenumber",
+          "desc": "명세서순번",
+          "note": ""
+        },
+        {
+          "name": "SpecificationContent",
+          "desc": "명세서내용",
+          "note": ""
+        },
+        {
+          "name": "SpecificationContentType",
+          "desc": "명세서내용구분",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentPriorArtSearchInfo",
+      "name": "선행기술조사",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentPriorArtSearchInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "OfficeactionCitationYesorno",
+          "desc": "통지서인용여부",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "PriorartsearchLiteratureSerialnumber",
+          "desc": "선행기술조사문헌일련번호",
+          "note": ""
+        },
+        {
+          "name": "PriorartsearchLiteratureNumber",
+          "desc": "선행기술조사문헌번호",
+          "note": ""
+        },
+        {
+          "name": "PriorartsearchAdditionDescription",
+          "desc": "선행기술조사부가설명",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentTrademarkAmendmentItemInfo",
+      "name": "정정사항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentTrademarkAmendmentItemInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Afterstandardvlaue",
+          "desc": "이후값표준화",
+          "note": ""
+        },
+        {
+          "name": "Aftervalue",
+          "desc": "이후값",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "Beforestandardvlaue",
+          "desc": "이전값표준화",
+          "note": ""
+        },
+        {
+          "name": "Beforevlaue",
+          "desc": "이전값",
+          "note": ""
+        },
+        {
+          "name": "Correctiontype",
+          "desc": "정정구분",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "Correctionserialnumber",
+          "desc": "정정일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        },
+        {
+          "name": "amendmentGazzetePatentTrademarkAmendmentItemInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Afterstandardvlaue",
+          "desc": "이후값표준화",
+          "note": ""
+        },
+        {
+          "name": "Aftervalue",
+          "desc": "이후값",
+          "note": ""
+        },
+        {
+          "name": "Beforestandardvlaue",
+          "desc": "이전값표준화",
+          "note": ""
+        },
+        {
+          "name": "Beforevlaue",
+          "desc": "이전값",
+          "note": ""
+        },
+        {
+          "name": "Correctiontype",
+          "desc": "정정구분",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "Correctionserialnumber",
+          "desc": "정정일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공보순서",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentTrademarkAmendmentListInfo",
+      "name": "정정공보목록",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentTrademarkAmendmentListInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "Correctioncontent",
+          "desc": "정정내용",
+          "note": ""
+        },
+        {
+          "name": "Correctiondate",
+          "desc": "정정일자",
+          "note": ""
+        },
+        {
+          "name": "Correctionitem",
+          "desc": "정정항목",
+          "note": ""
+        },
+        {
+          "name": "Correctionversion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        },
+        {
+          "name": "amendmentGazzetePatentTrademarkAmendmentListInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Correctioncontent",
+          "desc": "정정내용",
+          "note": ""
+        },
+        {
+          "name": "Correctiondate",
+          "desc": "정정일자",
+          "note": ""
+        },
+        {
+          "name": "Correctionitem",
+          "desc": "정정항목",
+          "note": ""
+        },
+        {
+          "name": "Correctionversion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공보순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentTrademarkPersonInfo",
+      "name": "인명정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentTrademarkPersonInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Address",
+          "desc": "관련인주소",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "CountryName",
+          "desc": "관련인국가",
+          "note": ""
+        },
+        {
+          "name": "Name",
+          "desc": "관련인명",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "RepresentativeName",
+          "desc": "대표자명",
+          "note": ""
+        },
+        {
+          "name": "SerialNumber",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공보순번",
+          "note": ""
+        },
+        {
+          "name": "PublicApplicationrelationpersonType",
+          "desc": "관련인종류",
+          "note": ""
+        },
+        {
+          "name": "Zipcode",
+          "desc": "우편번호",
+          "note": ""
+        },
+        {
+          "name": "amendmentGazzetePatentTrademarkPersonInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "Address",
+          "desc": "관련인주소",
+          "note": ""
+        },
+        {
+          "name": "CountryName",
+          "desc": "관련인국가",
+          "note": ""
+        },
+        {
+          "name": "Name",
+          "desc": "관련인명",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "RepresentativeName",
+          "desc": "대표자명",
+          "note": ""
+        },
+        {
+          "name": "SerialNumber",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공보순번",
+          "note": ""
+        },
+        {
+          "name": "PublicApplicationrelationpersonType",
+          "desc": "관련인종류",
+          "note": ""
+        },
+        {
+          "name": "Zipcode",
+          "desc": "우편번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzetePatentTrademarkPriorityClaimInfo",
+      "name": "우선권주장",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzetePatentTrademarkPriorityClaimInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "PriorityClaimCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        },
+        {
+          "name": "PriorityClaimApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "PriorityClaimApplicationNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "SerialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공고순번",
+          "note": ""
+        },
+        {
+          "name": "amendmentGazzetePatentTrademarkPriorityClaimInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "OpeningPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "PriorityClaimCountry",
+          "desc": "우선권주장국가",
+          "note": ""
+        },
+        {
+          "name": "PriorityClaimApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "PriorityClaimApplicationNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "SerialNumber",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "PublicSequencenumber",
+          "desc": "공보순번",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "BIB-서지, AB-요약서, CD-분류코드, CL-청구항, DG-지정국, ETC-기타내용, RND-국가연구개발사업, DSC-명세서, PA-선행기술조사, AMI-정정사항, AML-정정공보목록, PS-인명정보, PRI-우선권주장"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        },
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "BIB-서지, AMI-정정사항, AML-정정공보목록, CLS-디자인분류, OAP-원출원정보, PS-인명정보, PRI-우선권주장, IMG-이미지정보"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        },
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "BIB-서지, AMI-정정사항, AML-정정공보목록, PS-인명정보, PRI-우선권주장, DS-지정상품"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        },
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        },
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignBibliographicInfo",
+      "name": "서지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignBibliographicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationKind",
+          "desc": "출원종류",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "lawSentenceRevisionMatters",
+          "desc": "법적문구개정사항",
+          "note": ""
+        },
+        {
+          "name": "lawSentenceReferenceContent",
+          "desc": "법적문구개정내용",
+          "note": ""
+        },
+        {
+          "name": "gazetteMode",
+          "desc": "공보형식",
+          "note": ""
+        },
+        {
+          "name": "registrationRecaptureYN",
+          "desc": "등록회복여부",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designTargetArticleName",
+          "desc": "디자인대상물품명칭",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "internationalRegDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "nonExaminationTargetFlag",
+          "desc": "무심사대상여부",
+          "note": ""
+        },
+        {
+          "name": "openingDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openingNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "orgAppRegistrationDate",
+          "desc": "원출원등록일자",
+          "note": ""
+        },
+        {
+          "name": "orgAppRegistrationNumber",
+          "desc": "원출원등록번호",
+          "note": ""
+        },
+        {
+          "name": "orgAppExaminationRequestDate",
+          "desc": "원출원심사요청일자",
+          "note": ""
+        },
+        {
+          "name": "orgAppKind",
+          "desc": "원출원종류",
+          "note": ""
+        },
+        {
+          "name": "partExaminationRegYN",
+          "desc": "일부심사등록유무",
+          "note": ""
+        },
+        {
+          "name": "partDesignContent",
+          "desc": "부분디자인내용",
+          "note": ""
+        },
+        {
+          "name": "partDesignFlag",
+          "desc": "부분디자인유무",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "secretFlag",
+          "desc": "비밀유무",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignUpdateMattersInfo",
+      "name": "정정사항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignUpdateMattersInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "afterStandardValue",
+          "desc": "이후표준화값",
+          "note": ""
+        },
+        {
+          "name": "afterValue",
+          "desc": "이후값",
+          "note": ""
+        },
+        {
+          "name": "transferStandardValue",
+          "desc": "이전표준화값",
+          "note": ""
+        },
+        {
+          "name": "transferValue",
+          "desc": "이전값",
+          "note": ""
+        },
+        {
+          "name": "updateSerialNumber",
+          "desc": "정정일련번호",
+          "note": ""
+        },
+        {
+          "name": "updateType",
+          "desc": "정정구분",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignUpdatePublicListInfo",
+      "name": "정정공보목록",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignUpdatePublicListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "updateContent",
+          "desc": "정정내용",
+          "note": ""
+        },
+        {
+          "name": "updateCompleteDate",
+          "desc": "정정완료일자",
+          "note": ""
+        },
+        {
+          "name": "updateItem",
+          "desc": "정정항목",
+          "note": ""
+        },
+        {
+          "name": "updateTitle",
+          "desc": "정정제목",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignClassificationInfo",
+      "name": "디자인분류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignClassificationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "designType",
+          "desc": "디자인구분",
+          "note": ""
+        },
+        {
+          "name": "designClassificationCode",
+          "desc": "디자인분류코드",
+          "note": ""
+        },
+        {
+          "name": "designClassificationSeqNo",
+          "desc": "디자인분류일련번호",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignOrgAppInfo",
+      "name": "원출원정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignOrgAppInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "orgAppRegistrationNumber",
+          "desc": "원출원등록번호",
+          "note": ""
+        },
+        {
+          "name": "orgAppRegistrationType",
+          "desc": "원출원등록구분",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignPersonInfo",
+      "name": "인명정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignPersonInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "관련인주소",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "관련인국가",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "individualCorporationType",
+          "desc": "개인법인구분",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "관련인명",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "type",
+          "desc": "관련인종류",
+          "note": ""
+        },
+        {
+          "name": "representativeName",
+          "desc": "대표자명",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "mailNumber",
+          "desc": "우편번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignPriorityInfo",
+      "name": "우선권주장",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignPriorityInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "preferOrgAppCountry",
+          "desc": "선출원국가명",
+          "note": ""
+        },
+        {
+          "name": "preferOrgAppDate",
+          "desc": "선출원일자",
+          "note": ""
+        },
+        {
+          "name": "priorityClaimBasicAppNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityClaimSerialNumber",
+          "desc": "우선권주장일련번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteDesignImageInfo",
+      "name": "이미지정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteDesignImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "updateVersion",
+          "desc": "정정버전",
+          "note": ""
+        },
+        {
+          "name": "amendmentMatters",
+          "desc": "보정사항",
+          "note": ""
+        },
+        {
+          "name": "amendmentMattersStatus",
+          "desc": "보정사항상태",
+          "note": ""
+        },
+        {
+          "name": "designArticleClassification",
+          "desc": "디자인물품분류",
+          "note": ""
+        },
+        {
+          "name": "designApplicationArticle",
+          "desc": "디자인적용물품",
+          "note": ""
+        },
+        {
+          "name": "designDescription",
+          "desc": "디자인설명",
+          "note": ""
+        },
+        {
+          "name": "drawingType",
+          "desc": "도면구분",
+          "note": ""
+        },
+        {
+          "name": "imageContent",
+          "desc": "이미지내용",
+          "note": ""
+        },
+        {
+          "name": "designSerialNumber",
+          "desc": "디자인일련번호",
+          "note": ""
+        },
+        {
+          "name": "designCreatSummary",
+          "desc": "디자인창작요점",
+          "note": ""
+        },
+        {
+          "name": "documentOpeningPublicType",
+          "desc": "문서공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "unificationDesignSeqNo",
+          "desc": "통합형디자인일련번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteTrademarkBibliographicInfo",
+      "name": "서지",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteTrademarkBibliographicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegDate",
+          "desc": "국제등록일자",
+          "note": ""
+        },
+        {
+          "name": "internationalRegNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "mdAfterfactDesignationDate",
+          "desc": "마드리드사후지정일자",
+          "note": ""
+        },
+        {
+          "name": "openingDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openingNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "orgAppExaminationDemandDate",
+          "desc": "원출원심사청구일자",
+          "note": ""
+        },
+        {
+          "name": "orgAppKind",
+          "desc": "원출원종류",
+          "note": ""
+        },
+        {
+          "name": "orgAppRegistrationDate",
+          "desc": "원출원등록일자",
+          "note": ""
+        },
+        {
+          "name": "orgAppRegistrationNumber",
+          "desc": "원출원등록번호",
+          "note": ""
+        },
+        {
+          "name": "publicationInstitution",
+          "desc": "발행기관",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteNumber",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "gazetteKind",
+          "desc": "공보종류",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "retroactiveType",
+          "desc": "소급구분",
+          "note": ""
+        },
+        {
+          "name": "gazetteTurn",
+          "desc": "공보순번",
+          "note": ""
+        },
+        {
+          "name": "trademarkAppKind",
+          "desc": "상표출원종류",
+          "note": ""
+        },
+        {
+          "name": "trademarkType",
+          "desc": "상표유형",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "amendmentGazzeteTrademarkDesignationGoodsInfo",
+      "name": "지정상품",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "amendmentGazzeteTrademarkDesignationGoodsInfoList",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designationGoodsClassCode",
+          "desc": "지정상품분류코드",
+          "note": ""
+        },
+        {
+          "name": "designationGoodsName",
+          "desc": "지정상품명",
+          "note": ""
+        },
+        {
+          "name": "niceClassificationType",
+          "desc": "니스분류구분",
+          "note": ""
+        },
+        {
+          "name": "openingPublicType",
+          "desc": "공개공고구분",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "gazetteTurn",
+          "desc": "공보순번",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

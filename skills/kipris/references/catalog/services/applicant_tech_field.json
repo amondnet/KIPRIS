@@ -1,0 +1,128 @@
+{
+  "id": "applicant_tech_field",
+  "name": "출원인 기술분야",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "applicantTechInfo",
+      "name": "출원인 권리별 기술분야 정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "rightType",
+          "desc": "권리구분코드",
+          "note": "(공백:ALL, 1:특허, 2:실용신안, 3:디자인, 4:상표)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicantTechInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "rightType",
+          "desc": "권리구분",
+          "note": ""
+        },
+        {
+          "name": "rightTypeName",
+          "desc": "권리구분명",
+          "note": ""
+        },
+        {
+          "name": "serialNumber",
+          "desc": "일련번호",
+          "note": ""
+        },
+        {
+          "name": "classificationSerialNumber",
+          "desc": "분류일련번호",
+          "note": ""
+        },
+        {
+          "name": "classificationType",
+          "desc": "분류구분",
+          "note": ""
+        },
+        {
+          "name": "classificationCode",
+          "desc": "분류코드",
+          "note": ""
+        },
+        {
+          "name": "version",
+          "desc": "버전",
+          "note": ""
+        },
+        {
+          "name": "niceCode",
+          "desc": "NICE코드",
+          "note": ""
+        },
+        {
+          "name": "applicationCaseCount",
+          "desc": "출원건수",
+          "note": ""
+        },
+        {
+          "name": "registrationCaseCount",
+          "desc": "등록건수",
+          "note": ""
+        },
+        {
+          "name": "terminationCaseCount",
+          "desc": "소멸건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 특허고객번호1|특허고객번호2)"
+        }
+      ]
+    }
+  ]
+}

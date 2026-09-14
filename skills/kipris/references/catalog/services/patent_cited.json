@@ -1,0 +1,112 @@
+{
+  "id": "patent_cited",
+  "name": "특허·실용 피인용문헌",
+  "service_path": "CitingService",
+  "path_confidence": "unknown",
+  "gateway": "openapi",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "citingInfo",
+      "name": "피인용문헌",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "standardCitationApplicationNumber",
+          "desc": "출원번호",
+          "note": "(선행기술)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "citingInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationApplicationNumber",
+          "desc": "출원번호",
+          "note": "(선행기술)"
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": "(피인용문헌, 후행기술)"
+        },
+        {
+          "name": "StandardStatusCode",
+          "desc": "표준화처리상태코드",
+          "note": "(20001-표준화, 20002-비특허문헌)"
+        },
+        {
+          "name": "StandardStatusCodeName",
+          "desc": "표준화처리상태코드",
+          "note": "(20001-표준화, 20002-비특허문헌)"
+        },
+        {
+          "name": "CitationLiteratureTypeCode",
+          "desc": "인용문헌구분코드",
+          "note": "(E0801-발송문서, E0802-선행기술조사보고서, E0805-선행기술조사문헌, E0806-출원서인용문헌이력정보)"
+        },
+        {
+          "name": "CitationLiteratureTypeCodeName",
+          "desc": "인용문헌구분코드명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "standardCitationApplicationNumber",
+          "desc": "출원번호",
+          "note": "(선행기술)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

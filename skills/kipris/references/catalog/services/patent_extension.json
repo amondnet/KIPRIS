@@ -1,0 +1,201 @@
+{
+  "id": "patent_extension",
+  "name": "특허권 존속기간 연장등록 공보",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "extensionPatentGazetteInfo",
+      "name": "기본정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "extensionPatentGazetteInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "issueDate",
+          "desc": "발간일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteKind",
+          "desc": "공보종류",
+          "note": ""
+        },
+        {
+          "name": "extensionApplicationNumber",
+          "desc": "연장출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "extensionPatentGazetteAdditionalInfo",
+      "name": "부가정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "extensionPatentGazetteAdditionalInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationnumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "PermissionSerialnumber",
+          "desc": "허가일련번호",
+          "note": ""
+        },
+        {
+          "name": "permissionDate",
+          "desc": "허가일자",
+          "note": ""
+        },
+        {
+          "name": "permissionContent",
+          "desc": "허가내용",
+          "note": ""
+        },
+        {
+          "name": "compoundName",
+          "desc": "화합물명칭",
+          "note": ""
+        },
+        {
+          "name": "articleName",
+          "desc": "물품명칭",
+          "note": "한글"
+        },
+        {
+          "name": "articleEnglishName",
+          "desc": "물품명칭",
+          "note": "영문"
+        },
+        {
+          "name": "merchandiseName",
+          "desc": "상품명칭",
+          "note": "한글"
+        },
+        {
+          "name": "merchandiseEnglishName",
+          "desc": "상품명칭",
+          "note": "영문"
+        },
+        {
+          "name": "usageContent",
+          "desc": "용도내용",
+          "note": "한글"
+        },
+        {
+          "name": "usageEnglishContent",
+          "desc": "용도내용",
+          "note": "영문"
+        }
+      ]
+    },
+    {
+      "id": "extensionPatentGazettePdfInfo",
+      "name": "공보전문PDF",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "pdfInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "gazetteKind",
+          "desc": "공보종류",
+          "note": ""
+        },
+        {
+          "name": "sendNumber",
+          "desc": "발송번호",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "filePath",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "id": "patent_sequence",
+  "name": "특허 염기서열",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "biotechApplicationReceiptInfo",
+      "name": "생명공학출원접수",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "biotechApplicationReceiptInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingItemCount",
+          "desc": "아미노산염기서열항목수",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingDrawupProgramName",
+          "desc": "아미노산염기서열작성프로그램",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "biotechSeqlistingInfo",
+      "name": "생명공학염기서열",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "biotechSeqlistingInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingNumber",
+          "desc": "아미노산염기서열번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingLength",
+          "desc": "아미노산염기서열길이",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingTypeCode",
+          "desc": "아미노산염기서열유형코드",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingOrganismSeedName",
+          "desc": "아미노산염기서열생물종명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "biotechSeqlistingFeatureInfo",
+      "name": "생명공학염기서열특징",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "biotechSeqlistingFeatureInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingNumber",
+          "desc": "아미노산염기서열번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingFeatureSerialNumber",
+          "desc": "아미노산염기서열특징일련번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingFeatureName",
+          "desc": "아미노산염기서열특징명칭",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingFeatureLocationContent",
+          "desc": "아미노산염기서열특징위치내용",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingFeatureEtceteraContent",
+          "desc": "아미노산염기서열특징기타내용",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "biotechSeqlistingOriginaltextInfo",
+      "name": "생명공학염기서열원문",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "biotechSeqlistingOriginaltextInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingNumber",
+          "desc": "아미노산염기서열번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingContentSerialNumber",
+          "desc": "아미노산염기서열일련번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingContent",
+          "desc": "아미노산염기서열내용",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "biotechJournalInfo",
+      "name": "생명공학간행물",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "biotechJournalInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingNumber",
+          "desc": "아미노산염기서열번호",
+          "note": ""
+        },
+        {
+          "name": "journalSerialNumber",
+          "desc": "간행물일련번호",
+          "note": ""
+        },
+        {
+          "name": "journalTitle",
+          "desc": "간행물제목",
+          "note": ""
+        },
+        {
+          "name": "journalName",
+          "desc": "간행물명",
+          "note": ""
+        },
+        {
+          "name": "journalAuthorName",
+          "desc": "간행물저자성명",
+          "note": ""
+        },
+        {
+          "name": "journalVolumeCount",
+          "desc": "간행물권수",
+          "note": ""
+        },
+        {
+          "name": "journalIssueNumber",
+          "desc": "간행물발간번호",
+          "note": ""
+        },
+        {
+          "name": "journalIssueDate",
+          "desc": "간행물발간일자",
+          "note": ""
+        },
+        {
+          "name": "journalPageScopeContent",
+          "desc": "간행물페이지범위내용",
+          "note": ""
+        },
+        {
+          "name": "databaseRegistrationNumber",
+          "desc": "DB등록번호",
+          "note": ""
+        },
+        {
+          "name": "databaseRegistrationDate",
+          "desc": "DB등록일자",
+          "note": ""
+        },
+        {
+          "name": "citationNumber",
+          "desc": "인용문헌번호",
+          "note": ""
+        },
+        {
+          "name": "citationApplicationDate",
+          "desc": "인용문헌출원일자",
+          "note": ""
+        },
+        {
+          "name": "citationOpeningDate",
+          "desc": "인용문헌공개일자",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingFeatureLocationContent",
+          "desc": "아미노산염기서열특징위치내용",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1-생명공학출원접수, oper2-생명공학염기서열, oper3-생명공학염기서열특징, oper4-생명공학염기서열원문, oper5-생명공학간행물, oper6-생명공학염기서열원문가공))"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": "biotechSeqlistingOriginaltextManufactureInfo",
+      "name": "생명공학염기서열원문가공",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "biotechSeqlistingOriginaltextManufactureInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingNumber",
+          "desc": "아미노산염기서열일련번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingContentSerialNumber",
+          "desc": "아미노산염기서열내용일련번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingContentRelationSerialNumber",
+          "desc": "아미노산염기서열내용관련일련번호",
+          "note": ""
+        },
+        {
+          "name": "aminoSeqlistingContent",
+          "desc": "아미노산염기서열내용",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

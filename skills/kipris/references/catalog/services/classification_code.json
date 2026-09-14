@@ -1,0 +1,307 @@
+{
+  "id": "classification_code",
+  "name": "분류코드",
+  "service_path": "ClassificationService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "searchIPCInfo",
+      "name": "IPC코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ipcNumber",
+          "desc": "IPC코드/단어",
+          "note": "(IPC 코드 및 단어)"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "getSearchIPCInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "indexNo",
+          "desc": "인덱스번호",
+          "note": ""
+        },
+        {
+          "name": "ipcNumber",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "korDescription",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "engDescription",
+          "desc": "영어설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchViennaCodeInfo",
+      "name": "도형코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchWord",
+          "desc": "검색단어",
+          "note": "(Vienna코드)"
+        },
+        {
+          "name": "sectionInfo",
+          "desc": "섹션번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "getSearchViennaCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "indexNumber",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "viennaCode",
+          "desc": "비엔나코드",
+          "note": ""
+        },
+        {
+          "name": "viennaCodeDescription",
+          "desc": "비엔나코드설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchDesignCodeInfo",
+      "name": "디자인분류검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "designNumber",
+          "desc": "디자인분류코드/물품명칭",
+          "note": ""
+        },
+        {
+          "name": "startNumber",
+          "desc": "시작번호",
+          "note": "(결과 출력 대상의 번호를 입력하여 해당 번홉부터 출력)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "getSearchDesignCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "designNumber",
+          "desc": "디자인코드",
+          "note": ""
+        },
+        {
+          "name": "designName",
+          "desc": "디자인물품명칭",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchEPCInfo",
+      "name": "EPC코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "codeNumber",
+          "desc": "EPC코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "GetSearchEPCInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "epcNumber",
+          "desc": "EPC코드",
+          "note": ""
+        },
+        {
+          "name": "korDescription",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "engDescription",
+          "desc": "영문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchUPCInfo",
+      "name": "UPC코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "codeNumber",
+          "desc": "UPC코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "GetSearchUPCInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "upcNumber",
+          "desc": "UPC코드",
+          "note": ""
+        },
+        {
+          "name": "korDescription",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "engDescription",
+          "desc": "영문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchFIInfo",
+      "name": "FI코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "codeNumber",
+          "desc": "FI코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "GetSearchFIInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "fiCode",
+          "desc": "FI코드",
+          "note": ""
+        },
+        {
+          "name": "korDescription",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "engDescription",
+          "desc": "영문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchFTERMInfo",
+      "name": "FTERM코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "codeNumber",
+          "desc": "FTERM코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "GetSearchFTERMInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ftermCode",
+          "desc": "FTERM코드",
+          "note": ""
+        },
+        {
+          "name": "korDescription",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "engDescription",
+          "desc": "영문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "searchCPCInfo",
+      "name": "CPC코드검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "codeNumber",
+          "desc": "CPC코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "getSearchCPCInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "CPC코드",
+          "note": ""
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "영문설명",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

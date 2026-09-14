@@ -1,0 +1,123 @@
+{
+  "id": "design_admin_history",
+  "name": "디자인 행정처리 이력",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "relatedDocsonfileInfo",
+      "name": "통합이력정보(디자인)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "relateddocsonfileInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "documentNumber",
+          "desc": "접수발송번호",
+          "note": ""
+        },
+        {
+          "name": "documentDate",
+          "desc": "접수발송일자",
+          "note": ""
+        },
+        {
+          "name": "documentTitle",
+          "desc": "접수발송서류명",
+          "note": ""
+        },
+        {
+          "name": "documentTitleEng",
+          "desc": "접수발송서류명",
+          "note": "(영문)"
+        },
+        {
+          "name": "status",
+          "desc": "처리상태",
+          "note": ""
+        },
+        {
+          "name": "statusEng",
+          "desc": "처리상태",
+          "note": "(영문)"
+        },
+        {
+          "name": "step",
+          "desc": "단계",
+          "note": "(출원, 심판, 등록)"
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1 : 통합이력정보(디자인))"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": "※ 입력방식(ex : 20160713)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    }
+  ]
+}

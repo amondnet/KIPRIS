@@ -1,0 +1,143 @@
+{
+  "id": "multi_citation",
+  "name": "다인용 선행문헌",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "multiCitationInfo",
+      "name": "다인용 선행문헌 조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "start_citationDate",
+          "desc": "참증시작일자",
+          "note": "(필수)"
+        },
+        {
+          "name": "end_citationDate",
+          "desc": "참증종료일자",
+          "note": "(필수)"
+        },
+        {
+          "name": "ipcCode",
+          "desc": "IPC코드",
+          "note": "(필수, LIKE검색지원)"
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "AU-오스트레일리아, CA-캐나다, CH-스위스, CN-중국, DE-독일, EP-유럽특허청(EPO), FR-프랑스, GB-영국, JP-일본, KR-대한민국, PJ-일본영문초록, PL-폴란드, RU-러시아, US-미국, WO-WIPO"
+        },
+        {
+          "name": "documentNumber",
+          "desc": "출원번호/문헌번호",
+          "note": "(국내)출원번호, (해외)문헌번호"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "multiCitationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "documentNumber",
+          "desc": "출원번호/문헌번호",
+          "note": "(국내)출원번호, (해외)문헌번호"
+        },
+        {
+          "name": "citationDate",
+          "desc": "참증일자",
+          "note": ""
+        },
+        {
+          "name": "ipcCode",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "citationCount",
+          "desc": "참증횟수",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "publicationDate",
+          "desc": "공고일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공고번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "변동리스트",
+          "note": "(국가코드,번호,참증일자,IPC) ※번호-(국내)출원번호, (해외)문헌번호"
+        }
+      ]
+    }
+  ]
+}

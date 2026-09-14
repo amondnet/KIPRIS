@@ -1,0 +1,463 @@
+{
+  "version": "1",
+  "generated_at": "2026-09-14T08:10:50Z",
+  "source": {
+    "repo": "nuri428/kipris_skill",
+    "license": "MIT",
+    "commit": "d8b929b5bace5c0985388a99d93e92c221686233",
+    "note": "Derived from KIPRIS Plus Open API specifications documented in the source repo."
+  },
+  "gateways": {
+    "openapi": {
+      "base": "http://plus.kipris.or.kr/openapi/rest",
+      "auth_param": "accessKey"
+    },
+    "kipo": {
+      "base": "http://plus.kipris.or.kr/kipo-api/kipi",
+      "auth_param": "ServiceKey"
+    }
+  },
+  "services": [
+    {
+      "id": "amendment_gazette",
+      "name": "정정공보",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 24
+    },
+    {
+      "id": "applicant_corporation",
+      "name": "출원인 법인",
+      "service_path": "CorpBsApplicantService",
+      "path_confidence": "unknown",
+      "gateway": "openapi",
+      "auth_param": null,
+      "operation_count": 5
+    },
+    {
+      "id": "applicant_name_history",
+      "name": "출원인 명칭 변동 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "applicant_tech_field",
+      "name": "출원인 기술분야",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "claim_history",
+      "name": "청구항 변동 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "classification_code",
+      "name": "분류코드",
+      "service_path": "ClassificationService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 8
+    },
+    {
+      "id": "contest_idea",
+      "name": "공모전 아이디어",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 1
+    },
+    {
+      "id": "design",
+      "name": "디자인 공보",
+      "service_path": "designInfoSearchService",
+      "path_confidence": "portal",
+      "gateway": "kipo",
+      "auth_param": "ServiceKey",
+      "operation_count": 51
+    },
+    {
+      "id": "design_admin_history",
+      "name": "디자인 행정처리 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "design_classification_history",
+      "name": "디자인 분류코드 변동 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "design_map",
+      "name": "디자인맵 형태분류",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "foreign_design",
+      "name": "해외디자인",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 31
+    },
+    {
+      "id": "foreign_patent",
+      "name": "해외특허",
+      "service_path": "ForeignPatentAdvencedSearchService",
+      "path_confidence": "verified",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 81
+    },
+    {
+      "id": "foreign_trademark",
+      "name": "해외상표",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 22
+    },
+    {
+      "id": "government_patent",
+      "name": "국유특허",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "inn_medicine",
+      "name": "의약품 국제일반명칭",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "internet_tech_notice",
+      "name": "인터넷 기술공지",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "ipbiz_hanaro",
+      "name": "IP-Biz 하나로 서비스 기술분류",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 1
+    },
+    {
+      "id": "japan_patent_alloy",
+      "name": "일본 특허 합금조성비",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 5
+    },
+    {
+      "id": "kpa_english_abstract",
+      "name": "한국특허영문초록(KPA)",
+      "service_path": "KpaGeneralSearchService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 26
+    },
+    {
+      "id": "legal_status",
+      "name": "법적 상태 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 5
+    },
+    {
+      "id": "machine_translation_abstract",
+      "name": "기계번역용 국문초록",
+      "service_path": "KorAbstractInfoService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 1
+    },
+    {
+      "id": "multi_citation",
+      "name": "다인용 선행문헌",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "opinion_notice",
+      "name": "의견제출통지서",
+      "service_path": "IntermediateDocumentOPService",
+      "path_confidence": "unknown",
+      "gateway": "openapi",
+      "auth_param": null,
+      "operation_count": 12
+    },
+    {
+      "id": "patent_admin_history",
+      "name": "특허·실용 행정처리 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "patent_alloy",
+      "name": "특허 합금조성비",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "patent_citation",
+      "name": "특허·실용 인용문헌",
+      "service_path": "CitationService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 5
+    },
+    {
+      "id": "patent_cited",
+      "name": "특허·실용 피인용문헌",
+      "service_path": "CitingService",
+      "path_confidence": "unknown",
+      "gateway": "openapi",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "patent_classification_history",
+      "name": "특허·실용 분류코드 변동 이력",
+      "service_path": "PatentClassificationInfoService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 3
+    },
+    {
+      "id": "patent_cn_kr_corpus",
+      "name": "특허 중한 코퍼스",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 1
+    },
+    {
+      "id": "patent_extension",
+      "name": "특허권 존속기간 연장등록 공보",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 4
+    },
+    {
+      "id": "patent_family",
+      "name": "특허 패밀리",
+      "service_path": "patFamInfoSearchService",
+      "path_confidence": "unknown",
+      "gateway": "kipo",
+      "auth_param": null,
+      "operation_count": 5
+    },
+    {
+      "id": "patent_microorganism",
+      "name": "특허 기탁 미생물",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 4
+    },
+    {
+      "id": "patent_notice_deadline",
+      "name": "특허·실용 통지서 마감기한",
+      "service_path": "DueDateService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 6
+    },
+    {
+      "id": "patent_sequence",
+      "name": "특허 염기서열",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 7
+    },
+    {
+      "id": "patent_utility",
+      "name": "특허·실용 공개·등록공보",
+      "service_path": "patUtiModInfoSearchSevice",
+      "path_confidence": "verified",
+      "gateway": "both",
+      "auth_param": null,
+      "operation_count": 61
+    },
+    {
+      "id": "registration",
+      "name": "등록사항",
+      "service_path": "RegistrationService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 12
+    },
+    {
+      "id": "registration_decision",
+      "name": "등록결정서",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 9
+    },
+    {
+      "id": "rejection_decision",
+      "name": "거절결정서",
+      "service_path": "IntermediateDocumentREService",
+      "path_confidence": "unknown",
+      "gateway": "openapi",
+      "auth_param": null,
+      "operation_count": 12
+    },
+    {
+      "id": "representative_applicant",
+      "name": "대표 출원인",
+      "service_path": "RpstApplicantService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 4
+    },
+    {
+      "id": "right_holder_history",
+      "name": "권리자 변동 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "thesaurus",
+      "name": "시소러스",
+      "service_path": "ThesaurusInfoService",
+      "path_confidence": "portal",
+      "gateway": "openapi",
+      "auth_param": "accessKey",
+      "operation_count": 2
+    },
+    {
+      "id": "tm5_indicator",
+      "name": "TM5 공통상태 지표",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "trademark",
+      "name": "상표 출원 속보",
+      "service_path": "trademarkInfoSearchService",
+      "path_confidence": "portal",
+      "gateway": "kipo",
+      "auth_param": "ServiceKey",
+      "operation_count": 54
+    },
+    {
+      "id": "trademark_admin_history",
+      "name": "상표 행정처리 이력",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "trademark_classification_history",
+      "name": "상표 분류코드 변동 이력",
+      "service_path": "TradeMarkClassificationInfoService",
+      "path_confidence": "unknown",
+      "gateway": "openapi",
+      "auth_param": null,
+      "operation_count": 2
+    },
+    {
+      "id": "trademark_origin",
+      "name": "상표 원산지 명칭",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    },
+    {
+      "id": "trial",
+      "name": "심판사항",
+      "service_path": "judgmentInfoSearchService",
+      "path_confidence": "portal",
+      "gateway": "kipo",
+      "auth_param": "ServiceKey",
+      "operation_count": 31
+    },
+    {
+      "id": "variety_protection",
+      "name": "품종보호권 등록 식물 명칭",
+      "service_path": null,
+      "path_confidence": "unknown",
+      "gateway": "unknown",
+      "auth_param": null,
+      "operation_count": 3
+    }
+  ]
+}

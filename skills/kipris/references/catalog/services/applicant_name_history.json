@@ -1,0 +1,162 @@
+{
+  "id": "applicant_name_history",
+  "name": "출원인 명칭 변동 이력",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "applicantBasicInfo",
+      "name": "기본정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicantBasicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerRegistrationDate",
+          "desc": "특허고객등록일자",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNameKR",
+          "desc": "특허고객명",
+          "note": "한글"
+        },
+        {
+          "name": "patentCustomerNameEN",
+          "desc": "특허고객명",
+          "note": "(영문)"
+        },
+        {
+          "name": "businessRegistrationNumber",
+          "desc": "사업자등록번호",
+          "note": ""
+        },
+        {
+          "name": "corporationNumber",
+          "desc": "법인번호",
+          "note": ""
+        },
+        {
+          "name": "corporationTypeCode",
+          "desc": "개인법인구분코드",
+          "note": ""
+        },
+        {
+          "name": "corporationTypeCodeName",
+          "desc": "개인법인구분코드명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantNmChHistoryInfo",
+      "name": "이력정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicantNmChHistoryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "changeHistoryOrder",
+          "desc": "변경이력순서",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNumber",
+          "desc": "특허고객번호",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호",
+          "note": ""
+        },
+        {
+          "name": "changeDate",
+          "desc": "변경일자",
+          "note": ""
+        },
+        {
+          "name": "patentCustomerNameKR",
+          "desc": "특허고객명",
+          "note": "한글"
+        },
+        {
+          "name": "patentCustomerNameEN",
+          "desc": "특허고객명",
+          "note": "(영문)"
+        },
+        {
+          "name": "krNameChangeYN",
+          "desc": "국문명칭변경여부",
+          "note": ""
+        },
+        {
+          "name": "enNameChangeYN",
+          "desc": "영문명칭변경여부",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 특허고객번호1|특허고객번호2)"
+        }
+      ]
+    }
+  ]
+}

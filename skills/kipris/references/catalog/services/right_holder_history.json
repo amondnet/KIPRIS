@@ -1,0 +1,127 @@
+{
+  "id": "right_holder_history",
+  "name": "권리자 변동 이력",
+  "service_path": null,
+  "path_confidence": "unknown",
+  "gateway": "unknown",
+  "auth_param": null,
+  "operations": [
+    {
+      "id": "rightHolderInfo",
+      "name": "권리자변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "rightHolderInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "pertinentPartition",
+          "desc": "해당란",
+          "note": ""
+        },
+        {
+          "name": "rankNumber",
+          "desc": "순위번호",
+          "note": ""
+        },
+        {
+          "name": "registrationDate",
+          "desc": "등록일자",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorSerialNumber",
+          "desc": "순위관련자일련번호",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorNumber",
+          "desc": "순관련자번호(특허고객번호)",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorType",
+          "desc": "순위관련자종류",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorName",
+          "desc": "순위관련자이름",
+          "note": ""
+        },
+        {
+          "name": "rankCorrelatorAddress",
+          "desc": "순위관련자주소",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "rightHolderTransferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "rightHolderTransferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "변동일자",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "등록번호리스트",
+          "note": "(ex : 등록번호1|등록번호2)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

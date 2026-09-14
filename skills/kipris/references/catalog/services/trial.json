@@ -1,0 +1,3538 @@
+{
+  "id": "trial",
+  "name": "심판사항",
+  "service_path": "judgmentInfoSearchService",
+  "path_confidence": "portal",
+  "gateway": "kipo",
+  "auth_param": "ServiceKey",
+  "operations": [
+    {
+      "id": "getWordSearch",
+      "name": "단어",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "searchString",
+          "desc": "검색어",
+          "note": ""
+        },
+        {
+          "name": "searchYear",
+          "desc": "검색년도범위",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        },
+        {
+          "name": "count",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getNumberSearch",
+      "name": "번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "searchJudhment",
+          "desc": "심판분류",
+          "note": "(100 0=전체)"
+        },
+        {
+          "name": "searchNumber",
+          "desc": "검색번호",
+          "note": ""
+        },
+        {
+          "name": "searchYear",
+          "desc": "검색년도범위",
+          "note": "(2009 0=전체)"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "count",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getAdvancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "검색어",
+          "note": ""
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": "(JM)"
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": "(JG)"
+        },
+        {
+          "name": "trialNumberNm",
+          "desc": "심판번호문자",
+          "note": "(JC)"
+        },
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": "(RN)"
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호/국제등록번호",
+          "note": "(AN)"
+        },
+        {
+          "name": "trialRequestDate",
+          "desc": "심판청구일자",
+          "note": "(RD)"
+        },
+        {
+          "name": "trialDate",
+          "desc": "심결일자",
+          "note": "(DD)"
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": "(DP)"
+        },
+        {
+          "name": "plaintiffAgent",
+          "desc": "청구대리인",
+          "note": "(DG)"
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": "(PP)"
+        },
+        {
+          "name": "defendantAgent",
+          "desc": "피청구대리인",
+          "note": "(PG)"
+        },
+        {
+          "name": "eventindication",
+          "desc": "사건의표시",
+          "note": "(EI)"
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": "(IT)"
+        },
+        {
+          "name": "patent",
+          "desc": "특허",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "practical",
+          "desc": "실용",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "design",
+          "desc": "디자인",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "tradeMark",
+          "desc": "상표",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": "(포함 : true, 미포함 : false)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "Items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialdecisionDateSearchInfo",
+      "name": "심결일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialDate",
+          "desc": "심결일자",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": "(포함 : true, 미포함 : false)?※기본값(default) : true"
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": "(JG:심판번호, JM:심판종류, DP:청구인, IT:발명명칭, AN:출원번호, RN:등록번호, PP:피청구인)?※기본값(default) : JG"
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "Items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        },
+        {
+          "name": "numOfRows",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "pageNo",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "totalCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "freeSearchInfo",
+      "name": "자유검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "검색어",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialDescSearchInfo",
+      "name": "심판종류",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialKind",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialNumberSearchInfo",
+      "name": "심판번호숫자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": "(숫자)"
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialNumberNmSearchInfo",
+      "name": "심판번호문자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumberNm",
+          "desc": "심판번호문자",
+          "note": "(문자)"
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registerNumberSearchInfo",
+      "name": "등록번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationNumberSearchInfo",
+      "name": "출원(국제등록)번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialRequestDateSearchInfo",
+      "name": "심판청구일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialRequestDate",
+          "desc": "심판청구일자",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "plaintiffSearchInfo",
+      "name": "청구인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "plaintiffAgentSearchInfo",
+      "name": "청구대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "plaintiffAgent",
+          "desc": "청구대리인",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "defendantSearchInfo",
+      "name": "피청구인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "defendantAgentSearchInfo",
+      "name": "피청구대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "defendantAgent",
+          "desc": "피청구대리인",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "eventindicationSearchInfo",
+      "name": "사건의 표시",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "eventindication",
+          "desc": "사건의표시",
+          "note": ""
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "titleSearchInfo",
+      "name": "명칭",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": "(IT)"
+        },
+        {
+          "name": "appealCourt",
+          "desc": "항고심판소",
+          "note": ""
+        },
+        {
+          "name": "patentCourt",
+          "desc": "특허법원",
+          "note": ""
+        },
+        {
+          "name": "patentTrial",
+          "desc": "특허심판원",
+          "note": ""
+        },
+        {
+          "name": "summaryCourt",
+          "desc": "심판소",
+          "note": ""
+        },
+        {
+          "name": "supremeCourt",
+          "desc": "대법원",
+          "note": ""
+        },
+        {
+          "name": "exParte",
+          "desc": "결정계",
+          "note": ""
+        },
+        {
+          "name": "interParties",
+          "desc": "당사자계",
+          "note": ""
+        },
+        {
+          "name": "docsStart",
+          "desc": "페이지번호",
+          "note": "(검색 페이지 번호)"
+        },
+        {
+          "name": "docsCount",
+          "desc": "페이지당건수",
+          "note": "(기본 : 30, 최대 500)"
+        },
+        {
+          "name": "sortSpec",
+          "desc": "정렬기준",
+          "note": ""
+        },
+        {
+          "name": "descSort",
+          "desc": "정렬방식",
+          "note": "(asc방식 : false, desc방식 : true)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TotalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "TrialInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "trialDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "trialStatus",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "plaintiff",
+          "desc": "청구인",
+          "note": ""
+        },
+        {
+          "name": "title",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDoc",
+          "desc": "심(판)결문",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "defendant",
+          "desc": "피청구인",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getBibliographyDetailInfoSearch",
+      "name": "서지상세정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "bibliographicSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "appealFg",
+          "desc": "상고여부",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "buCd",
+          "desc": "심판부코드",
+          "note": ""
+        },
+        {
+          "name": "cdDesc",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "conclusiveDate",
+          "desc": "심판확정일자",
+          "note": ""
+        },
+        {
+          "name": "conclusiveResultCode",
+          "desc": "심판확정결과",
+          "note": ""
+        },
+        {
+          "name": "conclusiveStatusCode",
+          "desc": "심판확정상태",
+          "note": ""
+        },
+        {
+          "name": "conclusiveTrialDivision",
+          "desc": "확정심결주문내용",
+          "note": ""
+        },
+        {
+          "name": "eventindication",
+          "desc": "사건의표시",
+          "note": ""
+        },
+        {
+          "name": "evtNo",
+          "desc": "사건번호",
+          "note": ""
+        },
+        {
+          "name": "instanceDivision",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "internationalRegisterNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "offcAppealFg",
+          "desc": "청상고여부",
+          "note": ""
+        },
+        {
+          "name": "oppositionDate",
+          "desc": "병합일자",
+          "note": ""
+        },
+        {
+          "name": "oppositionTrialNumber",
+          "desc": "병합심판번호",
+          "note": ""
+        },
+        {
+          "name": "originalTrialNumber",
+          "desc": "원심판번호",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        },
+        {
+          "name": "regReferenceNumber/",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "rightDivisionCode",
+          "desc": "권리종류",
+          "note": ""
+        },
+        {
+          "name": "trialDecision",
+          "desc": "심결주문내용",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionCode",
+          "desc": "심결주문",
+          "note": ""
+        },
+        {
+          "name": "trialDecisionDate",
+          "desc": "심결일자",
+          "note": ""
+        },
+        {
+          "name": "trialFlag",
+          "desc": "",
+          "note": "※해당 데이터 사용금지"
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "trialNumberNm",
+          "desc": "심판문자번호",
+          "note": ""
+        },
+        {
+          "name": "trialRequestCount",
+          "desc": "심판청구항수",
+          "note": ""
+        },
+        {
+          "name": "trialRequestDate",
+          "desc": "심판청구일자",
+          "note": ""
+        },
+        {
+          "name": "trialRequestPurpose",
+          "desc": "청구의취지",
+          "note": ""
+        },
+        {
+          "name": "trialStatusCode",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "claimAgentTypeArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "claimAgentType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "청구대리인주소",
+          "note": ""
+        },
+        {
+          "name": "agentCode",
+          "desc": "청구대리인번호",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "청구대리인국가",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "청구대리인명",
+          "note": ""
+        },
+        {
+          "name": "claimTypeArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "claimType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "청구인주소",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "청구인국가",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "청구인명",
+          "note": ""
+        },
+        {
+          "name": "defendantAgentTypeArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "defendantAgentType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "피청구대리인주소",
+          "note": ""
+        },
+        {
+          "name": "agentCode",
+          "desc": "피청구대리인번호",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "피청구대리인국가",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "피청구대리인명",
+          "note": ""
+        },
+        {
+          "name": "defendantTypeArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "defendantType",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "피청구인주소",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "피청구인국가",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "피청구인명",
+          "note": ""
+        },
+        {
+          "name": "legalStatusInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "legalStatusInfos",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "documentsNumber",
+          "desc": "접수서류명/발송서류명",
+          "note": ""
+        },
+        {
+          "name": "receiptDate",
+          "desc": "접수일자/발송일자",
+          "note": ""
+        },
+        {
+          "name": "receiptNumber",
+          "desc": "접수번호/발송번호",
+          "note": ""
+        },
+        {
+          "name": "status",
+          "desc": "서류처리상태",
+          "note": ""
+        },
+        {
+          "name": "relatedTrialNumberArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "relatedTrialNumber",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "specifyCtegoryCodeInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "specifyCtegoryCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "지정분류코드",
+          "note": ""
+        },
+        {
+          "name": "specifyCtegoryCodeInfoArray",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "supplementaryDecisionInfo",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialBibliographicSummaryInfo",
+      "name": "서지요약정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "TrialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "trialBibliographicSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "TrialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "TrialTypeCodeName",
+          "desc": "심판종류",
+          "note": ""
+        },
+        {
+          "name": "RightTypeCodeName",
+          "desc": "권리종류",
+          "note": ""
+        },
+        {
+          "name": "TrialStatusCodeName",
+          "desc": "심판상태",
+          "note": ""
+        },
+        {
+          "name": "EventIndicationContent",
+          "desc": "사건의표시",
+          "note": ""
+        },
+        {
+          "name": "TrialDemandDate",
+          "desc": "심판청구일자",
+          "note": ""
+        },
+        {
+          "name": "TrialSubCode",
+          "desc": "심판부코드",
+          "note": ""
+        },
+        {
+          "name": "DemandObject",
+          "desc": "청구의취지",
+          "note": ""
+        },
+        {
+          "name": "TrialdecisionPrincipleclauseCodeName",
+          "desc": "심결주문",
+          "note": ""
+        },
+        {
+          "name": "TrialdecisionDate",
+          "desc": "심결일자",
+          "note": ""
+        },
+        {
+          "name": "TrialConfirmationStatusCodeName",
+          "desc": "심판확정상태",
+          "note": ""
+        },
+        {
+          "name": "TrialConfirmationDate",
+          "desc": "심판확정일자",
+          "note": ""
+        },
+        {
+          "name": "ConfirmationResultCodeName",
+          "desc": "심판확정결과",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "appReferenceNumber",
+          "desc": "출원참조번호",
+          "note": ""
+        },
+        {
+          "name": "RegistrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "RegReferenceNumber",
+          "desc": "등록참조번호",
+          "note": ""
+        },
+        {
+          "name": "Titleofinvention",
+          "desc": "발명의명칭/물품명칭/상표명칭",
+          "note": ""
+        },
+        {
+          "name": "OriginalTrialNumber",
+          "desc": "원심판번호",
+          "note": ""
+        },
+        {
+          "name": "EventNumber",
+          "desc": "사건번호",
+          "note": ""
+        },
+        {
+          "name": "AppealtothesupremecourtYesorno",
+          "desc": "상고여부",
+          "note": ""
+        },
+        {
+          "name": "OfficeAppealtothesupremecourtYesorno",
+          "desc": "청상고여부",
+          "note": ""
+        },
+        {
+          "name": "TrialdecisionPrincipleclauseContent",
+          "desc": "심결주문내용",
+          "note": ""
+        },
+        {
+          "name": "ConfirmationTrialdecisionPrincipleclauseContent",
+          "desc": "확정심결주문내용",
+          "note": ""
+        },
+        {
+          "name": "AnnexationTrialNumber",
+          "desc": "병합심판번호",
+          "note": ""
+        },
+        {
+          "name": "AnnexationDate",
+          "desc": "병합일자",
+          "note": ""
+        },
+        {
+          "name": "TrialNumberName",
+          "desc": "심판번호문자",
+          "note": ""
+        },
+        {
+          "name": "TrialgradeType",
+          "desc": "심판구분",
+          "note": "심급구분"
+        },
+        {
+          "name": "TotalPetitionclauseCount",
+          "desc": "총청구항수",
+          "note": ""
+        },
+        {
+          "name": "InternationalRegistrationNumber",
+          "desc": "국제등록번호",
+          "note": ""
+        },
+        {
+          "name": "TrialcourtdecisionFilePath",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialHistoryInfo",
+      "name": "심판이력사항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "TrialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "trialHistoryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ReceiptSendNumber",
+          "desc": "접수번호/발송번호",
+          "note": ""
+        },
+        {
+          "name": "ReceiptSendDocumentName",
+          "desc": "접수서류명/발송서류명",
+          "note": ""
+        },
+        {
+          "name": "ReceiptSendDate",
+          "desc": "접수일자/발송일자",
+          "note": ""
+        },
+        {
+          "name": "ProcessStatusCodeName",
+          "desc": "서류처리상태",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialRelatedTrialNumberInfo",
+      "name": "관련심판번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialRelatedTrialNumberInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialSpecifyCtegoryCodeInfo",
+      "name": "지정분류코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialSpecifyCtegoryCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "지정분류코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialPlaintiffInfo",
+      "name": "청구인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialPlaintiffInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "청구인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "청구인주소",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "청구인국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialPlaintiffAgentInfo",
+      "name": "청구대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialPlaintiffAgentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "청구대리인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "청구대리인주소",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "청구대리인국가",
+          "note": ""
+        },
+        {
+          "name": "agentCode",
+          "desc": "청구대리인번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialDefendantInfo",
+      "name": "피청구인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialDefendantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "피청구인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "피청구인주소",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "피청구인국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialDefendantAgentInfo",
+      "name": "피청구대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialDefendantAgentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "피청구대리인명",
+          "note": ""
+        },
+        {
+          "name": "address",
+          "desc": "피청구대리인주소",
+          "note": ""
+        },
+        {
+          "name": "country",
+          "desc": "피청구대리인국가",
+          "note": ""
+        },
+        {
+          "name": "agentCode",
+          "desc": "피청구대리인번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getChangeInfoSearch",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "date",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": []
+    },
+    {
+      "id": "trialTransferInfo",
+      "name": "변동정보2",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "searchType",
+          "desc": "검색코드",
+          "note": "(BIB-서지, ADM-심판이력, DP-청구인/피청구인, PP-청구대리인/피청구대리인, TDC-심판결문, TDCDEL-심판결문삭제)"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": "※입력방식(ex : 20160713)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "trialTransferInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "심판번호리스트",
+          "note": "(ex : 심판번호1|심판번호2)"
+        }
+      ]
+    },
+    {
+      "id": "getJudDocumentInfoSearch",
+      "name": "심판(결)문",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "Item",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "파일종류",
+          "note": ""
+        },
+        {
+          "name": "openYN",
+          "desc": "공개여부",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialSupplementaryDecisionInfo",
+      "name": "경정결정문",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "trialSupplementaryDecisionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        },
+        {
+          "name": "fileName",
+          "desc": "파일명",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "파일종류",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "trialFullTextCheckInfo",
+      "name": "모든 전문 유무",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "trialNumber",
+          "desc": "심판번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "trialFullTextCheckInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "judgmentDocumentCheckResult",
+          "desc": "심판결문유무",
+          "note": "(있음:Y, 없음:N)"
+        },
+        {
+          "name": "supplementaryDecisionCheckResult",
+          "desc": "경정결정문유무",
+          "note": "(있음:Y, 없음:N)"
+        }
+      ]
+    }
+  ]
+}

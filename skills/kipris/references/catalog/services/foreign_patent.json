@@ -1,0 +1,8279 @@
+{
+  "id": "foreign_patent",
+  "name": "해외특허",
+  "service_path": "ForeignPatentAdvencedSearchService",
+  "path_confidence": "verified",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "wordSearch",
+      "name": "단어",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "searchWord",
+          "desc": "검색단어",
+          "note": ""
+        },
+        {
+          "name": "searchWordRange",
+          "desc": "검색기간",
+          "note": ""
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "numberSearch",
+      "name": "번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "searchNumber",
+          "desc": "검색번호",
+          "note": ""
+        },
+        {
+          "name": "searchNumberKind",
+          "desc": "검색번호종류",
+          "note": ""
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "advancedSearch",
+      "name": "전체검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "abstracts",
+          "desc": "초록",
+          "note": "AB"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "claimExtend",
+          "desc": "청구범위",
+          "note": "CL"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "detailsDescription",
+          "desc": "상세설명",
+          "note": "DC"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": "KW"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명(고안)의명칭",
+          "note": "TL"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "OD"
+        },
+        {
+          "name": "openNo",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "otherRef",
+          "desc": "-",
+          "note": "미사용"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "RD"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "RN"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "usPatentDocument",
+          "desc": "U.S.PatentDocument",
+          "note": "UR"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "freeSearch",
+      "name": "자유검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "free",
+          "desc": "자유검색",
+          "note": "(자유)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ipcSearch",
+      "name": "IPC",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "(ipc)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "upcSearch",
+      "name": "USCD",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fiSearch",
+      "name": "FI",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "(fi)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ftermSearch",
+      "name": "F-Term",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "(fterm)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "epcSearch",
+      "name": "EPC",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "(epc)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventionNameSearch",
+      "name": "발명의명칭",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "invention",
+          "desc": "발명의명칭",
+          "note": "(발명의 명칭)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "abstractSearch",
+      "name": "초록정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "abstracts",
+          "desc": "초록",
+          "note": "(초록)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "claimExtendSearch",
+      "name": "청구범위",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "claimExtend",
+          "desc": "청구범위",
+          "note": "(청구범위)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "usPatentDocumentSearch",
+      "name": "US Patent Document",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "usPatentDocument",
+          "desc": "usPatentDocument",
+          "note": "(US patent Document)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationNumberSearch",
+      "name": "출원번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(출원번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "openNumberSearch",
+      "name": "공개번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "(공개번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registerNumberSearch",
+      "name": "등록번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerNumber",
+          "desc": "등록번호",
+          "note": "(등록번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityNumberSearch",
+      "name": "우선권번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityNumber",
+          "desc": "우선권번호",
+          "note": "(우선권번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "internationalOpenNumberSearch",
+      "name": "국제공개번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "internationalOpenNumber",
+          "desc": "국제공개번호",
+          "note": "(국제공개번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "foreignRefNumberSearch",
+      "name": "ForeignRef 번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "foreignRefNumber",
+          "desc": "ForeignRef번호",
+          "note": "(foreignRef 번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fieldSearch",
+      "name": "필드",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "field",
+          "desc": "field",
+          "note": "(field)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicationdateSearch",
+      "name": "출원일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationdate",
+          "desc": "출원일자",
+          "note": "(출원일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "openDateSearch",
+      "name": "공개일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(공개일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registerDateSearch",
+      "name": "등록일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "(등록일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityDateSearch",
+      "name": "우선권일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(우선권일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantSearch",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "(출원인)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventorsSearch",
+      "name": "발명자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "(발명자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "agentsSearch",
+      "name": "대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "(대리인)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "internationalApplicationNumberSearch",
+      "name": "국제출원번호",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "internationalApplicationNumber",
+          "desc": "국제출원번호",
+          "note": "(국제출원번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "relationUSSearch",
+      "name": "Relation US Search",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "relationUS",
+          "desc": "RelationUS",
+          "note": "(relationUS)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "internationalApplicationDateSearch",
+      "name": "국제출원일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "(국제출원일자)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "detailsDescriptionSearch",
+      "name": "항목별검색상세",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "detailsDescription",
+          "desc": "상세설명",
+          "note": "(상세설명)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "cpcSearch",
+      "name": "CPC 검색",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "cpc",
+          "desc": "CPC코드",
+          "note": "(cpc)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자), OPD(공개일자), GD(등록일자), PD(공보일자), IDT(국제출원일자), IOD(국제공개일자), RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "(true-desc, false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "priorityCountrySearch",
+      "name": "우선권주장국가",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "priorityCountrySearch",
+          "desc": "우선권번호",
+          "note": "(우선권번호)"
+        },
+        {
+          "name": "currentPage",
+          "desc": "페이지번호",
+          "note": ""
+        },
+        {
+          "name": "sortField",
+          "desc": "정렬기준",
+          "note": "AD(출원일자) OPD(공개일자) GD(등록일자) PD(공보일자) IDT(국제출원일자) IOD(국제공개일자) RD(우선권주장일자)"
+        },
+        {
+          "name": "sortState",
+          "desc": "정렬방식",
+          "note": "내림정렬 (true-desc false-asc)"
+        },
+        {
+          "name": "collectionValues",
+          "desc": "국가코드",
+          "note": "(미국-US 유럽-EP PCT-WO 일본-JP 일본영문초록-PJ 중국-CP 중국특허영문초록-CN 대만영문초록-TW"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "searchResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipc",
+          "desc": "IPC코드",
+          "note": "IPC"
+        },
+        {
+          "name": "upc",
+          "desc": "UPC코드",
+          "note": "CLAS"
+        },
+        {
+          "name": "fi",
+          "desc": "FI코드",
+          "note": "FI"
+        },
+        {
+          "name": "fterm",
+          "desc": "F-TERM코드",
+          "note": "FT"
+        },
+        {
+          "name": "epc",
+          "desc": "EPC코드",
+          "note": "EC"
+        },
+        {
+          "name": "applicationNo",
+          "desc": "출원번호",
+          "note": "AN"
+        },
+        {
+          "name": "registerNo",
+          "desc": "등록번호",
+          "note": "GN"
+        },
+        {
+          "name": "publishrNo",
+          "desc": "공보번호",
+          "note": "PN"
+        },
+        {
+          "name": "priorityNo",
+          "desc": "우선권주장번호",
+          "note": "(RNV)"
+        },
+        {
+          "name": "internationalOpenNo",
+          "desc": "국제공개번호",
+          "note": "ION"
+        },
+        {
+          "name": "familyNo",
+          "desc": "패밀리번호",
+          "note": "(FMV)"
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": "AD"
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": "(ODV)"
+        },
+        {
+          "name": "registerDate",
+          "desc": "등록일자",
+          "note": "GD"
+        },
+        {
+          "name": "priorityDate",
+          "desc": "우선권주장일자",
+          "note": "(RND)"
+        },
+        {
+          "name": "internationalOpenDate",
+          "desc": "국제공개일자",
+          "note": "IOD"
+        },
+        {
+          "name": "applicant",
+          "desc": "출원인명",
+          "note": "AP"
+        },
+        {
+          "name": "inventors",
+          "desc": "발명자명",
+          "note": "IN"
+        },
+        {
+          "name": "agents",
+          "desc": "대리인명",
+          "note": "AG"
+        },
+        {
+          "name": "internationalApplicationNo",
+          "desc": "국제출원번호",
+          "note": "IAN"
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": "IDT"
+        },
+        {
+          "name": "vdkVgwKey",
+          "desc": "국가코드/문헌번호/조회순번",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "OPN"
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명",
+          "note": "(고안)의명칭"
+        },
+        {
+          "name": "colString",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "bibliographicInfo",
+      "name": "서지상세정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "bibliographicInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "bibliographicSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가매체코드",
+          "note": ""
+        },
+        {
+          "name": "ltrtNo",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의 명칭",
+          "note": ""
+        },
+        {
+          "name": "usKind",
+          "desc": "상태",
+          "note": ""
+        },
+        {
+          "name": "usNo",
+          "desc": "등록번호/등록일자/공개번호/공개일자",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "국외문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정공보유무",
+          "note": ""
+        },
+        {
+          "name": "publishDate",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "imageStandardCode",
+          "desc": "대표도면출처상태코드",
+          "note": ""
+        },
+        {
+          "name": "pubFg",
+          "desc": "공고공보유무",
+          "note": ""
+        },
+        {
+          "name": "ipcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ipcCd",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "ipcVersion",
+          "desc": "IPC버전",
+          "note": ""
+        },
+        {
+          "name": "fiInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "publKey",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "FI코드",
+          "note": ""
+        },
+        {
+          "name": "ftermInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ftermCode",
+          "desc": "F-TERM코드",
+          "note": ""
+        },
+        {
+          "name": "themeCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "temaCode",
+          "desc": "F_TERM주제코드",
+          "note": ""
+        },
+        {
+          "name": "summation",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "astrtCont",
+          "desc": "요약",
+          "note": ""
+        },
+        {
+          "name": "openNumberInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호/공개일자",
+          "note": ""
+        },
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicantAddress",
+          "desc": "출원인주소",
+          "note": ""
+        },
+        {
+          "name": "applicantCountry",
+          "desc": "출원인국가",
+          "note": ""
+        },
+        {
+          "name": "inventorsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "발명자명",
+          "note": ""
+        },
+        {
+          "name": "inventorAddress",
+          "desc": "발명자주소",
+          "note": ""
+        },
+        {
+          "name": "inventorCountry",
+          "desc": "발명자국가",
+          "note": ""
+        },
+        {
+          "name": "priorityNumberDateInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationCountry",
+          "desc": "우선권국가코드",
+          "note": ""
+        },
+        {
+          "name": "docdbFamilyInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "docdbLiteratureNumber",
+          "desc": "DOCDB문헌번호",
+          "note": ""
+        },
+        {
+          "name": "docdbCountryCode",
+          "desc": "DOCDB국가코드",
+          "note": ""
+        },
+        {
+          "name": "epodocPublicNumber",
+          "desc": "EPODOC공보번호",
+          "note": ""
+        },
+        {
+          "name": "docdbLiteratureIdCode",
+          "desc": "DOCDB문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "foreignBiblio",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "publKey",
+          "desc": "DOCDB문헌번호",
+          "note": ""
+        },
+        {
+          "name": "ipcVersionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "versionDate",
+          "desc": "IPC버전/IPC개정일자",
+          "note": "IPC8판 적용일자"
+        },
+        {
+          "name": "upcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "upcUspdCd",
+          "desc": "UPC코드",
+          "note": ""
+        },
+        {
+          "name": "getfield",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "코드내역",
+          "note": ""
+        },
+        {
+          "name": "agentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentAddr",
+          "desc": "대리인주소",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        },
+        {
+          "name": "judgesInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "seq",
+          "desc": "고유번호",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "심사관종류",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "심사관명",
+          "note": ""
+        },
+        {
+          "name": "internationalApplicationOpenInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "internationalApplicationNumber",
+          "desc": "국제출원번호",
+          "note": ""
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": ""
+        },
+        {
+          "name": "internationPublicationNumber",
+          "desc": "국제공개번호",
+          "note": ""
+        },
+        {
+          "name": "internationPublicationDate",
+          "desc": "국제공개일자",
+          "note": ""
+        },
+        {
+          "name": "publKey",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "demandParagraphInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "claimText",
+          "desc": "청구범위내용",
+          "note": ""
+        },
+        {
+          "name": "usPatentDocumentsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "corgPatno",
+          "desc": "외국참조번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "국외문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "exam",
+          "desc": "심사관인용여부",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "심사관명",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "코드내역",
+          "note": ""
+        },
+        {
+          "name": "ltrtnoLink",
+          "desc": "재구성공고번호등록",
+          "note": ""
+        },
+        {
+          "name": "cntryCodeLink",
+          "desc": "국가코드 링크",
+          "note": ""
+        },
+        {
+          "name": "foreignPatentDocumentsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "corgPatno",
+          "desc": "외국참조번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "국외문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "exam",
+          "desc": "심사관인용여부",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가매체코드",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "코드내역",
+          "note": ""
+        },
+        {
+          "name": "otherPublicationsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "data",
+          "desc": "외국참조번호",
+          "note": ""
+        },
+        {
+          "name": "relatedUsApplicationDataInfo",
+          "desc": "",
+          "note": "해당 정보는 미국만 제공"
+        },
+        {
+          "name": "patno",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "출원종류",
+          "note": ""
+        },
+        {
+          "name": "stcd",
+          "desc": "상태코드",
+          "note": ""
+        },
+        {
+          "name": "relatedUsApplicationDataDetailInfo",
+          "desc": "",
+          "note": "해당 정보는 미국만 제공"
+        },
+        {
+          "name": "patno",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "출원종류",
+          "note": ""
+        },
+        {
+          "name": "stcd",
+          "desc": "상태코드",
+          "note": ""
+        },
+        {
+          "name": "ltrtnoLink",
+          "desc": "재구성공고번호등록",
+          "note": ""
+        },
+        {
+          "name": "actionStatus",
+          "desc": "관련출원 코드설명",
+          "note": ""
+        },
+        {
+          "name": "openAnnounceNumberInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "openAnnounceNumber",
+          "desc": "공개번호/공개일자",
+          "note": ""
+        },
+        {
+          "name": "eclaInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "코드내역",
+          "note": ""
+        },
+        {
+          "name": "designationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "nationalNameKR",
+          "desc": "지정국가명(한글)",
+          "note": ""
+        },
+        {
+          "name": "nationalNameCode",
+          "desc": "지정국가코드",
+          "note": ""
+        },
+        {
+          "name": "representationImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "tifPath",
+          "desc": "tif 경로",
+          "note": ""
+        },
+        {
+          "name": "jpgPath",
+          "desc": "jpg 경로",
+          "note": ""
+        },
+        {
+          "name": "cpcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "cpcCd",
+          "desc": "CPC코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "bibliographicSummaryInfo",
+      "name": "서지요약정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "bibliographicSummaryInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가매체코드",
+          "note": ""
+        },
+        {
+          "name": "ltrtNo",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "inventionTitle",
+          "desc": "발명의명칭",
+          "note": ""
+        },
+        {
+          "name": "usKind",
+          "desc": "번호종류",
+          "note": ""
+        },
+        {
+          "name": "usNo",
+          "desc": "등록번호/등록일자/공개번호/공개일자",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "국외문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "openDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "publishDate",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "imageStandardCode",
+          "desc": "대표도면출처상태코드",
+          "note": ""
+        },
+        {
+          "name": "pubFg",
+          "desc": "공고공보유무",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정공보유무",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ipcInfo",
+      "name": "IPC",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ipcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ipcCd",
+          "desc": "IPC코드",
+          "note": ""
+        },
+        {
+          "name": "ipcVersion",
+          "desc": "IPC버전",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fiInfo",
+      "name": "FI(일본)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "fiInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "publKey",
+          "desc": "순번",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "FI코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ftermInfo",
+      "name": "F-Term(일본)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ftermInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ftermCode",
+          "desc": "F-TERM코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "themeCodeInfo",
+      "name": "Theme코드(일본)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "themeCodeInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "temaCode",
+          "desc": "F_TERM주제코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "summation",
+      "name": "초록",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "summation",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "astrtCont",
+          "desc": "요약",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "openNumberInfo",
+      "name": "공개번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "openNumberInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호/공개일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "applicantInfo",
+      "name": "출원인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "applicantInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicantName",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "applicantAddress",
+          "desc": "출원인주소",
+          "note": ""
+        },
+        {
+          "name": "applicantCountry",
+          "desc": "출원인국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inventorsInfo",
+      "name": "발명자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "inventorsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "inventorName",
+          "desc": "발명자명",
+          "note": ""
+        },
+        {
+          "name": "inventorAddress",
+          "desc": "발명자주소",
+          "note": ""
+        },
+        {
+          "name": "inventorCountry",
+          "desc": "발명자국가",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "prriorityNumberDateInfo",
+      "name": "우선권번호,일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "priorityNumberDateInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationNumber",
+          "desc": "우선권주장번호",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationDate",
+          "desc": "우선권주장일자",
+          "note": ""
+        },
+        {
+          "name": "priorityApplicationCountry",
+          "desc": "우선권주장국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "docdbFamilyInfo",
+      "name": "DOC,패밀리",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "docdbFamilyInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "docdbLiteratureNumber",
+          "desc": "DOCDB문헌번호",
+          "note": ""
+        },
+        {
+          "name": "docdbCountryCode",
+          "desc": "DOCDB국가코드",
+          "note": ""
+        },
+        {
+          "name": "epodocPublicNumber",
+          "desc": "EPODOC공보번호",
+          "note": ""
+        },
+        {
+          "name": "docdbLiteratureIdCode",
+          "desc": "DOCDB문헌식별코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "foreignBiblio",
+      "name": "해외 서지",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "foreignBiblio",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "publKey",
+          "desc": "DOCDB문헌번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ipcVersionInfo",
+      "name": "IPC버전",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "ipcVersionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "versionDate",
+          "desc": "IPC버전/IPC개정일자",
+          "note": "IPC8판 적용일자"
+        }
+      ]
+    },
+    {
+      "id": "upcInfo",
+      "name": "USCD",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "upcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "upcUspdCd",
+          "desc": "UPC코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getfield",
+      "name": "Field of Search",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "getfield",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "검색항목",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "agentInfo",
+      "name": "대리인",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "agentInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "agentAddr",
+          "desc": "대리인주소",
+          "note": ""
+        },
+        {
+          "name": "agentName",
+          "desc": "대리인명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "internationalApplicationOpenInfo",
+      "name": "국제출원/공개 번호,일자 정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "internationalApplicationOpenInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "internationalApplicationNumber",
+          "desc": "국제출원번호",
+          "note": ""
+        },
+        {
+          "name": "internationalApplicationDate",
+          "desc": "국제출원일자",
+          "note": ""
+        },
+        {
+          "name": "internationPublicationNumber",
+          "desc": "국제공개번호",
+          "note": ""
+        },
+        {
+          "name": "internationPublicationDate",
+          "desc": "국제공개일자",
+          "note": ""
+        },
+        {
+          "name": "publKey",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "demandParagraphInfo",
+      "name": "청구항",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL)※다중 국가 선택 불가, PCT 조회 제한"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "demandParagraphInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "claimText",
+          "desc": "청구범위내용",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "usPatentDocumentsInfo",
+      "name": "인용(자국 문헌)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "usPatentDocumentsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "corgPatno",
+          "desc": "외국참조번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "보고서종류",
+          "note": ""
+        },
+        {
+          "name": "exam",
+          "desc": "심사관인용여부",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "name",
+          "desc": "출원인명",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "UPC코드",
+          "note": ""
+        },
+        {
+          "name": "ltrtnoLink",
+          "desc": "재구성공고번호등록",
+          "note": ""
+        },
+        {
+          "name": "cntryCodeLink",
+          "desc": "국가코드링크",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "foreignPatentDocumentsInfo",
+      "name": "인용(타국 문헌)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "foreignPatentDocumentsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "corgPatno",
+          "desc": "외국참조번호",
+          "note": ""
+        },
+        {
+          "name": "patTpcd",
+          "desc": "보고서종류",
+          "note": ""
+        },
+        {
+          "name": "exam",
+          "desc": "심사관인용여부",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "UPC코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "otherPublicationsInfo",
+      "name": "인용(Other Publication)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "otherPublicationsInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "data",
+          "desc": "외국참조번호",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "relatedUsApplicationDataInfo",
+      "name": "Related US Application Data",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "relatedUsApplicationDataInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "patno",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "출원종류",
+          "note": ""
+        },
+        {
+          "name": "stcd",
+          "desc": "상태코드",
+          "note": ""
+        },
+        {
+          "name": "ltrtnoLink",
+          "desc": "관련출원번호링크",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "relatedUsApplicationDataDetailInfo",
+      "name": "Relation출원상세",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "relatedUsApplicationDataDetailInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "patno",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "patDt",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "kind",
+          "desc": "출원종류",
+          "note": ""
+        },
+        {
+          "name": "stcd",
+          "desc": "상태코드",
+          "note": ""
+        },
+        {
+          "name": "ltrtnoLink",
+          "desc": "관련출원번호링크",
+          "note": ""
+        },
+        {
+          "name": "actionStatus",
+          "desc": "관련출원코드설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getOpenAnnounceNumber",
+      "name": "공개,공고번호",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "openAnnounceNumberInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "openAnnounceNumber",
+          "desc": "공개번호/공개일자",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "eclaInfo",
+      "name": "ECLA",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "eclaInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "clssCd",
+          "desc": "구분코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "designationInfo",
+      "name": "지정국",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "designationInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "nationalNameKR",
+          "desc": "지정국가명",
+          "note": "한글"
+        },
+        {
+          "name": "nationalNameCode",
+          "desc": "지정국가코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "cpcInfo",
+      "name": "CPC",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "cpcInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "cpcCd",
+          "desc": "CPC코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "familyInfo",
+      "name": "패밀리정보(DOCDB 패밀리 정보 포함)",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "familyInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": ""
+        },
+        {
+          "name": "countryName",
+          "desc": "국가명",
+          "note": ""
+        },
+        {
+          "name": "familyKind",
+          "desc": "패밀리종류",
+          "note": ""
+        },
+        {
+          "name": "familyNumber",
+          "desc": "패밀리번호",
+          "note": ""
+        },
+        {
+          "name": "literatureCode",
+          "desc": "문헌코드",
+          "note": ""
+        },
+        {
+          "name": "applicationDate",
+          "desc": "출원일자",
+          "note": ""
+        },
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "openingDate",
+          "desc": "공개일자",
+          "note": ""
+        },
+        {
+          "name": "openingNumber",
+          "desc": "공개번호",
+          "note": ""
+        },
+        {
+          "name": "gazetteDate",
+          "desc": "공보일자",
+          "note": ""
+        },
+        {
+          "name": "gazetteNumber",
+          "desc": "공보번호",
+          "note": ""
+        },
+        {
+          "name": "registrationNumber",
+          "desc": "등록번호",
+          "note": ""
+        },
+        {
+          "name": "inventionName",
+          "desc": "발명의명칭",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fullTextInfo",
+      "name": "전문",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "fullTextInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "representationImageInfo",
+      "name": "대표도",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "representationImageInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "tifPath",
+          "desc": "-",
+          "note": "(미사용)"
+        },
+        {
+          "name": "tifFileName",
+          "desc": "-",
+          "note": "(미사용)"
+        },
+        {
+          "name": "jpgPath",
+          "desc": "이미지경로",
+          "note": ""
+        },
+        {
+          "name": "jpgFileName",
+          "desc": "이미지명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "revisionAnnounceInfo",
+      "name": "정정공고",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "revisionAnnounceInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "openFullTextInfo",
+      "name": "공개전문",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "openFullTextInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationFullTextInfo",
+      "name": "공고전문",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationFullTextInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "path",
+          "desc": "파일경로",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "revisionInfo",
+      "name": "정정정보",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "revisionInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "repubFg",
+          "desc": "정정정보유무",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fullTextDisplayInfo",
+      "name": "전문정보출력",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "fullTextDisplayInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개전문번호",
+          "note": ""
+        },
+        {
+          "name": "registerNumber",
+          "desc": "공고전문번호",
+          "note": ""
+        },
+        {
+          "name": "revisionNumber",
+          "desc": "-",
+          "note": "(미사용)"
+        }
+      ]
+    },
+    {
+      "id": "openNumberLinkInfo",
+      "name": "공개번호링크",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "openNumberLinkInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "no",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "registrationNumberLinkInfo",
+      "name": "등록번호링크",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "registrationNumberLinkInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "no",
+          "desc": "번호",
+          "note": ""
+        },
+        {
+          "name": "totalSearchCount",
+          "desc": "전체건수",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fullTextCheck",
+      "name": "모든 전문 및 대표도 유무",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "fullTextCheckResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "openFullTextCheckResult",
+          "desc": "공개전문유무",
+          "note": "(있음:Y,없음:N)"
+        },
+        {
+          "name": "registrationFullTextCheckResult",
+          "desc": "공고전문유무",
+          "note": "(있음:Y,없음:N)"
+        },
+        {
+          "name": "representationImageInfo",
+          "desc": "대표도면유무",
+          "note": "(있음:Y,없음:N)"
+        },
+        {
+          "name": "revisionAnnounceFullTextCheckResult",
+          "desc": "-",
+          "note": "미사용"
+        }
+      ]
+    },
+    {
+      "id": "getIpcCode",
+      "name": "IPC코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ipcCd",
+          "desc": "IPC코드",
+          "note": "(IPC)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchCodeResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "IPC코드",
+          "note": "(출력용)"
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "원문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getEpcCode",
+      "name": "EPC코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "epcCode",
+          "desc": "EPC코드",
+          "note": "(EPC)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchCodeResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "EPC코드",
+          "note": ""
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "원문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getUpcCode",
+      "name": "UPC코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "upcUspdCd",
+          "desc": "UPC코드",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchCodeResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "UPC코드",
+          "note": "(출력용)"
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "원문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getFiCode",
+      "name": "FI코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "fiCode",
+          "desc": "FI코드",
+          "note": "(FI)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchCodeResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "FI코드",
+          "note": "(출력용)"
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "원문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getFtermCode",
+      "name": "F-TERM 코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "ftermCode",
+          "desc": "F-TREM코드",
+          "note": "(F-TERM)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchCodeResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "F-TERM코드",
+          "note": ""
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "원문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "getLtrtno",
+      "name": "문헌번호(LTRTNO)조회",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        },
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": "(OR?조건)"
+        },
+        {
+          "name": "openNumber",
+          "desc": "공개번호",
+          "note": "(OR?조건)"
+        },
+        {
+          "name": "registNumber",
+          "desc": "등록번호",
+          "note": "(OR?조건)"
+        },
+        {
+          "name": "publicationNumber",
+          "desc": "공보번호",
+          "note": "(OR?조건)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "LtrtnoInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ltrtno",
+          "desc": "문헌번호",
+          "note": "(LTRTNO)"
+        }
+      ]
+    },
+    {
+      "id": "getCpcCode",
+      "name": "CPC코드",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "cpcCd",
+          "desc": "CPC코드",
+          "note": "(CPC)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "searchCodeResult",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "section",
+          "desc": "CPC코드",
+          "note": "(출력용)"
+        },
+        {
+          "name": "koreanExplanation",
+          "desc": "한글설명",
+          "note": ""
+        },
+        {
+          "name": "originalTextExplanation",
+          "desc": "원문설명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "kind",
+          "desc": "검색코드",
+          "note": "(oper1 : 서지상세정보, oper2 : 서지요약정보, oper3 : IPC, oper4 : FI(일본), oper5 : F-Term(일본), oper6 : Theme코드(일본), oper7 : 초록, oper9 : 출원인, oper10 : 발명자, oper11 : 우선권번호·일자, oper15 : USCD, oper16 : Field of Search, oper17 : 대리인, oper18 : 국제출원/공개 번호,일자 정보, oper19 : 청구항, oper20 : 인용(자국 문헌), oper21 : 인용(타국 문헌), oper22 : 인용(Ohter Publication), oper23 : Related US Application Data, oper26 : ECLA, oper27 : 지정국, oper28 : CPC, oper29 : 패밀리정보(DOCDB 패밀리정보 포함)) ※ oper1, oper2, oper3, oper4, oper5, oper6, oper7, oper9, oper10, oper11, oper15, oper16, oper17, oper18, oper19, oper20, oper21, oper22, oper23, oper26, oper27, oper28, oper29 중 원하는 변동정보 검색코드 입력"
+        },
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        },
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": "※ 입력방식(ex : 20160713)"
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "전체건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "문헌번호 리스트",
+          "note": "(ex : 문헌번호1|문헌번호2|...)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "countryCode",
+          "desc": "국가코드",
+          "note": "(미국-US, 유럽-EP, PCT-WO, 일본-JP, 일본영문초록-PJ, 중국-CP, 중국특허영문초록-CN, 대만영문초록-TW, 러시아-RU, 콜롬비아-CO, 스웨덴-SE, 스페인-ES, 이스라엘-IL, 인도-IN, 베트남-VN)※다중 국가 선택 불가"
+        },
+        {
+          "name": "literatureNumber",
+          "desc": "문헌번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

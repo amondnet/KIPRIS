@@ -1,0 +1,260 @@
+{
+  "id": "patent_citation",
+  "name": "특허·실용 인용문헌",
+  "service_path": "CitationService",
+  "path_confidence": "portal",
+  "gateway": "openapi",
+  "auth_param": "accessKey",
+  "operations": [
+    {
+      "id": "citationInfoV2",
+      "name": "인용문헌V2",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "citationInfoV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "CitationLiteratureTypeSerialnumber",
+          "desc": "인용문헌구분일련번호",
+          "note": ""
+        },
+        {
+          "name": "CitationLiteratureTypeCode",
+          "desc": "인용문헌구분코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureNumber",
+          "desc": "표준인용문헌번호",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureCountryCode",
+          "desc": "표준인용문헌국가코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureIdentificationCode",
+          "desc": "표준인용문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteraturePublicationDate",
+          "desc": "표준인용문헌발행일자",
+          "note": ""
+        },
+        {
+          "name": "StandardProcessStatusCode",
+          "desc": "표준처리상태코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "citationInfo",
+      "name": "인용문헌",
+      "deprecated": true,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "citationInfoV2",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "CitationLiteratureTypeSerialnumber",
+          "desc": "인용문헌구분일련번호",
+          "note": ""
+        },
+        {
+          "name": "CitationLiteratureTypeCode",
+          "desc": "인용문헌구분코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureNumber",
+          "desc": "표준인용문헌번호",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureCountryCode",
+          "desc": "표준인용문헌국가코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureIdentificationCode",
+          "desc": "표준인용문헌식별코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteraturePublicationDate",
+          "desc": "표준인용문헌발행일자",
+          "note": ""
+        },
+        {
+          "name": "StandardProcessStatusCode",
+          "desc": "표준처리상태코드",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "citationInfoV3",
+      "name": "인용문헌V3",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "citationInfoV3",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "ApplicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        },
+        {
+          "name": "OriginalcitationLiteraturenumber",
+          "desc": "원인용문헌번호",
+          "note": ""
+        },
+        {
+          "name": "OriginalcitationLiteraturenumberDate",
+          "desc": "원인용문헌번호일자",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteraturenumber",
+          "desc": "표준인용문헌번호",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureCountryCode",
+          "desc": "표준인용문헌국가코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteratureCountryCodeName",
+          "desc": "표준인용문헌국가코드명",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationIdentificationCode",
+          "desc": "표준인용식별코드",
+          "note": ""
+        },
+        {
+          "name": "StandardCitationLiteraturePublicationDate",
+          "desc": "표준인용문헌발행일자",
+          "note": ""
+        },
+        {
+          "name": "StandardStatusCode",
+          "desc": "표준상태코드",
+          "note": ""
+        },
+        {
+          "name": "StandardStatusCodeName",
+          "desc": "표준상태코드명",
+          "note": ""
+        },
+        {
+          "name": "CitationLiteratureTypeCode",
+          "desc": "인용문헌구분코드",
+          "note": ""
+        },
+        {
+          "name": "CitationLiteratureTypeCodeName",
+          "desc": "인용문헌구분코드명",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "transferListInfo",
+      "name": "변동정보",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "transferDate",
+          "desc": "변동일자",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "transferListInfo",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "transferCount",
+          "desc": "변동건수",
+          "note": ""
+        },
+        {
+          "name": "transferList",
+          "desc": "출원번호리스트",
+          "note": "(ex : 출원번호1|출원번호2)"
+        }
+      ]
+    },
+    {
+      "id": null,
+      "name": "최종변동일자",
+      "deprecated": false,
+      "params": [
+        {
+          "name": "applicationNumber",
+          "desc": "출원번호",
+          "note": ""
+        }
+      ],
+      "response_fields": [
+        {
+          "name": "items",
+          "desc": "",
+          "note": ""
+        },
+        {
+          "name": "lastTransferDateInfo",
+          "desc": "최종변동일자",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

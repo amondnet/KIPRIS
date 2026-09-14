@@ -359,15 +359,21 @@ def main() -> int:
     p_services.add_argument("--grep", help="filter by id or Korean name")
 
     p_describe = sub.add_parser("describe", help="show a service's operations and parameters")
-    p_describe.add_argument("service")
+    p_describe.add_argument("service", help="service id from `services`")
     p_describe.add_argument("--op", help="show only this operation, with full IN/OUT fields")
     p_describe.add_argument("--full", action="store_true", help="include fields for every operation")
 
-    p_call = sub.add_parser("call", help="call an operation")
-    p_call.add_argument("service")
-    p_call.add_argument("operation")
-    p_call.add_argument("-p", "--param", action="append", metavar="NAME=VALUE")
-    p_call.add_argument("--gateway", choices=["openapi", "kipo"])
+    p_call = sub.add_parser(
+        "call",
+        help="call an operation; spends one request against the monthly quota")
+    p_call.add_argument("service", help="service id from `services`")
+    p_call.add_argument("operation", help="operation id from `describe <service>`")
+    p_call.add_argument("-p", "--param", action="append", metavar="NAME=VALUE",
+                        help="request parameter, repeatable; exact names come from "
+                             "`describe <service> --op <operation>`")
+    p_call.add_argument("--gateway", choices=["openapi", "kipo"],
+                        help="force the gateway instead of the catalogued or inferred one; "
+                             "it decides which auth param and base URL are used")
     p_call.add_argument("--service-path", help="override the catalogued ServicePath")
     p_call.add_argument("--raw", action="store_true", help="print the raw XML response")
     p_call.add_argument("--full", action="store_true", help="include the whole parsed envelope")

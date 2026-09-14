@@ -1,0 +1,29 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "amondnet",
+  "owner": {
+    "name": "Minsu Lee",
+    "email": "amond@amond.dev",
+    "url": "https://github.com/amondnet"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by @amondnet",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "kipris",
+      "source": "./",
+      "description": "Search Korean patents, utility models, designs, trademarks, trials and foreign patents via the KIPRIS Plus Open API. Python stdlib only — no install step.",
+      "category": "research",
+      "keywords": [
+        "patent",
+        "trademark",
+        "intellectual-property",
+        "korea",
+        "kipris"
+      ],
+      "tags": ["search", "open-api"]
+    }
+  ]
+}
